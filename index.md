@@ -6,23 +6,24 @@ _Bayesian statistician and consultant --- London --- Research Fellow at **London
 
 **Short bio:** I studied Mathematics (2009-2014, BSci & MSci, University of Science & Technology, Kraków) and specialised in algorithmic theory and graph theory. I work on predictive, patient-level modelling of real world drug effectiveness, Bayesian hierarchical models, (network) meta-analyses, infectious disease models, survival analysis. At LSE our research is focussed on using Bayesian inference for modelling heterogeneity in treatment effects, including an R package development for evidence synthesis with Stan, with advice from Andrew Gelman, (Columbia University) and Dean Karlan (Northwestern Uni). I plan to defend my PhD, “Innovative methodology for Bayesian hierarchical modelling, with applications in biology and toxicology”, at Hasselt University in autumn 2019. 
 
-links: (GitHub)[https://github.com/wwiecek], (LinkedIn)[https://www.linkedin.com/in/witold-wiecek-308089126/], CV
+links: [GitHub](https://github.com/wwiecek), [LinkedIn](https://www.linkedin.com/in/witold-wiecek-308089126/), CV
 
 ## Recent output/links
 
 * Work with European Food Safety Authority (via Certara) on meta-analyses of data in drug/food safety and generic tools for toxicokinetic modelling. 
-    + Sept 2018: (EFSA Conference poster on TKPlate)[https://drive.google.com/open?id=1aFVlBTc8oDMedJHXg9jj6rh2HpyHUi9D] (TK modelling GUI) 
-    + 8 Feb 2019: (Seminar at Hasselt University Center for Statistics)[https://www.dropbox.com/s/5pr4p7ct5bxc4c2/hasselt_seminar_8feb.html?dl=1] on meta-analyses in food/drug safety
+    + Sept 2018: [EFSA Conference poster on TKPlate](https://drive.google.com/open?id=1aFVlBTc8oDMedJHXg9jj6rh2HpyHUi9D) (TK modelling GUI) 
+    + 8 Feb 2019: [Seminar at Hasselt University Center for Statistics](https://www.dropbox.com/s/5pr4p7ct5bxc4c2/hasselt_seminar_8feb.html?dl=1) on meta-analyses in food/drug safety
 * Feb 2019: our paper on meta-analyses of toxicology data submitted to _Computational Toxicology_
 * Jan 2018: Short presentation on [real world evidence in pharma research & medical publishing](https://drive.google.com/open?id=1sX87rBcz6UvoWoiEW0of2KaswV2O2BaH), from a discussion panel at European meeting for International Society for Medical Publication Professionals (through Analytica Laser/Certara)
 
 
 ## Ongoing software (in public domain)
 
-* graph_sampler with Frederic Bois (INERIS) and Ghislaine Gayraud (UTC Compiegne); open-source (GNU Savannah) software in C for inferring Bayesian network structure, including efficient MCMC sampler over discrete space of graphs
-* baggr with Rachael Meager (LSE); R package for meta-analyses with Stan; not yet on CRAN 
-* httkgui/TKPlate with European Food Safety Authority; R package including Shiny app - a prototype for a graphical user interface for running generic toxicokinetic models, including ODE TK models in C
-* survnma (currently Certara IP, not released publicly yet); an R package for network meta-analyses of survival data (such as in oncology), aimed at improving health technology assessment modelling
+* [graph_sampler](http://www.nongnu.org/graphsampler/) with Frederic Bois (INERIS) and Ghislaine Gayraud (UTC Compiegne); open-source (GNU Savannah) software in C for inferring Bayesian network structure, including efficient MCMC sampler over discrete space of graphs
+* [baggr](https://github.com/wwiecek/baggr) with [Rachael Meager (LSE)](https://sites.google.com/view/rachaelmeager/home); R package for meta-analyses with Stan; not yet on CRAN 
+* [httkgui/TKPlate](https://zenodo.org/record/2548850) with European Food Safety Authority; R package including Shiny app - a prototype for a graphical user interface for running generic toxicokinetic models, including ODE TK models in C; also on my GitHub
+* ??? (currently Certara IP, but with planned public release soon); an R package for network meta-analyses of survival data (such as in oncology), aimed at improving health technology assessment modelling
+
 
 ## Publications 2016-2018
 
