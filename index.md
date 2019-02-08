@@ -1,6 +1,6 @@
 # Witold Więcek
 
-![](img/ww.jpg)
+<img style="float: left; padding: 10px;" src="img/ww.jpg">
 
 _Bayesian statistician and consultant --- London --- Research Fellow at **London School of Economics (STICERD)** --- Independent Consultant at **Certara** (pharmacometric and health economic consulting) --- Scientific Collaborator at **Hasselt University** (Centre for Statistics)_ 
 
