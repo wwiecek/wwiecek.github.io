@@ -1,8 +1,6 @@
 # Witold Więcek
 
-![](img/ww.jpg)
-
-_Bayesian statistician and consultant --- London --- Research Fellow at **London School of Economics (STICERD)** --- Independent Consultant at **Certara** (pharmacometric and health economic consulting) --- Scientific Collaborator at **Hasselt University** (Centre for Statistics)_
+![](img/ww.jpg) _Bayesian statistician and consultant --- London --- Research Fellow at **London School of Economics (STICERD)** --- Independent Consultant at **Certara** (pharmacometric and health economic consulting) --- Scientific Collaborator at **Hasselt University** (Centre for Statistics)_
 
 **Short bio:** I studied Mathematics (2009-2014, BSci & MSci, University of Science & Technology, Kraków) and specialised in algorithmic theory and graph theory. I work on predictive, patient-level modelling of real world drug effectiveness, Bayesian hierarchical models, (network) meta-analyses, infectious disease models, survival analysis. At LSE our research is focussed on using Bayesian inference for modelling heterogeneity in treatment effects, including an R package development for evidence synthesis with Stan, with advice from Andrew Gelman, (Columbia University) and Dean Karlan (Northwestern Uni). I plan to defend my PhD, “Innovative methodology for Bayesian hierarchical modelling, with applications in biology and toxicology”, at Hasselt University in autumn 2019. 
 
@@ -34,12 +32,13 @@ links: [GitHub](https://github.com/wwiecek), [LinkedIn](https://www.linkedin.com
 * Wiecek, Witold, and Helene Karcher. “Nivolumab versus Cabozantinib: Comparing Overall Survival in Metastatic Renal Cell Carcinoma.” PloS One 11, no. 6 (2016): e0155389. https://doi.org/10.1371/journal.pone.0155389.
 
 
-Posters, presentations, other releases
-Only the ones that were abstracted in literature:
+##Posters, presentations, misc
 
-Amzal, B., W. Wiecek, T. Obadia, and F. Benzaghou. “Interval-Censored Survival Data Analysis: Learnings From Phase Iii Trial In Prostate Cancer.” Value in Health 19, no. 3 (May 1, 2016): A98–99. https://doi.org/10.1016/j.jval.2016.03.1711.
-Karcher, H., W. Wiecek, R. Casciano, E. Coeytaux, S. Bixer, B. Amzal, and L. Abenhaim. “Evaluating the Impact of PCSK9 Inhibitors on Cardiovascular Disease.” Value in Health 20, no. 9 (October 1, 2017): A630. https://doi.org/10.1016/j.jval.2017.08.1404.
-Karcher, H., W. Wiecek, M. Nikodem, E. Voss, A. Sena, and S. Cepeda. “A NEW TOOL TO AUTOMATE NETWORK META-ANALYSES OF STUDIES EXTRACTED FROM CLINICALTRIALS.GOV.” Value in Health 19, no. 3 (May 1, 2016): A91. https://doi.org/10.1016/j.jval.2016.03.1823.
+_Only materials that were abstracted in literature:_
+
+* Amzal, B., W. Wiecek, T. Obadia, and F. Benzaghou. “Interval-Censored Survival Data Analysis: Learnings From Phase Iii Trial In Prostate Cancer.” Value in Health 19, no. 3 (May 1, 2016): A98–99. https://doi.org/10.1016/j.jval.2016.03.1711.
+* Karcher, H., W. Wiecek, R. Casciano, E. Coeytaux, S. Bixer, B. Amzal, and L. Abenhaim. “Evaluating the Impact of PCSK9 Inhibitors on Cardiovascular Disease.” Value in Health 20, no. 9 (October 1, 2017): A630. https://doi.org/10.1016/j.jval.2017.08.1404.
+* Karcher, H., W. Wiecek, M. Nikodem, E. Voss, A. Sena, and S. Cepeda. “A NEW TOOL TO AUTOMATE NETWORK META-ANALYSES OF STUDIES EXTRACTED FROM CLINICALTRIALS.GOV.” Value in Health 19, no. 3 (May 1, 2016): A91. https://doi.org/10.1016/j.jval.2016.03.1823.
 * Wiecek, W., B. Amzal, S. Bakshi, V. Patel, and T. Van Staa. “Age Related Consultation Rates of Clinically-Diagnosed Influenza And Acute Respiratory Illnesses Observed Through A Network of Gp Practices Across England.” Value in Health 18, no. 7 (November 1, 2015): A579. https://doi.org/10.1016/j.jval.2015.09.1931.
 * Wiecek, W., and H. Karcher. “Comparing Cost-Effectiveness Of Emerging Drugs In Advanced Cancer Without Hazard Ratios For Progression.” Value in Health 18, no. 7 (November 1, 2015): A688. https://doi.org/10.1016/j.jval.2015.09.2551.
 * Wiecek, W., H. Karcher, B. Amzal, A. Beyer, T. Hoekstra, B. Fasolo, and J. L. Hillege. “Impact of Drug’s Presentation on Patients’ Perception of Treatment’s Risks & Benefits Through New Ordinal Gee Modelling Method: Results from Imi Protect Wp6.” Value in Health 18, no. 7 (November 1, 2015): A484–85. https://doi.org/10.1016/j.jval.2015.09.1326.
