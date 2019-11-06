@@ -12,8 +12,6 @@ links: [GitHub](https://github.com/wwiecek), [LinkedIn](https://www.linkedin.com
 
 ## Recent projects/talks/papers (Oct 2019)
 
-
-*  _Innovative methodology for Bayesian hierarchical modelling, with applications in biology and toxicology_, at Hasselt University_
 * Work with European Food Safety Authority (via Certara) on chemical risk assessment
     + Sept 2019: The theory paper on meta-analysis has been published in _Computational Toxicology_: see the citation below
     + 11 July 2019: [Workshop presentation at ISOP Paris](https://www.dropbox.com/s/i5grx70cmkmb0y0/paris_workshop_11july.pdf?dl=0)
