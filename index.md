@@ -1,40 +1,48 @@
 # Witold Więcek
 
-_Bayesian statistician and consultant --- London --- Research Fellow at **London School of Economics (STICERD)** --- Consultant at **Certara** (pharmacometric and health economic consulting) --- Scientific Collaborator at **Hasselt University** (Centre for Statistics)_ 
+_Bayesian statistician and independent consultant --- based in London --- Research Fellow at **London School of Economics (STICERD)** --- Consultant for **Certara** (pharmacometrics and health economics consulting) --- Scientific Collaborator at **Hasselt University** (Centre for Statistics)_ 
 
-**Short bio:** I studied Mathematics (BSci, MSci, AGH Kraków), specialising in algorithmic theory, graph theory, probability. 
-At Certara, I work on predictive, patient-level modelling of real world drug effectiveness, (network) meta-analyses, infectious disease models (influenza), survival analysis. 
-At LSE, I work on Bayesian inference for modelling heterogeneity in treatment effects, including an R package development for evidence synthesis with Stan and a hierarchical model for a poverty alleviation study, with Andrew Gelman (Columbia University) and Dean Karlan (Northwestern Uni) as project advisors. 
-I plan to defend my PhD, _Innovative methodology for Bayesian hierarchical modelling, with applications in biology and toxicology_, at Hasselt University in September 2019. 
+**Short bio:** I studied Mathematics (BSci, MSci, AGH Kraków), specialising in algorithmic theory, graph theory, probability. I did my PhD in Bayesian statistics at University of Hasselt (Belgium). [My thesis](https://ibiostat.be/publications/phd/witoldwiecek.pdf) was on hierarchical modelling (focus on meta-analyses) and Bayesian networks.
+At Certara (Sept 2014-present) I work on analyses that inform real-world effectiveness of treatments. This includes predictive, patient-level modelling (incl. PK/PD), (network) meta-analyses, infectious disease models (influenza), survival analysis. I also worked on PK/PD, PBPK, esp. in the context of checmical risk assessment. 
+At LSE (May 2018-present), I work on Bayesian inference for modelling heterogeneity in treatment effects with with [Rachael Meager (STICERD)](https://sites.google.com/view/rachaelmeager/home). I'm working on a new R package for evidence synthesis with Stan and also various research projects in development economics: in particular a hierarchical Bayesian model for a poverty alleviation study, with Andrew Gelman (Columbia University) and Dean Karlan (Northwestern Uni) as project advisors.
 
 links: [GitHub](https://github.com/wwiecek), [LinkedIn](https://www.linkedin.com/in/witold-wiecek-308089126/), CV
 
 
 
-## Recent output/links (July 2019)
+## Recent projects/talks/papers (Oct 2019)
 
+
+*  _Innovative methodology for Bayesian hierarchical modelling, with applications in biology and toxicology_, at Hasselt University_
 * Work with European Food Safety Authority (via Certara) on chemical risk assessment
-    + Sept 2018: [EFSA Conference poster on TKPlate](https://drive.google.com/open?id=1aFVlBTc8oDMedJHXg9jj6rh2HpyHUi9D) (TK modelling GUI) 
-    + 8 Feb 2019: [Seminar at Hasselt University Center for Statistics](https://www.dropbox.com/s/5pr4p7ct5bxc4c2/hasselt_seminar_8feb.html?dl=1) on meta-analyses in food/drug safety
-    + Feb 2019: our paper on meta-analyses in submission to _Computational Toxicology_
+    + Sept 2019: The theory paper on meta-analysis has been published in _Computational Toxicology_: see the citation below
     + 11 July 2019: [Workshop presentation at ISOP Paris](https://www.dropbox.com/s/i5grx70cmkmb0y0/paris_workshop_11july.pdf?dl=0)
+	+ 8 Feb 2019: [Seminar at Hasselt University Center for Statistics](https://www.dropbox.com/s/5pr4p7ct5bxc4c2/hasselt_seminar_8feb.html?dl=1) on meta-analyses in food/drug safety
+    + Sept 2018: [EFSA Conference poster on TKPlate](https://drive.google.com/open?id=1aFVlBTc8oDMedJHXg9jj6rh2HpyHUi9D) (TK modelling GUI) 
 * Modelling cyclical structures in Bayesian networks:
-    * Jul 2019: paper in submission, pre-print available at [arXiv](<https://arxiv.org/abs/1906.04992>) 
+    * I will be presenting as part of a panel on Bayesian networks at [CMStatistics 2019](http://www.cmstatistics.org/CMStatistics2019/) this December. Will put my talk here.
+    * Jul 2019: theory paper is in submission, pre-print available at [arXiv](<https://arxiv.org/abs/1906.04992>) 
     * May 2019: *graph_sampler* has been ported to R (still work in progress): see [here](<https://github.com/wwiecek/rgraphsampler>)
-* Jan 2018: Short presentation on [real world evidence in pharma research & medical publishing](https://drive.google.com/open?id=1sX87rBcz6UvoWoiEW0of2KaswV2O2BaH), from a discussion panel at European meeting for International Society for Medical Publication Professionals (via Analytica Laser/Certara)
+* Short presentation on [real world evidence in pharma research & medical publishing](https://drive.google.com/open?id=1sX87rBcz6UvoWoiEW0of2KaswV2O2BaH), from a discussion panel at European meeting for International Society for Medical Publication Professionals (via Analytica Laser/Certara)
 
 
 
 ## Ongoing projects in the public domain
 
-* [baggr](https://github.com/wwiecek/baggr) with [Rachael Meager (LSE)](https://sites.google.com/view/rachaelmeager/home); R package for meta-analyses with Stan; not yet on CRAN 
+* [baggr](https://github.com/wwiecek/baggr) ; R package for meta-analyses with Stan; not yet on CRAN 
 * [graph_sampler](http://www.nongnu.org/graphsampler/) with Frederic Bois (INERIS) and Ghislaine Gayraud (UTC Compiegne); open-source (GNU Savannah) software in C for inferring Bayesian network structure, including efficient MCMC sampler over discrete space of graphs; also an [R package](<https://github.com/wwiecek/rgraphsampler>)
+* [rgraphsampler](https://github.com/wwiecek/rgraphsampler) is an R package prototype (it works but it's also raw) that allows to run the _graph sampler_ code inside R
 * [httkgui/TKPlate](https://zenodo.org/record/2548850) with European Food Safety Authority; R package including Shiny app - a raw prototype for a graphical user interface for running generic toxicokinetic models, including ODE TK models in C; also on my GitHub
 * [survivalnma](<https://github.com/certara/survivalnma>) is a limited release of an R package I built internally at Certara for network meta-analyses of survival data (such as occurs in oncology), aimed at improving health technology assessment models
 
 
 
-## Publications 2016-2018
+## Publications 2016-2019
+
+My Hasselt PhD is available [online](https://ibiostat.be/publications/phd/witoldwiecek.pdf).
+
+* Wiecek, Witold, Jean-Lou Dorne, Nadia Quignot, Camille Bechaux, and Billy Amzal. ‘A Generic Bayesian Hierarchical Model for the Meta-Analysis of Human Population Variability in Kinetics and Its Applications in Chemical Risk Assessment’. Computational Toxicology 12 (November 2019): 100106. <https://doi.org/10.1016/j.comtox.2019.100106>.
+* (Arxiv only) Wiecek, Witold, Frederic Y. Bois, and Ghislaine Gayraud. ‘Structure Learning of Bayesian Networks Involving Cyclic Structures’. ArXiv:1906.04992 [Stat], 12 June 2019. <http://arxiv.org/abs/1906.04992>.
 
 * Quignot, Nadia, Witold Wiecek, Billy Amzal, and Jean-Lou Dorne. _The Yin-Yang of CYP3A4: A Bayesian Meta-Analysis to Quantify Inhibition and Induction of CYP3A4 Metabolism in Humans and Refine Uncertainty Factors for Mixture Risk Assessment._ Archives of Toxicology, October 8, 2018. <https://doi.org/10.1007/s00204-018-2325-6>.
 * Rajaram, Sankarasubramanian, Witold Wiecek, Richard Lawson, Betina T. Blak, Yanli Zhao, Judith Hackett, Robert Brody, Vishal Patel, and Billy Amzal. _Impact of Increased Influenza Vaccination in 2-3-Year-Old Children on Disease Burden within the General Population: A Bayesian Model-Based Approach._ PloS One 12, no. 12 (2017): e0186739. <https://doi.org/10.1371/journal.pone.0186739>.
