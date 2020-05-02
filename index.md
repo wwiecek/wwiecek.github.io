@@ -2,9 +2,9 @@
 
 _Bayesian statistician and researcher based in London_ 
 
-**Short bio:** I work on applied problems in health economics, development economics and epidemiology. My research work is currently funded by [Schmidt Futures](https://schmidtfutures.com/) and focused on developing [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/) together with [Rachael Meager (LSE)](https://sites.google.com/view/rachaelmeager/home). I also work on other research projects in academia in the UK and the US.
+**Short bio:** I work on applied problems in health economics, development economics and epidemiology. My research work is currently funded by [Schmidt Futures](https://schmidtfutures.com/) and focused on developing [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/) together with [Rachael Meager](https://sites.google.com/view/rachaelmeager/home) where I was previously a Research Fellow. I also work on other research projects in academia in the UK and the US.
 
-I split my time between academic research and consulting work in healthcare at Certara, where I use Bayesian models to inform real-world effectiveness of treatments, model patient outcomes, do epidemiological modelling (influenza, recently COVID), use Bayesian inference for risk assessment. 
+I also do consulting work in healthcare at Certara, where I use Bayesian models to inform real-world effectiveness of treatments, model patient outcomes, do epidemiological modelling (influenza, recently COVID), use Bayesian inference for risk assessment and health technology assessment.
 
 I studied Mathematics (BSci, MSci at AGH), specialising in algorithmic theory, graph theory, probability. I have a PhD in Bayesian statistics (UHasselt). [My thesis](https://ibiostat.be/publications/phd/witoldwiecek.pdf) was on hierarchical modelling (focus on meta-analyses) and Bayesian networks.
 
