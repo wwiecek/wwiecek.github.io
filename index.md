@@ -1,14 +1,14 @@
 # Witold Więcek
 
-_Bayesian statistician and consultant based in London_ 
+_Bayesian statistician and researcher based in London_ 
 
-**Short bio:** I studied Mathematics (BSci 2012, MSci 2014 at AGH), specialising in algorithmic theory, graph theory, probability. I have a PhD in Bayesian statistics (UHasselt). [My thesis](https://ibiostat.be/publications/phd/witoldwiecek.pdf) was on hierarchical modelling (focus on meta-analyses) and Bayesian networks.
+**Short bio:** I work on applied problems in health economics, development economics and epidemiology. My research work is currently funded by [Schmidt Futures](https://schmidtfutures.com/) and focused on developing [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/) together with [Rachael Meager (LSE)](https://sites.google.com/view/rachaelmeager/home). I also work on other research projects in academia in the UK and the US.
 
-My research work is currently funded by [Schmidt Futures](https://schmidtfutures.com/) and focused on developing [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/) together with [Rachael Meager (LSE)](https://sites.google.com/view/rachaelmeager/home). I also have a few ongoing research projects in academia in the UK and the US.
+I split my time between academic research and consulting work in healthcare at Certara, where I use Bayesian models to inform real-world effectiveness of treatments, model patient outcomes, do epidemiological modelling (influenza, recently COVID), use Bayesian inference for risk assessment. 
 
-I split my time between research and consulting work in healthcare at Certara, where I use Bayesian models to inform real-world effectiveness of treatments, model patient outcomes, do epidemiological modelling (influenza, recently COVID), use Bayesian inference for risk assessment. 
+I studied Mathematics (BSci, MSci at AGH), specialising in algorithmic theory, graph theory, probability. I have a PhD in Bayesian statistics (UHasselt). [My thesis](https://ibiostat.be/publications/phd/witoldwiecek.pdf) was on hierarchical modelling (focus on meta-analyses) and Bayesian networks.
 
-links: [GitHub](https://github.com/wwiecek), [LinkedIn](https://www.linkedin.com/in/witold-wiecek-308089126/), CV
+links: [GitHub](https://github.com/wwiecek), [LinkedIn](https://www.linkedin.com/in/witold-wiecek-308089126/)
 
 
 
@@ -21,7 +21,6 @@ links: [GitHub](https://github.com/wwiecek), [LinkedIn](https://www.linkedin.com
 - Bayesian inference for modelling heterogeneity in treatment effects in a poverty alleviation program, with Rachael Meager (LSE), Andrew Gelman (Columbia), Dean Karlan and Christopher Udry (Northwestern)
 - Bayesian models and inference for assessing impact of water chlorination on infant mortality, a project with Michael Kremer and Brandon Tan at Harvard
 - COVID-19 modelling for evaluating pharmaceutical interventions; a Gates Therapeutics Accelerator/Certara project
-    + For now a prototype of a Shiny app is [in public domain](https://github.com/certara/covid19epi)
 - Modelling cyclical structures in Bayesian networks using [graph_sampler](http://www.nongnu.org/graphsampler/), with Frederic Bois (INERIS/Certara) and Ghislaine Gayraud (UTC Compiegne)
     + Theory paper is in submission, pre-print available at [arXiv](<https://arxiv.org/abs/1906.04992>) 
     + Dec 2019: [a talk on the cyclical structures in graph_sampler at CMStatistics 2019](https://www.dropbox.com/s/5848p24vy2942ap/ercim_wwiecek_graph_sampler.pdf?dl=1) conference in London
