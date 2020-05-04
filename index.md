@@ -1,10 +1,10 @@
 # Witold Więcek
 
-_Bayesian statistician and researcher based in London_ 
+_Bayesian statistician and researcher_ 
 
-**Short bio:** I work on applied problems in health economics, development economics and epidemiology. My research work is focused on developing [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/) together with [Rachael Meager](https://sites.google.com/view/rachaelmeager/home) at London School of Economics where I was previously a Research Fellow. I also work on other  projects with colleagues in the UK and the US.
+**Short bio:** I work on applied problems in health economics, development economics and epidemiology. My research work is focused on developing [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/) together with [Rachael Meager](https://sites.google.com/view/rachaelmeager/home) at London School of Economics where I was previously a Research Fellow. I also work on various other academic research projects in the UK and the US. I'm based in London.
 
-I also do consulting work in healthcare at Certara, where I use Bayesian models to inform real-world effectiveness of treatments, model patient outcomes, do epidemiological modelling (influenza, recently COVID), use Bayesian inference for risk assessment and health technology assessment.
+I do consulting work in healthcare at Certara, where I use Bayesian models to inform real-world effectiveness of treatments, model patient outcomes, do epidemiological modelling (influenza, recently COVID), use Bayesian inference for risk assessment and health technology assessment.
 
 I studied Mathematics (BSci, MSci at AGH), specialising in algorithmic theory, graph theory, probability. I have a PhD in Bayesian statistics (UHasselt). [My thesis](https://ibiostat.be/publications/phd/witoldwiecek.pdf) was on hierarchical modelling (focus on meta-analyses) and Bayesian networks.
 
