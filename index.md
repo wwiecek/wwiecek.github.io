@@ -2,24 +2,24 @@
 
 _Bayesian statistician and researcher_ 
 
-**Short bio:** I work on applied problems in health economics, development economics and epidemiology. My research work is focused on developing [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/) together with [Rachael Meager](https://sites.google.com/view/rachaelmeager/home) at London School of Economics where I was previously a Research Fellow. I also work on various other academic research projects in the UK and the US. I'm based in London.
+**Short bio:** I work on applied problems in health care, health and development economics, epidemiology. A lot of my research work is focused on developing [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/) together with [Rachael Meager](https://sites.google.com/view/rachaelmeager/home) at London School of Economics where I was previously a Research Fellow. I also work on various other research projects with colleagues in academia, most recently with [Accelerating HT](https://www.acceleratinght.org/home) group on COVID. I do not have a permanent affiliation and my work is funded by various research grants. I'm based in London.
 
-I do consulting work in healthcare at Certara, where I use Bayesian models to inform real-world effectiveness of treatments, model patient outcomes, do epidemiological modelling (influenza, recently COVID), use Bayesian inference for risk assessment and health technology assessment.
+I also do consulting work in health care at Certara, where I build Bayesian models for real-world effectiveness of treatments, health technology assessment and do epidemiological modelling. 
 
-I studied Mathematics (BSci, MSci at AGH), specialising in algorithmic theory, graph theory, probability. I have a PhD in Bayesian statistics (UHasselt). [My thesis](https://ibiostat.be/publications/phd/witoldwiecek.pdf) was on hierarchical modelling (focus on meta-analyses) and Bayesian networks.
+I studied Mathematics (BSci, MSci at AGH), specialising in algorithmic theory, graph theory, probability. I have a PhD in statistics (UHasselt). [My thesis](https://ibiostat.be/publications/phd/witoldwiecek.pdf) was on Bayesian hierarchical modelling and Bayesian networks.
 
 links: [GitHub](https://github.com/wwiecek), [LinkedIn](https://www.linkedin.com/in/witold-wiecek-308089126/)
 
 
 
-## Some ongoing projects (spring 2020)
+## Some ongoing projects (summer 2020)
 
-
-- Improving Bayesian meta-analysis methods (currently funded by [Schmidt Futures](https://schmidtfutures.com/); with Rachael Meager at LSE), with special focus on economics
+- Work with [Accelerating HT](https://www.acceleratinght.org/home), mainly on epidemiological or Bayesian support for economic models of COVID-19 vaccines. The model that the group developed is available on the linked website.
+- Improving Bayesian meta-analysis methods (grant from [Schmidt Futures](https://schmidtfutures.com/) with Rachael Meager at LSE), with special focus on economics
     + [baggr](https://github.com/wwiecek/baggr) is our R package for Bayesian meta-analyses and hierarchical models with [Stan](https://mc-stan.org/)
 	+ The package is [available on CRAN](https://cran.r-project.org/web/packages/baggr/index.html) and updated regularly.
+    + Bayesian models and inference for assessing impact of water chlorination on infant mortality, a project with Michael Kremer and Brandon Tan at Harvard
 - Bayesian inference for modelling heterogeneity in treatment effects in a poverty alleviation program, with Rachael Meager (LSE), Andrew Gelman (Columbia), Dean Karlan and Christopher Udry (Northwestern)
-- Bayesian models and inference for assessing impact of water chlorination on infant mortality, a project with Michael Kremer and Brandon Tan at Harvard
 - COVID-19 modelling for evaluating pharmaceutical interventions; a Gates Therapeutics Accelerator/Certara project
 - Modelling cyclical structures in Bayesian networks using [graph_sampler](http://www.nongnu.org/graphsampler/), with Frederic Bois (INERIS/Certara) and Ghislaine Gayraud (UTC Compiegne)
     + Theory paper is in submission, pre-print available at [arXiv](<https://arxiv.org/abs/1906.04992>) 
@@ -43,7 +43,7 @@ The rest of my consulting work is not available publically.
 
 
 
-## Recent publications
+## Some publications
 
 My Hasselt PhD is available [online](https://ibiostat.be/publications/phd/witoldwiecek.pdf).
 
