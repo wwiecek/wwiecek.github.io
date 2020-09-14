@@ -18,7 +18,7 @@ links: [GitHub](https://github.com/wwiecek), [LinkedIn](https://www.linkedin.com
 - **Improving Bayesian meta-analysis methods** (grant from [Schmidt Futures](https://schmidtfutures.com/) with Rachael Meager at LSE), with special focus on economics
     + [baggr](https://github.com/wwiecek/baggr) is our R package for Bayesian meta-analyses and hierarchical models with [Stan](https://mc-stan.org/)
 	+ The package is [available on CRAN](https://cran.r-project.org/web/packages/baggr/index.html) and updated regularly.
-    + Bayesian models and inference for assessing impact of water chlorination on infant mortality, a project with Michael Kremer and Brandon Tan at Harvard
+    + I gave [a short talk about baggr at StanCon 2020](https://www.youtube.com/watch?v=Lau2v6uHaKM). Download the slides [here](https://www.dropbox.com/s/l95t19bkiu3p6me/baggr_stancon_2020.pdf?dl=1) and the presentation notebook (code) [here](https://www.dropbox.com/s/lv3c9lie9e7wqxs/baggr_stancon_2020.Rmd?dl=1).
 - **Modelling heterogeneity in treatment effects in a poverty alleviation program**, with Rachael Meager (LSE), Andrew Gelman (Columbia), Dean Karlan and Christopher Udry (Northwestern)
 - COVID-19 modelling for evaluating pharmaceutical interventions; a Gates Therapeutics Accelerator/Certara project
 - **Cyclical structures in Bayesian networks** using [graph_sampler](http://www.nongnu.org/graphsampler/), with Frederic Bois (INERIS/Certara) and Ghislaine Gayraud (UTC Compiegne)
