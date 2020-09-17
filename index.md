@@ -8,7 +8,7 @@ A lot of my recent work is focused on COVID, primarily with colleagues in academ
 
 I studied Mathematics (BSci, MSci at AGH), specialising in algorithmic theory, graph theory, probability. I have a PhD in statistics (UHasselt). [My thesis](https://ibiostat.be/publications/phd/witoldwiecek.pdf) was on Bayesian hierarchical modelling and Bayesian networks.
 
-links: [GitHub](https://github.com/wwiecek) | [LinkedIn](https://www.linkedin.com/in/witold-wiecek-308089126/) | [Google Schoolar](https://scholar.google.com/citations?user=r6uDNqEAAAAJ&hl=en&oi=ao)
+[GitHub](https://github.com/wwiecek) | [LinkedIn](https://www.linkedin.com/in/witold-wiecek-308089126/) | [Google Schoolar](https://scholar.google.com/citations?user=r6uDNqEAAAAJ&hl=en&oi=ao)
 
 
 
