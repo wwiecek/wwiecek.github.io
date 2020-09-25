@@ -6,6 +6,8 @@ _Bayesian statistician and researcher_
 
 A lot of my recent work is focused on COVID, primarily with colleagues in academia at [Accelerating HT](https://www.acceleratinght.org/home). I am also developing [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/) together with [Rachael Meager](https://sites.google.com/view/rachaelmeager/home) at London School of Economics where I was previously a Research Fellow. I am a consultant in health care at Certara, where since 2014 I worked on many Bayesian modelling projects on real-world effectiveness of treatments, health technology assessment, and epidemiological modelling. 
 
+My research is funded by various grants, most recently an [Emergent Ventures anti-Covid prize](https://www.mercatus.org/emergent-ventures) and a research grant from [Schmidt Futures](https://schmidtfutures.com/) (jointly with Rachael Meager).
+
 I studied Mathematics (BSci, MSci at AGH), specialising in algorithmic theory, graph theory, probability. I have a PhD in statistics (UHasselt). [My thesis](https://ibiostat.be/publications/phd/witoldwiecek.pdf) was on Bayesian hierarchical modelling and Bayesian networks.
 
 [GitHub](https://github.com/wwiecek) | [LinkedIn](https://www.linkedin.com/in/witold-wiecek-308089126/) | [Google Schoolar](https://scholar.google.com/citations?user=r6uDNqEAAAAJ&hl=en&oi=ao)
@@ -15,7 +17,7 @@ I studied Mathematics (BSci, MSci at AGH), specialising in algorithmic theory, g
 ## Some ongoing projects (summer 2020)
 
 - **COVID-19 research** with [Accelerating HT](https://www.acceleratinght.org/home), mainly on epidemiological or Bayesian support for economic models of COVID-19 vaccines. The model that the group developed is available on the linked website.
-- **Improving Bayesian meta-analysis methods** (grant from [Schmidt Futures](https://schmidtfutures.com/) with Rachael Meager at LSE), with special focus on economics
+- **Improving Bayesian meta-analysis methods** with special focus on economics
     + [baggr](https://github.com/wwiecek/baggr) is our R package for Bayesian meta-analyses and hierarchical models with [Stan](https://mc-stan.org/)
 	+ The package is [available on CRAN](https://cran.r-project.org/web/packages/baggr/index.html) and updated regularly.
     + I gave [a short talk about baggr at StanCon 2020](https://www.youtube.com/watch?v=Lau2v6uHaKM). Download the slides [here](https://www.dropbox.com/s/l95t19bkiu3p6me/baggr_stancon_2020.pdf?dl=1) and the presentation notebook (code) [here](https://www.dropbox.com/s/lv3c9lie9e7wqxs/baggr_stancon_2020.Rmd?dl=1).
