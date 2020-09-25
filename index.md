@@ -6,7 +6,7 @@ _Bayesian statistician and researcher_
 
 A lot of my recent work is focused on COVID, primarily with colleagues in academia at [Accelerating HT](https://www.acceleratinght.org/home). I am also developing [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/) together with [Rachael Meager](https://sites.google.com/view/rachaelmeager/home) at London School of Economics where I was previously a Research Fellow. I am a consultant in health care at Certara, where since 2014 I worked on many Bayesian modelling projects on real-world effectiveness of treatments, health technology assessment, and epidemiological modelling. 
 
-My research is funded by various grants, most recently an [Emergent Ventures anti-Covid prize](https://www.mercatus.org/emergent-ventures) and a research grant from [Schmidt Futures](https://schmidtfutures.com/) (jointly with Rachael Meager).
+My research is funded by various grants, most recently an [Emergent Ventures anti-Covid prize](https://www.mercatus.org/emergent-ventures) and a grant from [Schmidt Futures](https://schmidtfutures.com/) (jointly with Rachael Meager).
 
 I studied Mathematics (BSci, MSci at AGH), specialising in algorithmic theory, graph theory, probability. I have a PhD in statistics (UHasselt). [My thesis](https://ibiostat.be/publications/phd/witoldwiecek.pdf) was on Bayesian hierarchical modelling and Bayesian networks.
 
