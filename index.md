@@ -4,9 +4,9 @@ _Bayesian statistician and researcher_
 
 <!-- 3rd person bio (for presentations):
 
-Witold Więcek is a researcher and a Bayesian statistician working both in academia and in pharmaceutical consulting. He works on applied problems in health care, health economics, development economics and epidemiology.
+Witold Więcek is a researcher and a Bayesian statistician working in academia and pharmaceutical consulting. He works on applied problems in health care, health economics, development economics and epidemiology.
 
-As a consultant for Certara, a global drug development consultancy, since 2014 Witold has worked in statistical modelling and project management roles for all major pharmaceutical companies, across many therapeutic areas and all clinical stages. Witold's work at Certara focuses on Bayesian modelling projects on real-world effectiveness of treatments, health technology assessment, and epidemiological modelling. His academic work is recently focused on impact of Covid, primarily with colleagues in academia at Accelerating HT, as well as developing Bayesian meta-analysis methods and tools together with Rachael Meager at London School of Economics where he was previously a Research Fellow.
+As a consultant for Certara, a global drug development consultancy, since 2014 Witold has worked in statistical modelling and project management roles for all major pharmaceutical companies, across many therapeutic areas and all clinical stages. Witold's work at Certara focuses on Bayesian modelling projects on real-world effectiveness of treatments, health technology assessment, and epidemiological modelling. His academic work is recently focused on impact of Covid, primarily with colleagues in academia at Accelerating HT (working with Nobel prize winner Michael Kremer), as well as developing Bayesian meta-analysis methods and tools together with Rachael Meager at London School of Economics where he was previously a Research Fellow.
 
 Witold is a recipient of the Emergent Ventures anti-Covid prize and a multi-year research grant from Schmidt Futures (jointly with Rachael Meager) for work on Bayesian statistics. His academic background is in Mathematics (BSci, MSci at AGH), specialising in algorithmic theory, graph theory, probability. He holds a PhD in statistics from UHasselt, with a thesis on Bayesian hierarchical modelling and Bayesian networks. Witold lives in London.
 -->
@@ -15,7 +15,7 @@ Witold is a recipient of the Emergent Ventures anti-Covid prize and a multi-year
 
 A lot of my recent work is focused on COVID, primarily with colleagues in academia at [Accelerating HT](https://www.acceleratinght.org/home). I've also been helping [1 Day Sooner](https://1daysooner.org/), a Covid human challenge trial advocacy group. I am also developing [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/) together with [Rachael Meager](https://sites.google.com/view/rachaelmeager/home) at London School of Economics where I was previously a Research Fellow. 
 
-I am a consultant in health care at Certara, where since 2014 I worked on projects with all major pharma companies (both hands-on and managing projects) across all stages of clinical trial development. In my work in health I focus on adding Bayesian modelling techniques in three areas: modelling real-world effectiveness of treatments, health technology assessment (incl. meta-analyses), and epidemiological modelling of infectious diseases. 
+I am a consultant in health care at Certara, where since 2014 I worked on projects with all major pharma companies (both hands-on and managing projects) across all stages of clinical trial development. In my work in health I try to focus on improving Bayesian modelling techniques in three areas: modelling real-world effectiveness of treatments, health technology assessment (incl. meta-analyses), and epidemiological modelling of infectious diseases. 
 
 My research is funded by various grants, most recently an [Emergent Ventures anti-Covid prize](https://www.mercatus.org/emergent-ventures) and a grant from [Schmidt Futures](https://schmidtfutures.com/) (jointly with Rachael Meager).
 
