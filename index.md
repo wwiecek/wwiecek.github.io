@@ -2,13 +2,24 @@
 
 _Bayesian statistician and researcher_ 
 
+<!-- 3rd person bio (for presentations):
+
+Witold Więcek is a researcher and a Bayesian statistician working both in academia and in pharmaceutical consulting. He works on applied problems in health care, health economics, development economics and epidemiology.
+
+As a consultant for Certara, a global drug development consultancy, since 2014 Witold has worked in statistical modelling and project management roles for all major pharmaceutical companies, across many therapeutic areas and all clinical stages. Witold's work at Certara focuses on Bayesian modelling projects on real-world effectiveness of treatments, health technology assessment, and epidemiological modelling. His academic work is recently focused on impact of Covid, primarily with colleagues in academia at Accelerating HT, as well as developing Bayesian meta-analysis methods and tools together with Rachael Meager at London School of Economics where he was previously a Research Fellow.
+
+Witold is a recipient of the Emergent Ventures anti-Covid prize and a multi-year research grant from Schmidt Futures (jointly with Rachael Meager) for work on Bayesian statistics. His academic background is in Mathematics (BSci, MSci at AGH), specialising in algorithmic theory, graph theory, probability. He holds a PhD in statistics from UHasselt, with a thesis on Bayesian hierarchical modelling and Bayesian networks. Witold lives in London.
+-->
+
 **Short bio:** I am an independent researcher, working with various universities, research groups and in private consulting. I work on applied problems in health care, health and development economics, epidemiology. I primarily do statistical inference using Bayesian methods. I'm based in London.
 
-A lot of my recent work is focused on COVID, primarily with colleagues in academia at [Accelerating HT](https://www.acceleratinght.org/home). I am also developing [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/) together with [Rachael Meager](https://sites.google.com/view/rachaelmeager/home) at London School of Economics where I was previously a Research Fellow. I am a consultant in health care at Certara, where since 2014 I worked on many Bayesian modelling projects on real-world effectiveness of treatments, health technology assessment, and epidemiological modelling. 
+A lot of my recent work is focused on COVID, primarily with colleagues in academia at [Accelerating HT](https://www.acceleratinght.org/home). I've also been helping [1 Day Sooner](https://1daysooner.org/), a Covid human challenge trial advocacy group. I am also developing [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/) together with [Rachael Meager](https://sites.google.com/view/rachaelmeager/home) at London School of Economics where I was previously a Research Fellow. 
+
+I am a consultant in health care at Certara, where since 2014 I worked on projects with all major pharma companies (both hands-on and managing projects) across all stages of clinical trial development. In my work in health I focus on adding Bayesian modelling techniques in three areas: modelling real-world effectiveness of treatments, health technology assessment (incl. meta-analyses), and epidemiological modelling of infectious diseases. 
 
 My research is funded by various grants, most recently an [Emergent Ventures anti-Covid prize](https://www.mercatus.org/emergent-ventures) and a grant from [Schmidt Futures](https://schmidtfutures.com/) (jointly with Rachael Meager).
 
-I studied Mathematics (BSci, MSci at AGH), specialising in algorithmic theory, graph theory, probability. I have a PhD in statistics (UHasselt). [My thesis](https://ibiostat.be/publications/phd/witoldwiecek.pdf) was on Bayesian hierarchical modelling and Bayesian networks.
+I studied Mathematics (BSci, MSci at AGH), specialising in algorithmic theory, graph theory, probability. I hold a PhD in statistics from UHasselt. [My thesis](https://ibiostat.be/publications/phd/witoldwiecek.pdf) was on Bayesian hierarchical modelling and Bayesian networks.
 
 [GitHub](https://github.com/wwiecek) | [LinkedIn](https://www.linkedin.com/in/witold-wiecek-308089126/) | [Google Schoolar](https://scholar.google.com/citations?user=r6uDNqEAAAAJ&hl=en&oi=ao)
 
@@ -28,7 +39,10 @@ I studied Mathematics (BSci, MSci at AGH), specialising in algorithmic theory, g
     + Dec 2019: [a talk on the cyclical structures in graph_sampler at CMStatistics 2019](https://www.dropbox.com/s/5848p24vy2942ap/ercim_wwiecek_graph_sampler.pdf?dl=1) conference in London
     + May 2019: *graph_sampler* has been ported to R (still work in progress): see [here](<https://github.com/wwiecek/rgraphsampler>)
 	+ graph_sampler is open-source (GNU Savannah) software written by F. Bois in C; it can be used for inferring Bayesian network structure, and includes an efficient MCMC sampler over discrete space of graphs
-- **Supporting chemical risk assessment with Bayesian modelling and meta-analysis methods**: work with European Food Safety Authority (via Certara) 
+- **Supporting chemical risk assessment with Bayesian modelling and meta-analysis methods**: work, at Certara, with European Food Safety Authority
+
+    + Mini git repository for this model is [on GitHub](https://github.com/wwiecek/bayesian-ma-risk). Happy to share more code if anyone needs it, please contact me.
+    + Nov 2020: short presentation of the model included in _Computational Toxicology_ paper at ACoP11, slides [here](https://github.com/wwiecek/bayesian-ma-risk/blob/master/acop_presentation_5oct2020.pdf) 
     + Apr 2020: Submitted a third paper in the series on using the Bayesian methods for RA meta-analysis
     + Sept 2019: Second (theory) paper has been published in _Computational Toxicology_: see the citation below
     + 11 July 2019: [Workshop presentation at ISOP Paris](https://www.dropbox.com/s/i5grx70cmkmb0y0/paris_workshop_11july.pdf?dl=0)
