@@ -13,11 +13,11 @@ Witold is a recipient of the Emergent Ventures anti-Covid prize and a multi-year
 
 **Short bio:** I am an independent researcher, working with various universities, research groups and in private consulting. I work on applied problems in health care, health and development economics, epidemiology. I primarily do statistical inference using Bayesian methods. I'm based in London.
 
-A lot of my recent work is focused on COVID, primarily with colleagues in academia at [Accelerating HT](https://www.acceleratinght.org/home). I've also been helping [1 Day Sooner](https://1daysooner.org/), a Covid human challenge trial advocacy group. I am also developing [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/) together with [Rachael Meager](https://sites.google.com/view/rachaelmeager/home) at London School of Economics where I was previously a Research Fellow. 
+A lot of my recent work is focused on COVID, primarily with colleagues in academia at [Accelerating HT](https://www.acceleratinght.org/home) (working with a recent Nobel prize winner Michael Kremer). I've also been helping [1 Day Sooner](https://1daysooner.org/), a Covid human challenge trial advocacy group. I am also developing [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/) together with [Rachael Meager](https://sites.google.com/view/rachaelmeager/home) at London School of Economics where I was previously a Research Fellow. 
 
 I am a consultant in health care at Certara, where since 2014 I worked on projects with all major pharma companies (both hands-on and managing projects) across all stages of clinical trial development. In my work in health I try to focus on improving Bayesian modelling techniques in three areas: modelling real-world effectiveness of treatments, health technology assessment (incl. meta-analyses), and epidemiological modelling of infectious diseases. 
 
-My research is funded by various grants, most recently an [Emergent Ventures anti-Covid prize](https://www.mercatus.org/emergent-ventures) and a grant from [Schmidt Futures](https://schmidtfutures.com/) (jointly with Rachael Meager).
+Witold is a recipient of the (Emergent Ventures anti-Covid prize)[https://www.mercatus.org/emergent-ventures] and a multi-year research grant from Schmidt Futures (jointly with Rachael Meager) for work on Bayesian statistics. 
 
 I studied Mathematics (BSci, MSci at AGH), specialising in algorithmic theory, graph theory, probability. I hold a PhD in statistics from UHasselt. [My thesis](https://ibiostat.be/publications/phd/witoldwiecek.pdf) was on Bayesian hierarchical modelling and Bayesian networks.
 
