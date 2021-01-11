@@ -59,9 +59,7 @@ Some other consulting work is not available publically.
 
 ## Some publications
 
-My Hasselt PhD is available [online](https://ibiostat.be/publications/phd/witoldwiecek.pdf).
-
-A complete list of my publications and posters is on [Google Schoolar](https://scholar.google.com/citations?user=r6uDNqEAAAAJ&hl=en&oi=ao) and [Research Gate](https://www.researchgate.net/profile/Witold_Wiecek).
+A complete list of my publications and posters is on [Google Schoolar](https://scholar.google.com/citations?user=r6uDNqEAAAAJ&hl=en&oi=ao) and [Research Gate](https://www.researchgate.net/profile/Witold_Wiecek). My PhD (Hasselt University) on Bayesian hiererchical modeling is available [online](https://ibiostat.be/publications/phd/witoldwiecek.pdf).
 
 * Wiecek, Witold, Jean-Lou Dorne, Nadia Quignot, Camille Bechaux, and Billy Amzal. ‘A Generic Bayesian Hierarchical Model for the Meta-Analysis of Human Population Variability in Kinetics and Its Applications in Chemical Risk Assessment’. Computational Toxicology 12 (November 2019): 100106. <https://doi.org/10.1016/j.comtox.2019.100106>.
 * (arXiv only) Wiecek, Witold, Frederic Y. Bois, and Ghislaine Gayraud. ‘Structure Learning of Bayesian Networks Involving Cyclic Structures’. ArXiv:1906.04992 [Stat], 12 June 2019. <http://arxiv.org/abs/1906.04992>.
