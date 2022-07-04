@@ -2,7 +2,11 @@
 
 _Bayesian statistician and researcher_ 
 
-<!-- 3rd person bio (for presentations, focus on medical crowd):
+<!-- THIS COMMENTED OUT PART IS A BIT DATED NOW (2021): -->
+
+<!-- 
+
+3rd person bio (for presentations, focus on medical crowd):
 
 Witold Więcek is a researcher and a Bayesian statistician working in academia and pharmaceutical consulting. He works on applied problems in health care, health economics, development economics and epidemiology.
 
@@ -11,7 +15,9 @@ As a consultant for Certara, a global drug development consultancy, since 2014 W
 Witold is a recipient of the Emergent Ventures anti-Covid prize and a multi-year research grant from Schmidt Futures (jointly with Rachael Meager) for work on Bayesian statistics. His academic background is in Mathematics (BSci, MSci at AGH), specialising in algorithmic theory, graph theory, probability. He holds a PhD in statistics from UHasselt, with a thesis on Bayesian hierarchical modelling and Bayesian networks. Witold lives in London.
 -->
 
-<!-- SHORTER VERSION THAT IS OK FOR DEV ECON WORK:
+<!-- 
+
+SHORTER VERSION THAT IS OK FOR DEV ECON WORK:
 
 Witold Więcek is a researcher and a Bayesian statistician working on applied problems in health, development economics, and epidemiology.
 
@@ -20,22 +26,24 @@ As a scientific consultant in drug development, Witold has worked in statistical
 Witold is a recipient of the Emergent Ventures anti-Covid prize and a multi-year research grant from Eric Schmidt (ex-Google CEO; awarded jointly with Rachael Meager) for work on Bayesian statistics.
 -->
 
-**Short bio:** I work on applied problems in development economics, health, and epidemiology. 
-I do grant-funded and consultancy work with various universities and research groups, as well as private consulting. I have a PhD in statistics, with focus on biostatistics and Bayesian methods. I am a recipient of the [Emergent Ventures anti-Covid prize](https://www.mercatus.org/emergent-ventures) (2020) and a multi-year research grant from [Schmidt Futures](https://schmidtfutures.com/) (2019-2021, jointly with Rachael Meager) for work on Bayesian statistics and evidence synthesis.
+**Short bio:** 
 
-A lot of my recent work is focused on COVID-19, primarily with colleagues in academia at [Accelerating HT](https://www.acceleratinght.org/home) (working with a recent Nobel prize winner Michael Kremer). I've also been a statistics and modeling advisor for [1 Day Sooner](https://1daysooner.org/), a Covid human challenge trial advocacy group. In addition to COVID work, I am developing [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/) together with [Rachael Meager](https://sites.google.com/view/rachaelmeager/home) at London School of Economics where I was previously a Research Fellow. 
+I am a researcher working on applied problems in health, epidemiology, and development economics. I do grant-funded work with various universities and research groups, as well as private consulting. I have a PhD in statistics, with focus on biostats and Bayesian methods. I am a winner of [Emergent Ventures prize](https://www.mercatus.org/emergent-ventures) for work on COVID (2020), and my work on Bayesian statistics has been funded by [Schmidt Futures](https://schmidtfutures.com/) (2019, jointly with Rachael Meager) and [Open Philanthropy](https://www.openphilanthropy.org/) (2022).
 
-As a consultant in health care at Certara, since 2014 I worked in all stages of drug development, with focus on improving Bayesian modelling techniques for real-world effectiveness of treatments, health technology assessment (incl. meta-analyses), and transmission of infectious diseases. 
+A lot of my recent work is focused on stats issues in development, primarily with colleagues at Development Innovation Lab at UChicago, where I am working with a recent Nobel prize winner Michael Kremer. I’ve also been a research advisor for [1Day Sooner](https://1daysooner.org/), a human challenge trial advocacy group. I am developing [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/) together with [Rachael Meager](https://sites.google.com/view/rachaelmeager/home) at London School of Economics.
+
+As a consultant in health care at Certara, since 2014 I worked in all stages of drug development, with focus on improving Bayesian modelling techniques in modelling real-world effectiveness of treatments, health technology assessment (including meta-analyses), and epidemiological modelling of infectious diseases.
 
 <!-- I studied Mathematics (BSci, MSci at AGH), specialising in algorithmic theory, graph theory, probability. I hold a PhD in statistics from UHasselt. [My thesis](https://ibiostat.be/publications/phd/witoldwiecek.pdf) was on Bayesian hierarchical modelling and Bayesian networks. -->
 
 [GitHub](https://github.com/wwiecek) | [LinkedIn](https://www.linkedin.com/in/witold-wi%C4%99cek-308089126) | [Google Schoolar](https://scholar.google.com/citations?user=r6uDNqEAAAAJ&hl=en)
 
-## Some ongoing projects and papers (summer 2021)
+## Some ongoing projects and papers (2022)
 
-- **Accelerating Covid-19 vaccines** with colleagues in econ, mainly at Development Innovation Lab at University of Chicago. 
-	+ June 2021: [Working paper on dose "stretching" of COVID vaccines](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3864485) argues for testing and use of lower doses of currently available vaccines 
-    + March 2021: a [paper in Science](https://science.sciencemag.org/content/371/6534/1107.summary) summarises our work on how market design could accelerate the vaccine supply
+- **Clean water interventions and child survival, a meta-analysis** [working paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4071953) with Michael Kremer, Stephen Luby, Ricardo Maertens, Brandon Tan
+- **Accelerating Covid-19 vaccines** with colleagues in economics
+	+ 2022: [Testing fractional doses of COVID-19 vaccines](https://www.pnas.org/doi/10.1073/pnas.2116932119) argues for more testing and use of lower doses of COVID-19 vaccines 
+    + 2021: a [paper in Science](https://science.sciencemag.org/content/371/6534/1107.summary) summarises work on how market design could accelerate the vaccine supply
 - **Risk of Covid-19 Human Challenge Trials**, with [1 Day Sooner](https://1daysooner.org/). I helped 1DS to [write a paper](https://onlinelibrary.wiley.com/doi/full/10.1111/risa.13726), which looks at risk of hospitalisation and death for HCT volunteers. There is also an [interactive tool](https://www.1daysooner.org/risk-model).
 - **Improving Bayesian meta-analysis methods**, particularly with focus on users in social sciences
     + [baggr](https://github.com/wwiecek/baggr) is our R package for Bayesian meta-analyses and hierarchical models that makes fitting [Stan](https://mc-stan.org/) models more user-friendly
@@ -43,7 +51,9 @@ As a consultant in health care at Certara, since 2014 I worked in all stages of 
     + I gave [a short intro to baggr at StanCon 2020](https://www.youtube.com/watch?v=Lau2v6uHaKM). Slides [here](https://www.dropbox.com/s/l95t19bkiu3p6me/baggr_stancon_2020.pdf?dl=1), presentation notebook (code) [here](https://www.dropbox.com/s/lv3c9lie9e7wqxs/baggr_stancon_2020.Rmd?dl=1).
 - **Modelling heterogeneity in treatment effects in a poverty alleviation program**, with Rachael Meager (LSE), Andrew Gelman (Columbia), Dean Karlan and Christopher Udry (Northwestern)
 
+## Publications
 
+See on [Google Schoolar](https://scholar.google.com/citations?user=r6uDNqEAAAAJ&hl=en). I'm also on [Research Gate](https://www.researchgate.net/profile/Witold_Wiecek). My PhD (Hasselt University) on Bayesian hiererchical modeling is available [online](https://ibiostat.be/publications/phd/witoldwiecek.pdf).
 
 ## Some older projects (2019-2020)
 
@@ -67,6 +77,4 @@ As a consultant in health care at Certara, since 2014 I worked in all stages of 
     + [survivalnma](<https://github.com/certara/survivalnma>) is a limited release of an R package I built internally at Certara for network meta-analyses of survival data (typical in oncology), aimed at improving health technology assessment with Bayesian models that are a bit more user-friendly
 	+ A methods poster is available within the repo.
 	
-## Publications
 
-See on [Google Schoolar](https://scholar.google.com/citations?user=r6uDNqEAAAAJ&hl=en). I'm also on [Research Gate](https://www.researchgate.net/profile/Witold_Wiecek). My PhD (Hasselt University) on Bayesian hiererchical modeling is available [online](https://ibiostat.be/publications/phd/witoldwiecek.pdf).
