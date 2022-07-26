@@ -28,9 +28,9 @@ Witold is a recipient of the Emergent Ventures anti-Covid prize and a multi-year
 
 **Short bio:** 
 
-I am a researcher working on applied problems in health, epidemiology, and development economics. I do grant-funded work with various universities and research groups, as well as private consulting. I have a PhD in statistics, with focus on biostats and Bayesian methods. I am a winner of [Emergent Ventures prize](https://www.mercatus.org/emergent-ventures) for work on COVID (2020), and my work on Bayesian statistics has been funded by [Schmidt Futures](https://schmidtfutures.com/) (2019, jointly with Rachael Meager) and [Open Philanthropy](https://www.openphilanthropy.org/) (2022).
+I am a researcher working on applied problems in health, epidemiology, and development economics. I do grant-funded work with various universities and research groups, as well as private consulting. I have a PhD in statistics, with focus on biostats and Bayesian methods. I am a winner of [Emergent Ventures prize](https://www.mercatus.org/emergent-ventures) for work on COVID (2020), and my work on Bayesian statistics has been funded by direct grants from [Schmidt Futures](https://schmidtfutures.com/) (2019), [Open Philanthropy](https://www.openphilanthropy.org/) (2022), and [FTX Future Fund](https://ftxfuturefund.org/).
 
-A lot of my recent work is focused on stats issues in development, primarily with colleagues at Development Innovation Lab at UChicago, where I am working with a recent Nobel prize winner Michael Kremer. I’ve also been a research advisor for [1Day Sooner](https://1daysooner.org/), a human challenge trial advocacy group. I am developing [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/) together with [Rachael Meager](https://sites.google.com/view/rachaelmeager/home) at London School of Economics.
+A lot of my recent work is focused on stats issues in development, primarily with colleagues at Development Innovation Lab at UChicago, where I am a Consulting Director working with a recent Nobel prize winner Michael Kremer. I’ve also been a research advisor for [1Day Sooner](https://1daysooner.org/), a human challenge trial advocacy group and I am working on [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/).
 
 As a consultant in health care at Certara, since 2014 I worked in all stages of drug development, with focus on improving Bayesian modelling techniques in modelling real-world effectiveness of treatments, health technology assessment (including meta-analyses), and epidemiological modelling of infectious diseases.
 
@@ -38,7 +38,7 @@ As a consultant in health care at Certara, since 2014 I worked in all stages of 
 
 [GitHub](https://github.com/wwiecek) | [LinkedIn](https://www.linkedin.com/in/witold-wi%C4%99cek-308089126) | [Google Schoolar](https://scholar.google.com/citations?user=r6uDNqEAAAAJ&hl=en)
 
-## Some ongoing projects and papers (2022)
+## Some ongoing projects and papers (spring 2022)
 
 - **Clean water interventions and child survival, a meta-analysis** [working paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4071953) with Michael Kremer, Stephen Luby, Ricardo Maertens, Brandon Tan
 - **Accelerating Covid-19 vaccines** with colleagues in economics
