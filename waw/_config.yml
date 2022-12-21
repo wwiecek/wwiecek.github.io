@@ -22,8 +22,9 @@ title: Witold Więcek
 email: witold.wiecek+gh@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Bayesian statistician and researcher
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+domain: wwiecek.github.io
+baseurl: "/waw/" # the subpath of your site, e.g. /blog
+url: https://wwiecek.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: vientsek
 github_username:  wwiecek
 
