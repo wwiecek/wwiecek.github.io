@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Clinical trials for accelerating pandemic vaccines"
-date:   2022-12-27 00:00:00 -0000
-categories: jekyll update
+date:   2022-12-27
+hidden: true
 ---
 
 ...is a factually-correct if rather uninspired title of [my new paper out in Oxford Review of Economic Policy](https://academic.oup.com/oxrep/article/38/4/797/6896151). This is just a short cross-post from a Twitter thread I wrote [here](https://twitter.com/vientsek/status/1606593208842059779), making it a bit more readable. The premise is simple: Covid-19 vaccine trials were a big success. But how close to the optimal speed were they? What about human challenge trials? 
@@ -26,7 +26,7 @@ The issue, however, is not HCT vs "traditional" RCT. Or any other binary choice 
 
 
  
-OK, this thread is getting too long, but one more thing: the trials were pretty far from real-world decision making. Pretty quickly we learned that gaps between two doses could be modified and that lower doses could work as well as large doses. But trials did not generate data. We discuss why manufacturers are poorly incentivised for doing any of this in another paper ([Testing fractional doses of COVID-19 vaccines | PNAS](https://www.pnas.org/doi/10.1073/pnas.2116932119)).
+OK, this thread is getting too long, but one more thing: the trials were pretty far from real-world decision making. Pretty quickly we learned that gaps between two doses could be modified and that lower doses could work as well as large doses. But trials did not generate data. We discuss why manufacturers are poorly incentivised for doing any of this in another paper ([Testing fractional doses of COVID-19 vaccines](https://www.pnas.org/doi/10.1073/pnas.2116932119)).
 
 The obvious idea would be to recruit another 10,000 subjects into the phase III trial and give them smaller doses or test longer gaps between two doses. If you wait to conduct a separate trial, you're too late (though in our PNAS paper we argued it was still worth doing it in early 2022---but it's peanuts compared to the value of this information in autumn 2020).
 
