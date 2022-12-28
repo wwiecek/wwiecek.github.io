@@ -5,7 +5,7 @@ date:   2022-12-27
 hidden: true
 ---
 
-...is a factually-correct if rather uninspired title of [my new paper out in Oxford Review of Economic Policy](https://academic.oup.com/oxrep/article/38/4/797/6896151). This is just a short cross-post from a Twitter thread I wrote [here](https://twitter.com/vientsek/status/1606593208842059779), making it a bit more readable. The premise is simple: Covid-19 vaccine trials were a big success. But how close to the optimal speed were they? What about human challenge trials? 
+...is a factually-correct if rather uninspired title of [my new paper](https://academic.oup.com/oxrep/article/38/4/797/6896151) out in Oxford Review of Econ Policy. This is just a short cross-post from a Twitter thread I wrote [here](https://twitter.com/vientsek/status/1606593208842059779), making it a bit more readable. The premise is simple: Covid-19 vaccine trials were a big success. But how close to the optimal speed were they? What about human challenge trials? 
 
 The paper is just a small contribution to complement [new issue of Oxford Review of Economic Policy](https://academic.oup.com/oxrep/issue/38/4?browseBy=volume) on economics of pandemic vaccines, with loads of really amazing authors including Susan Athey, Gita Gopinath, Alex Tabarrok, Chris Snyder, and dozens more. I focussed on vaccine trials, their timelines and what was achieved during the pandemic. So it's not about R&D, manufacturing, or regulatory approvals, but these things are obviously contingent on each other. I also ignore therapeutics. Other special issue authors cover these topics so check it out.
 
