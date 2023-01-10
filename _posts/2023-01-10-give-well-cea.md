@@ -3,7 +3,8 @@ layout: post
 title:  "A few comments on cost-effectiveness of water quality interventions"
 date:   2023-01-10
 ---
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 Here are some extra notes and details on [GiveWell's](https://www.givewell.org/) [Change Our Mind](https://blog.givewell.org/2022/12/15/change-our-mind-contest-winners/) entry on cost-effectiveness of water quality interventions by Matthew Romer and Paul Romer Present (MRPRP henceforth). Their entry is [here](https://forum.effectivealtruism.org/posts/6cJM2pWH8dz9TnBRy/an-examination-of-givewell-s-water-quality-intervention-cost ).
 
