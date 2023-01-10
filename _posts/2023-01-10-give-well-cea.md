@@ -10,7 +10,7 @@ I won't summarise the article as it already has a very nice and short abstract. 
 
 >Using our updated approach, the cost-effectiveness of in-line chlorination falls by 0.21% and the cost-effectiveness estimate of Dispensers for Safe Water falls by 23%.
 
-This difference is attributable to several factors, see [[An Examination of GiveWell’s Water Quality Intervention Cost-Effectiveness Analysis - EA Forum#Updated Results|Fig 2]] in the article but for this exploration I care about the adjustment to deaths only. (This is the factor pulling the DSW estimates downwards and I am not competent to talk about other parts of their analysis.)
+This difference is attributable to several factors (see Fig 2 in MRPRP entry), but for this exploration I care about the adjustment to deaths only. (This is the factor pulling the DSW estimates downwards and I am not competent to talk about other parts of their analysis.)
 For deaths, their calculation uses a new approach, which combines updated meta-analysis[^ma], aka _Direct approach_, and  the _Indirect approach_ (what was the "plausbility cap" for GW)  using a probabilistic calculation.
 
 [^ma]: They do not change the approach to meta-analysis of mortality reductions. It's still a fixed-effects analysis (compared to random-effects model in our meta-analysis, Kremer et al. 2022). But that's for another time.
