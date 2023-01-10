@@ -2,7 +2,6 @@
 layout: post
 title:  "Clinical trials for accelerating pandemic vaccines"
 date:   2022-12-27
-hidden: true
 ---
 
 ...is a factually-correct if rather uninspired title of [my new paper](https://academic.oup.com/oxrep/article/38/4/797/6896151) out in Oxford Review of Econ Policy. This is just a short cross-post from a Twitter thread I wrote [here](https://twitter.com/vientsek/status/1606593208842059779), making it a bit more readable. The premise is simple: Covid-19 vaccine trials were a big success. But how close to the optimal speed were they? What about human challenge trials? 
