@@ -3,6 +3,7 @@ layout: post
 title:  "Power calculations for an infection trial"
 date:   2023-01-09
 ---
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
 
 Here are some simple notes on how experimental design for infection experiments. The goal is to detect statistically significant difference in infection rates. I start with back-of-envelope calculations, then show R code that makes the calculation a bit realistic.
 
