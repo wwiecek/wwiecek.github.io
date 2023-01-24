@@ -1,12 +1,13 @@
 ---
 layout: page
-title: Some ongoing projects
 permalink: /projects/
 ---
 
-Last updated early 2022.
+Last updated Jan 2023.
 
-- **Clean water interventions and child survival, a meta-analysis** [working paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4071953) with Michael Kremer, Stephen Luby, Ricardo Maertens, Brandon Tan
+- **Clean water interventions and child survival, a meta-analysis** [working paper](https://bfi.uchicago.edu/working-paper/2022-26/) with Michael Kremer, Stephen Luby, Ricardo Maertens, Brandon Tan. We estimate a possible reduction in child mortality of 25% from improving water quality in low and middle-income countries.
+- **Fractional dosing of Covid vaccines** a [PNAS paper](https://www.pnas.org/doi/10.1073/pnas.2116932119) making the case for giving smaller doses of vaccine 
+
 - **Accelerating Covid-19 vaccines** with colleagues in economics
 	+ 2022: [Testing fractional doses of COVID-19 vaccines](https://www.pnas.org/doi/10.1073/pnas.2116932119) argues for more testing and use of lower doses of COVID-19 vaccines 
     + 2021: a [paper in Science](https://science.sciencemag.org/content/371/6534/1107.summary) summarises work on how market design could accelerate the vaccine supply

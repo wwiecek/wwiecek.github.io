@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Water Treatment and Child Mortality: A Meta-analysis and Cost-effectiveness Analysis"
-date:   2023-01-18
+date:   2023-01-24
 ---
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-Cross-posting this from [a guest post I wrote for Andrew Gelman's blog](https://statmodeling.stat.columbia.edu/?p=48604&preview=true).
+Cross-posting this from [a guest post I wrote for Andrew Gelman's blog](https://statmodeling.stat.columbia.edu/2023/01/18/water-treatment-and-child-mortality-a-meta-analysis-and-cost-effectiveness-analysis).
 
 I thought the readers of this blog would find [this pre-print](https://bfi.uchicago.edu/working-paper/2022-26/) interesting. It's a meta-analysis of how improving water quality can reduce child mortality by _a quarter_. If true, this has very large real-world implications, but there are of course statistical considerations of power, publication bias etc. So I thought that maybe some of you will have methodological comments and others may be interested in this finding. It also ties to a couple of follow-up posts I'd like to write on effective altruism and finding cost-effective interventions.
 
@@ -25,7 +25,11 @@ In this new pre-print[^paper], together with my colleagues Michael Kremer, Steve
 
 [^paper]:Or, to be precise, an update to a version of this pre-print which we released in February 2022. If you happened to read the previous version of the paper, both main methods and results are unchanged, but we added extra publication bias checks, characterization of the sample and rewrote most of the paper for clarity.
 
-We conduct a Bayesian meta-analysis of these 15 studies using a logit model and find _a 30% reduction in all-cause mortality_ (OR = 0.70, with a 95% interval 0.49 to 0.93), albeit with high (and uncertain) heterogeneity across studies, which means the predictive distribution for a new study has a considerably wider interval. (BTW the analysis is implemented in [baggr](https://github.com/wwiecek/baggr), an R package that provides meta-analysis interface for Stan.) There are some interesting methodological questions related to modeling of rare events, but frequentist methods (OR=0.72) as well as various sensitivity analyses we could think of lead to a similar result. We also think that publication bias is unlikely. Still, perhaps there are things we missed.
+We conduct a Bayesian meta-analysis of these 15 studies using a logit model and find _a 30% reduction in all-cause mortality_ (OR = 0.70, with a 95% interval 0.49 to 0.93), albeit with high (and uncertain) heterogeneity across studies, which means the predictive distribution for a new study has a considerably wider interval and sightly higher mean OR=0.75. This is to be expected considering we compare different types of interventions in different populations across a few decades.[^time]
+
+[^time]:That last aspect of heterogeneity seems important, because some have argued that the impact of clean water may diminish with time. There is a trace of that in our data (see Supplement), but with 15 studies the power to test for this time trend is very low (which I show using a simulation approach).
+
+The Bayesian analysis is implemented in [baggr](https://github.com/wwiecek/baggr), an R package that provides meta-analysis interface for Stan. There are some interesting methodological questions related to modeling of rare events, but repeating this analysis using frequentist methods (random-effects model on Peto OR has mean OR of 0.72) as well as various sensitivity analyses we could think of all lead to similar results. We also think that publication bias is unlikely. Still, perhaps there are things we missed.
 
 Based on this we calculate about $3,000 cost per child death averted, or, in terms of DALYs, the cost is under $40. It's hard to convey how extremely cost-effective this is, but basically $40/DALY is on par with the most cost-effective child health interventions such as vaccinations.
 
