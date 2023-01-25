@@ -6,7 +6,7 @@ date:   2023-01-24
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-Cross-posting this from [a guest post I wrote for Andrew Gelman's blog](https://statmodeling.stat.columbia.edu/2023/01/18/water-treatment-and-child-mortality-a-meta-analysis-and-cost-effectiveness-analysis).
+Cross-posting this from [a guest post I wrote for Andrew Gelman's blog](https://statmodeling.stat.columbia.edu/2023/01/25/water-treatment-and-child-mortality-a-meta-analysis-and-cost-effectiveness-analysis/).
 
 I thought the readers of this blog would find [this pre-print](https://bfi.uchicago.edu/working-paper/2022-26/) interesting. It's a meta-analysis of how improving water quality can reduce child mortality by _a quarter_. If true, this has very large real-world implications, but there are of course statistical considerations of power, publication bias etc. So I thought that maybe some of you will have methodological comments and others may be interested in this finding. It also ties to a couple of follow-up posts I'd like to write on effective altruism and finding cost-effective interventions.
 
