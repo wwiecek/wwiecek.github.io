@@ -4,5 +4,5 @@
 layout: home
 ---
 
-Hi, this is just a landing page for posts. (Under construction, as I am slowly migrating various bits of writing to Jekyll.) See my complete bio on the [About](about/) page.
+Hi, this is just a landing page for posts. (Under construction since late 2022, as I am slowly migrating various bits of writing to this Jekyll mini-site.) See my bio on the [About](about/) page.
 
