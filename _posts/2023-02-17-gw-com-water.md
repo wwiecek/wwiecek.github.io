@@ -4,16 +4,16 @@ title:  "GiveWell's Change Our Mind contest and water quality interventions"
 date:   2023-02-17
 ---
 
-(This is a working draft of a post that I am writing for Andrew Gelman's blog.)
+(_This is a working-in-public draft of a post that I am still working on. -Witold_)
 
 [In a recent post](https://statmodeling.stat.columbia.edu/2023/01/25/water-treatment-and-child-mortality-a-meta-analysis-and-cost-effectiveness-analysis/) I wrote about a new meta-analysis pre-print on water quality and child mortality, where based on RCT evidence from 15 studies we estimated a 30% reduction in deaths. Today I want to cover the same topic, but from a viewpoint of cost-effectiveness analyses (CEA).
 
 A few months ago [GiveWell](https://www.givewell.org/) (GW), an effective altruism non-profit, hosted a [Change Our Mind](https://blog.givewell.org/2022/12/15/change-our-mind-contest-winners/) contest. Its purpose was to critique and improve on GW's process/recommendations on how to allocate funding. This type of contest is obviously a fantastic idea (if you're distributing tens of millions of dollars to charitable causes, even a fraction of percent improvement to efficiency of your giving is worth paying good money for) and GW also provided pretty generous rewards for the top entries. There are two winners and I think both of them will be interesting to the readers of this blog:
 
-(1) [Noah Haber's "GiveWell's Uncertainty Problem"](https://www.metacausal.com/givewells-uncertainty-problem/)
-(2) An examination of [cost-effectiveness of water quality interventions](https://forum.effectivealtruism.org/posts/6cJM2pWH8dz9TnBRy/an-examination-of-givewell-s-water-quality-intervention-cost) by Matthew Romer and Paul Romer Present (MRPRP henceforth)
+1. [Noah Haber's "GiveWell's Uncertainty Problem"](https://www.metacausal.com/givewells-uncertainty-problem/)
+2. An examination of [cost-effectiveness of water quality interventions](https://forum.effectivealtruism.org/posts/6cJM2pWH8dz9TnBRy/an-examination-of-givewell-s-water-quality-intervention-cost) by Matthew Romer and Paul Romer Present (MRPRP henceforth)
 
-I will post separately on the uncertainty analysis by Haber, but today I want to write a bit on (2).
+I will post separately on the uncertainty analysis by Haber, but today I want to write a bit on MRPRP's analysis.
 
 As I wrote last time, back in April 2022 GW [recommended a grant of $65 million](https://blog.givewell.org/2022/04/06/water-quality-overview/) for clean water, in a "major update" to their earlier assessment. The decision was based on a pretty comprehensive analysis by GW, which estimated cost-benefit of specific interventions in specific countries.[^mortality] (I'm flattered to say that they also cited our meta-analysis as a motivation for updating their assessment.) MRPRP re-do the GiveWell's analysis and find effects that are 10-20% smaller in some cases. This is still highly cost effective, but (per the logic I already mentioned) even small differences in cost-effectiveness will have large real-world implications for funding given the large sums involved.
 
