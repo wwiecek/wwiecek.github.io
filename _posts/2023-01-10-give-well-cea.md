@@ -89,7 +89,7 @@ Just to reiterate: __where GW calculated the "plausibility cap", the authors her
 
 ## But what happens if we assume more deaths could be affected?
 
-After looking at this model I was interested in how uncertainty in the new assumptions drives the estimates. So I made one basic type of modification to the new analysis. Rather than assume Gaussian distribution on $S$ with mean of 42% and SD set to about 12% (mean + 2SD = 68%, GW's plausibility cap)^[The parameter I'm talking about is `frac_of_deaths_impacted_base` in MRPRP Stan code], I did the following: 
+After looking at this model I was interested in how uncertainty in the new assumptions drives the estimates. So I made one basic type of modification to the new analysis. Rather than assume Gaussian distribution on $S$ with mean of 42% and SD set to about 12% (mean + 2SD = 68%, GW's plausibility cap)[^parm], I did the following: 
 
 (Remember that GW's original estimate for Kenya DSW was 5.6% reduction, this new analysis got 4.6%.)
 
@@ -98,7 +98,11 @@ After looking at this model I was interested in how uncertainty in the new assum
 3. Used uniform distribution from 0.1 to 0.75. I got 5.1% reduction.
 4. Used Gaussian with mean of 68% and SD of 0.05, assuming that plausibility cap is in fact our "mean" belief and we're highly confident in it. I got 6.8% reduction in mortality.
 
-I am not positing that any of these is the right (or wrong) way to go about this. But the steps 1-3 clearly show how lowering confidence in the model retrieves a quite different result.^[Arguably we could also choose to model the proportion on a log scale. If using a lognormal distribution with the same 95% interpretation I get the same value as MRPRP.]
+I am not positing that any of these is the right (or wrong) way to go about this. But the steps 1-3 clearly show how lowering confidence in the model retrieves a quite different result.[^arg]
+
+[^arg]:Arguably we could also choose to model the proportion on a log scale. If using a lognormal distribution with the same 95% interpretation I get the same value as MRPRP.
+
+[^parm]:The parameter I'm talking about is `frac_of_deaths_impacted_base` in MRPRP Stan code.
 
 ## Conclusion
 
