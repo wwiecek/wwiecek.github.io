@@ -98,17 +98,16 @@ After looking at this model I was interested in how uncertainty in the new assum
 3. Used uniform distribution from 0.1 to 0.75. I got 5.1% reduction.
 4. Used Gaussian with mean of 68% and SD of 0.05, assuming that plausibility cap is in fact our "mean" belief and we're highly confident in it. I got 6.8% reduction in mortality.
 
-I am not positing that any of these is the right (or wrong) way to go about this. But 
-
-Arguably we could also choose to model the proportion on a log scale. If using a lognormal distribution with the same 95% interpretation I get the same value as MRPRP.
+I am not positing that any of these is the right (or wrong) way to go about this. But the steps 1-3 clearly show how lowering confidence in the model retrieves a quite different result.^[Arguably we could also choose to model the proportion on a log scale. If using a lognormal distribution with the same 95% interpretation I get the same value as MRPRP.]
 
 ## Conclusion
 
-- MRPRP probabilistic calculation of reductions is a very nice step forward from using a plausibility cap.
-- It's likely that the benefits of water quality interventions are sensitive to the assumption surrounding the share of deaths that can be prevented. Authors interpret the GW's assumption on share of all-cause mortality that can be affected (Mills-Reincke) as the upper end of 95% Gaussian interval.
+- MRPRP probabilistic calculation of reductions is a very nice step forward/away from using a plausibility cap and toward averaging over multiple models.
+- However, the direct and indirect models are hard to compare, especially in the sense of quantifying uncertainty in each (because the two models are quite different).
+- Under the MRPRP model the benefits of water quality interventions appear to be highly sensitive to the assumption surrounding the share of deaths that can be prevented. Authors interpret the GW's assumption on share of all-cause mortality that can be affected (Mills-Reincke) as the upper end of 95% Gaussian interval.
 - A lot of the new result seems to be driven by level of confidence in this belief. In other words, the results of this new analysis may be substantially different even without changing the "average" belief about Mills-Reincke effect, but simply by reducing confidence in this one input.
-- In a couple of modifications (intended for illustrative purposes only) I saw that the mortality reductions under Kenya DSW changed from 4.6% (authors new estimate) to over 5%.
-- All of the above is intended only as a demonstration of how the model is sensitive to assumptions. I do not have the expertise to intuit the particular values that should be used. 
+- In a couple of modifications (intended for illustrative purposes only) I saw that the mortality reductions under Kenya DSW changed from 4.6% (authors new estimate) to over 5%. E.g. doubling SD on the fraction of deaths affected retrieves the original GW result.
+- All of the above is intended only as a demonstration of how the model is sensitive to assumptions. I do not have the expertise to intuit the particular values that should be used. I may also be biased against the indirect evidence model simply because I know the direct evidence well and haven't spent a lot of time thinking about the indirect model.
 
 ## Links
 
