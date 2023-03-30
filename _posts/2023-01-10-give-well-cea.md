@@ -6,9 +6,9 @@ date:   2023-01-10
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-(_This is a working-in-public draft of a post that I am still working on. -Witold_)
+**30 Mar 2023 update: Since I wrote these notes, I also found that adding correlation between death and morbidity estimates would also bring the MRPRP results closer to GW's, but currently I do not have a good estimate of correlation, so I am not presenting it here.**
 
-Here are some extra notes and details on [GiveWell's](https://www.givewell.org/) [Change Our Mind](https://blog.givewell.org/2022/12/15/change-our-mind-contest-winners/) entry on cost-effectiveness of water quality interventions by Matthew Romer and Paul Romer Present (MRPRP henceforth). Their entry is [here](https://forum.effectivealtruism.org/posts/6cJM2pWH8dz9TnBRy/an-examination-of-givewell-s-water-quality-intervention-cost ).
+Here are some extra notes and details I compiled on [GiveWell's](https://www.givewell.org/) [Change Our Mind](https://blog.givewell.org/2022/12/15/change-our-mind-contest-winners/) entry on cost-effectiveness of water quality interventions by Matthew Romer and Paul Romer Present (MRPRP henceforth). Their entry is [here](https://forum.effectivealtruism.org/posts/6cJM2pWH8dz9TnBRy/an-examination-of-givewell-s-water-quality-intervention-cost ).
 
 I won't summarise the article as it already has a very nice and short abstract. The relevant result that I want to focus here is that they estimate a decrease in dispensers for safe water (DSW) but not in-line chlorination (ILC) cost-effectiveness:
 
