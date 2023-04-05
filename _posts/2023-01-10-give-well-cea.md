@@ -4,6 +4,9 @@ title:  "A few comments on cost-effectiveness of water quality interventions"
 date:   2023-01-10
 ---
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
 <script id="MathJax-script" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 **30 Mar 2023 update: Since I wrote these notes, I also found that adding correlation between death and morbidity estimates would also bring the MRPRP results closer to GW's, but currently I do not have a good estimate of correlation, so I am not presenting it here.**
