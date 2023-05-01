@@ -81,7 +81,7 @@ The crucial change seems to be that MRPRP interpret the GW's plausibility cap on
 
 In the case of Kenya DSW this means $S$ has a mean of 42% and a 95% interval from 21% to 67%, compared to the 68.6% in GW's cap.
 
-While other adjustments are made by the authors, if we used the previously mentioned formula, $PC$ = $S*(1-RR)*IV*EV$, we get average reduction using indirect evidence of
+While other adjustments are made by the authors, if we used the previously mentioned formula, $PC = S \cdot (1-RR) \cdot IV \cdot EV$, we get average reduction using indirect evidence of
 
 $$42\% * (1-0.78) * 0.9 * 0.52 = 4.3\%$$
 
