@@ -70,7 +70,7 @@ $$68.6\% * (1-0.81) * 0.9 * 0.49 = 68.6\% * 8.6\% = 5.6\%.$$
 
 Following the same formula for morbidity reduction but using [the new calculation](https://docs.google.com/spreadsheets/d/1BnuHlq4b0NSDjDmcEZ-79gjqrsQdi89zVn4ifSkPQ5k/edit#gid=255622053) we'd get:
 
-$(1-RR)*IV*EV = (1-0.78) * 0.9 * 0.52 = 10.2\%$
+$$(1-RR)*IV*EV = (1-0.78) * 0.9 * 0.52 = 10.2\%$$
 
 So this is higher than GiveWell (10.2% vs 8.6%). However, rather than multiplying this by $S$ (68.6%), this will now be subject to statistical model.
 NB the analysis itself introduces additional factors and adjustments, e.g. relationship between morbidity and mortality reductions (see [this sheet](https://docs.google.com/spreadsheets/d/1BnuHlq4b0NSDjDmcEZ-79gjqrsQdi89zVn4ifSkPQ5k/edit#gid=254577142)). These adjustments seem to me similarly arbitrary to GW's adjustments (not in a bad way) and in any case I am not enough of an expert to comment on them.
@@ -83,7 +83,7 @@ In the case of Kenya DSW this means $S$ has a mean of 42% and a 95% interval fro
 
 While other adjustments are made by the authors, if we used the previously mentioned formula, $PC$ = $S*(1-RR)*IV*EV$, we get average reduction using indirect evidence of
 
-$42\% * (1-0.78) * 0.9 * 0.52 = 4.3\%$ 
+$$42\% * (1-0.78) * 0.9 * 0.52 = 4.3\%$$
 
 (Once again, this is not how the calculation is done exactly, but it serves as an illustration.)
 
