@@ -15,7 +15,7 @@ image:
 ---
 ```
 
-Another important thing to note is that the "Contents" at the left hand side of the posts only display headings that are of ## size or larger. UNLESS there is a ### size heading below a ## (or larger) heading, in which case the "Contents" displays it as a sub-section/sub-heading underneath the ## heading.
+Another important thing to note is that the "Contents" at the right hand side of the posts only display headings that are of ## size or larger. UNLESS there is a ### size heading below a ## (or larger) heading, in which case the "Contents" displays it as a sub-section/sub-heading underneath the ## heading.
 
 # Chirpy Starter
 
