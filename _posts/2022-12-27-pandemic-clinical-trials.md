@@ -1,8 +1,7 @@
 ---
-layout: post
 title:  "Clinical trials for accelerating pandemic vaccines"
 date:   2022-12-27
-math: true
+math: true # NOTE that to render $ as a dollar sign (either in normal text or mathjax), you need to precede it with a double backslash: \\$
 # categories: [Category, Subcategory]
 # tags: [tag]
 # pin: true

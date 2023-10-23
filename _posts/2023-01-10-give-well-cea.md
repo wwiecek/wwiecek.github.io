@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "A few comments on cost-effectiveness of water quality interventions"
 date:   2023-01-10
 math: true

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "GiveWell's Change Our Mind contest and water quality interventions"
 date:   2023-02-17
 math: true

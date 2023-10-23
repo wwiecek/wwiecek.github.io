@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Water Treatment and Child Mortality: A Meta-analysis and Cost-effectiveness Analysis"
 date:   2023-01-24
 math: true
@@ -30,11 +29,11 @@ We conduct a Bayesian meta-analysis of these 15 studies using a logit model and 
 
 The Bayesian analysis is implemented in [baggr](https://github.com/wwiecek/baggr), an R package that provides meta-analysis interface for Stan. There are some interesting methodological questions related to modeling of rare events, but repeating this analysis using frequentist methods (random-effects model on Peto OR has mean OR of 0.72) as well as various sensitivity analyses we could think of all lead to similar results. We also think that publication bias is unlikely. Still, perhaps there are things we missed.
 
-Based on this we calculate about $3,000 cost per child death averted, or, in terms of DALYs, the cost is under $40. It's hard to convey how extremely cost-effective this is, but basically $40/DALY is on par with the most cost-effective child health interventions such as vaccinations.
+Based on this we calculate about \\$3,000 cost per child death averted, or, in terms of DALYs, the cost is under \\$40. It's hard to convey how extremely cost-effective this is, but basically \\$40/DALY is on par with the most cost-effective child health interventions such as vaccinations.
 
-Since the cost-effectiveness is potentially so high, there are obviously big real-world implications. Some funders have been reacting to the new evidence already. For example, some months ago [GiveWell](https://www.givewell.org/), an effective altruism non-profit that many readers will already be familiar with, conducted their own analysis of water quality interventions and in a "major update" of their assessment [recommended a grant of $65 million](https://blog.givewell.org/2022/04/06/water-quality-overview/) toward a particular chlorination implementation[^gw]. 
+Since the cost-effectiveness is potentially so high, there are obviously big real-world implications. Some funders have been reacting to the new evidence already. For example, some months ago [GiveWell](https://www.givewell.org/), an effective altruism non-profit that many readers will already be familiar with, conducted their own analysis of water quality interventions and in a "major update" of their assessment [recommended a grant of \\$65 million](https://blog.givewell.org/2022/04/06/water-quality-overview/) toward a particular chlorination implementation[^gw]. 
 
-[^gw]:GiveWell's analysis included their own meta-analysis and led to more conservative estimates of mortality reductions. As I mention at the end of this post, this is something I will try to blog about separately. Their grant will fund [Dispensers for Safe Water](https://www.givingwhatwecan.org/charities/dispensers-for-safe-water), an intervention which gives people access to chlorine at the water source. GW's analysis also suggested a much larger funding gap in water qulity interventions, of about $350 million per year.
+[^gw]:GiveWell's analysis included their own meta-analysis and led to more conservative estimates of mortality reductions. As I mention at the end of this post, this is something I will try to blog about separately. Their grant will fund [Dispensers for Safe Water](https://www.givingwhatwecan.org/charities/dispensers-for-safe-water), an intervention which gives people access to chlorine at the water source. GW's analysis also suggested a much larger funding gap in water qulity interventions, of about \\$350 million per year.
 
 (GiveWell's assessment is an interesting case study in its own right and I hope to  blog about it separately in the next few days. Their analysis works with point estimates and then makes a series of internal and external validity adjustments to make it specific to countries they're interested in. They also combine it with the indirect evidence from diarrhea reductions which I mentioned. )
 
