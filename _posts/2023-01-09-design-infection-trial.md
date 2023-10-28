@@ -1,30 +1,28 @@
 ---
-layout: post
 title:  "Power calculations for an infection trial"
 date:   2023-01-09
+math: true
 ---
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 Here are some simple notes on how experimental design for infection experiments. The goal is to detect statistically significant difference in infection rates. I start with back-of-envelope calculations, then show R code that makes the calculation a bit realistic.
 
-This is work in progress.
+This is a work in progress.
 
-### Basic epi maths 
-- Start with a simple model of a closed environment. On day 0 of the experiment there are $I_0$ infections. After that infections occur due to interactions between participants
+## Basic epi maths
+- Start with a simple model of a closed environment. On day 0 of the experiment there are $I_0$ infections. After that infections occur due to interactions between participants.
 - There will be approximately $R_0$ infections per generation. If $I_0$ is not high, with 2 generations you will have approximately $I_0(R_0 + R_0^2)$ new infections, with 3 you will have $I_0(R_0 + R_0^2 + R_0^3)$.
 - This is very simplified but works for a small $I_0$. Also, we say $R_0$ (rather than $R$), because we assume that participants are susceptible, otherwise math is more complicated.
 - If you reduce infection risk by some number $\gamma$, you simply scale the reproduction number $R_0(1-\gamma)$ 
-- For many pathogens it makes sense to assume $R_0$ slightly above 1, since people tend to modify their behaviour to reduce risk. Therefore 1 is a good conservative assumption, even if in the real world it can be as high as 3-4 for coronavirus. 
+- For many pathogens it makes sense to assume $R_0$ slightly above 1, since people tend to modify their behaviour to reduce risk. Therefore 1 is a good conservative assumption, even if in the real world it can be as high as 3-4 for coronavirus.
 
-### How to calculate number of new infections during the study
+## How to calculate number of new infections during the study
 
 - The motivating example above is too simple, because 
-- At the end of this doc I paste a very simple script in R to simulate number of infections in a closed population. ([[#Code to calculate number infected in experiment]])
+- At the end of this doc I paste a very simple script in R to simulate number of infections in a closed population (see [here](#code-to-calculate-number-infected-in-experiment)).
 - This simple code is for an SIR model, the simplest epidemiological model. It simulates the spread of an infectious disease in a closed population, where it takes D days for each new generation of the virus to develop, I0 people are infected on day 0, and the reproduction number is R0. SIR model assumes that individuals in the population can be in one of three states: susceptible (S), infected (I), or recovered (R). 
 - You want to run this code twice, one time with R in controls and then lower R, in treatment group. This calculation then feeds into calculation of statistical power.
 
-### Statistical power; what is measured in the trial?
+## Statistical power; what is measured in the trial?
 
 - We are interested in "significant" differences between two groups
 - By "significant" we mean setting a 5% significance level, a de facto norm for design of clinical trials.[^f]
@@ -33,19 +31,19 @@ This is work in progress.
 
 [^f]:Statistical **significance** is a measure of how likely it is that the results of a statistical test are due to chance rather than a real effect. It is usually expressed as a probability, with a commonly used threshold of 5%. This means that if the probability of getting the observed results by chance is less than 5%, then the results are considered statistically significant. **Power** is a measure of the ability of a statistical test to detect a real effect, if one exists. A test with high power is more likely to detect an effect if one exists, while a test with low power is less likely to detect an effect. Power is usually expressed as a probability, with a commonly used threshold of 80%. This means that if the probability of detecting an effect if it exists is greater than 80%, then the test has high power.
 
-- I include code to calculate sample size needed to achieve 80% power in [[#Using the code to calculate sample sizes]]
+- I include code to calculate sample size needed to achieve 80% power [below](#using-the-code-to-calculate-sample-sizes).
 
-### Open experiment
+## Open experiment
 
 - If the environment is open, that is, subjects can get infected not just within, but also outside of, the experiment, we need to expand the model to account for that.
-- An example R code is in [[#Modification for open environment]]
+- An example R code is in [Modification for open environment](#modification-for-open-environment).
 - The model I provide is an SIR model with two groups. 
 - In general, when you have many groups, the number of new infections in group $i$ acquired from group $j$ is now defined as $S_i(t) \cdot q \cdot c_{ij} \cdot{I_j(t)}$, 
 	- $q$ is probability of getting infected on contact
 	- $c_{ij}$ is the average number of contacts that person in group $i$ makes with people in group $j$
 	- $I_j$ is the _proportion_ in group $j$ that is infected (in other words, we normalise group sizes to 1)
 
-### Made up example (cruise ship)
+## Made up example (cruise ship)
 
 (Ignore this for now, this is just an outdated illustration.)
 
@@ -62,13 +60,13 @@ There are several caveats:
 - 25% is a very large effect and that means study has bad statistical properties + not great for policymaking
 - This is much worse in real-world due to heterogeneities. We should simulate it to get the answer.
 
-### Next steps
+## Next steps
 
 - It may be better to create a stochastic model. A pretty straightforward implementation is presented in this [R vignette for _odin_ package](https://cran.r-project.org/web/packages/odin/vignettes/discrete.html) (which is excellent for simulating from all kinds of epidemiological models)
 - Stochastic models are preferable because in small populations there will be a lot of variation due to chance
 - 
 
-### Code to calculate number infected in experiment
+## Code to calculate number infected in experiment
 
 ```r
 # Set the number of days to simulate
@@ -109,7 +107,7 @@ lines(1:days, total_inf, type = "l", col = "black", lty = "dotted")
 total_inf
 ```
 
-### Using the code to calculate sample sizes 
+## Using the code to calculate sample sizes 
 
 ```r
 #Same as above, but now it's a function
@@ -149,7 +147,7 @@ ceiling(nB) # 70
 
 ```
 
-### Modification for open environment
+## Modification for open environment
 
 ```r
 # Consider the same example as below, but now we have two environments

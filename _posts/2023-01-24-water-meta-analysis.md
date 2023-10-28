@@ -1,10 +1,8 @@
 ---
-layout: post
 title:  "Water Treatment and Child Mortality: A Meta-analysis and Cost-effectiveness Analysis"
 date:   2023-01-24
+math: true
 ---
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 Cross-posting this from [a guest post I wrote for Andrew Gelman's blog](https://statmodeling.stat.columbia.edu/2023/01/25/water-treatment-and-child-mortality-a-meta-analysis-and-cost-effectiveness-analysis/).
 
@@ -12,7 +10,7 @@ I thought the readers of this blog would find [this pre-print](https://bfi.uchic
 
 First, a word on why this is important. Globally, for each 1,000-births 37 children will die before age of 5. Thankfully this is already half of what it was in 2000. But that's still about 5 million deaths per year. One of the leading causes for death in children is diarrhea, caused by enteric infections. While chlorinating water[^chlor] is easy, inexpensive, and proven to remove pathogens from water, there are many countries where most people still don't have access to clean water.
 
-[^chlor]:For simplicity I simply say "chlorination" but this may refer to chlorinating at home, at the point from which water is drawn, or even using a device in the pipe, if households have piped water which may be contaminated. Each of these will have different effectiveness (primarily due to how convenient it is to use) and costs. So differentiating between them is very important for a policy maker. But in this post I group all of this to keep things simple. There are also other methods of improving quality, e.g. filtration. If you're interested, this is covered in more detail in the meta-analyses that I link to. ] 
+[^chlor]:For simplicity I simply say "chlorination" but this may refer to chlorinating at home, at the point from which water is drawn, or even using a device in the pipe, if households have piped water which may be contaminated. Each of these will have different effectiveness (primarily due to how convenient it is to use) and costs. So differentiating between them is very important for a policy maker. But in this post I group all of this to keep things simple. There are also other methods of improving quality, e.g. filtration. If you're interested, this is covered in more detail in the meta-analyses that I link to. 
 
 One way to argue for importance of clean water is to quantify its link to mortality. 
 However, while there is now good experimental evidence for [reductions in diarrhea](https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004794.pub3/full), making a link between clean water and mortality either requires either an additional, "indirect", model linking disease to deaths, which is hard,[^morb] or directly measuring deaths, which are rare (hence also hard)*.[^power]
@@ -31,11 +29,11 @@ We conduct a Bayesian meta-analysis of these 15 studies using a logit model and 
 
 The Bayesian analysis is implemented in [baggr](https://github.com/wwiecek/baggr), an R package that provides meta-analysis interface for Stan. There are some interesting methodological questions related to modeling of rare events, but repeating this analysis using frequentist methods (random-effects model on Peto OR has mean OR of 0.72) as well as various sensitivity analyses we could think of all lead to similar results. We also think that publication bias is unlikely. Still, perhaps there are things we missed.
 
-Based on this we calculate about $3,000 cost per child death averted, or, in terms of DALYs, the cost is under $40. It's hard to convey how extremely cost-effective this is, but basically $40/DALY is on par with the most cost-effective child health interventions such as vaccinations.
+Based on this we calculate about \\$3,000 cost per child death averted, or, in terms of DALYs, the cost is under \\$40. It's hard to convey how extremely cost-effective this is, but basically \\$40/DALY is on par with the most cost-effective child health interventions such as vaccinations.
 
-Since the cost-effectiveness is potentially so high, there are obviously big real-world implications. Some funders have been reacting to the new evidence already. For example, some months ago [GiveWell](https://www.givewell.org/), an effective altruism non-profit that many readers will already be familiar with, conducted their own analysis of water quality interventions and in a "major update" of their assessment [recommended a grant of $65 million](https://blog.givewell.org/2022/04/06/water-quality-overview/) toward a particular chlorination implementation[^gw]. 
+Since the cost-effectiveness is potentially so high, there are obviously big real-world implications. Some funders have been reacting to the new evidence already. For example, some months ago [GiveWell](https://www.givewell.org/), an effective altruism non-profit that many readers will already be familiar with, conducted their own analysis of water quality interventions and in a "major update" of their assessment [recommended a grant of \\$65 million](https://blog.givewell.org/2022/04/06/water-quality-overview/) toward a particular chlorination implementation[^gw]. 
 
-[^gw]:GiveWell's analysis included their own meta-analysis and led to more conservative estimates of mortality reductions. As I mention at the end of this post, this is something I will try to blog about separately. Their grant will fund [Dispensers for Safe Water](https://www.givingwhatwecan.org/charities/dispensers-for-safe-water), an intervention which gives people access to chlorine at the water source. GW's analysis also suggested a much larger funding gap in water qulity interventions, of about $350 million per year.
+[^gw]:GiveWell's analysis included their own meta-analysis and led to more conservative estimates of mortality reductions. As I mention at the end of this post, this is something I will try to blog about separately. Their grant will fund [Dispensers for Safe Water](https://www.givingwhatwecan.org/charities/dispensers-for-safe-water), an intervention which gives people access to chlorine at the water source. GW's analysis also suggested a much larger funding gap in water qulity interventions, of about \\$350 million per year.
 
 (GiveWell's assessment is an interesting case study in its own right and I hope to  blog about it separately in the next few days. Their analysis works with point estimates and then makes a series of internal and external validity adjustments to make it specific to countries they're interested in. They also combine it with the indirect evidence from diarrhea reductions which I mentioned. )
 

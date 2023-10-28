@@ -1,13 +1,8 @@
 ---
-layout: post
 title:  "A few comments on cost-effectiveness of water quality interventions"
 date:   2023-01-10
+math: true
 ---
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
-<script id="MathJax-script" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 **30 Mar 2023 update: Since I wrote these notes, I also found that adding correlation between death and morbidity estimates would also bring the MRPRP results closer to GW's, but currently I do not have a good estimate of correlation, so I am not presenting it here.**
 
@@ -36,7 +31,7 @@ All of the relevant references (links to GW's and their calculations) are at the
 	- There is also a (slightly lower) drop for ILC, but in this case the subsequent adjustments compensate for this lower mortality estimate.
 - The reason for the difference is mainly the new probabilistic analysis, i.e. how direct and indirect evidence is combined.
 - In other words, the mortality estimate (direct evidence) gets pulled away from 0.81 toward 0.89. To understand why it's necessary to look at the model they use closely.
-	- This is essentially in [this part ](https://docs.google.com/spreadsheets/d/1BnuHlq4b0NSDjDmcEZ-79gjqrsQdi89zVn4ifSkPQ5k/edit#gid=798836071)of the spreadsheet and GitHub code [here](https://github.com/secondhandmaps/WQ-CEA-Analysis/blob/main/stan_model_for_water_quality_v3.stan).
+	- This is essentially in [this part](https://docs.google.com/spreadsheets/d/1BnuHlq4b0NSDjDmcEZ-79gjqrsQdi89zVn4ifSkPQ5k/edit#gid=798836071) of the spreadsheet and GitHub code [here](https://github.com/secondhandmaps/WQ-CEA-Analysis/blob/main/stan_model_for_water_quality_v3.stan).
 	- Adjustments around direct effect (mortality model) are plausible and would on their own not lead to a decrease in DSW's effect. It is therefore due to indirect effects (morbidity) model.
 
 I will now quickly compare the GW and MRPRP approach to indirect evidence.
