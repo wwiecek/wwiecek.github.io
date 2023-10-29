@@ -1,7 +1,7 @@
 ---
-layout: page
-title: About
-permalink: /about/
+# the default layout is 'page'
+icon: fas fa-info-circle
+order: 4
 ---
 
 I am a researcher working on applied problems in health, epidemiology, and development economics. My background is in biostatistics and Bayesian methods. 
