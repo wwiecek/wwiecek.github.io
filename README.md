@@ -1,4 +1,7 @@
 # Important things to note (by Josh)
+
+The only difference between ```jekyll``` and ```merge-chirpy-theme``` should be that I tried to manually re-add the submodule for chirpy static assets within ```assets/lib``` in the former in order to get it to run locally (and I also had to re-add the ```index.html``` file for some reason).
+
 At the start of the post, here are the options you can use (non-exhaustive but most of the useful ones):
 ```
 ---
