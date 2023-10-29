@@ -70,7 +70,7 @@ $$68.6\% * (1-0.81) * 0.9 * 0.49 = 68.6\% * 8.6\% = 5.6\%.$$
 
 Following the same formula for morbidity reduction but using [the new calculation](https://docs.google.com/spreadsheets/d/1BnuHlq4b0NSDjDmcEZ-79gjqrsQdi89zVn4ifSkPQ5k/edit#gid=255622053) we'd get:
 
-$(1-RR)*IV*EV = (1-0.78) * 0.9 * 0.52 = 10.2\%$
+$$(1-RR)*IV*EV = (1-0.78) * 0.9 * 0.52 = 10.2\%$$
 
 So this is higher than GiveWell (10.2% vs 8.6%). However, rather than multiplying this by $S$ (68.6%), this will now be subject to statistical model.
 NB the analysis itself introduces additional factors and adjustments, e.g. relationship between morbidity and mortality reductions (see [this sheet](https://docs.google.com/spreadsheets/d/1BnuHlq4b0NSDjDmcEZ-79gjqrsQdi89zVn4ifSkPQ5k/edit#gid=254577142)). These adjustments seem to me similarly arbitrary to GW's adjustments (not in a bad way) and in any case I am not enough of an expert to comment on them.
@@ -81,9 +81,9 @@ The crucial change seems to be that MRPRP interpret the GW's plausibility cap on
 
 In the case of Kenya DSW this means $S$ has a mean of 42% and a 95% interval from 21% to 67%, compared to the 68.6% in GW's cap.
 
-While other adjustments are made by the authors, if we used the previously mentioned formula, $PC$ = $S*(1-RR)*IV*EV$, we get average reduction using indirect evidence of
+While other adjustments are made by the authors, if we used the previously mentioned formula, $PC = S*(1-RR)*IV*EV$, we get average reduction using indirect evidence of
 
-$42\% * (1-0.78) * 0.9 * 0.52 = 4.3\%$ 
+$$42\% * (1-0.78) * 0.9 * 0.52 = 4.3\%$$
 
 (Once again, this is not how the calculation is done exactly, but it serves as an illustration.)
 
@@ -109,6 +109,13 @@ I am not positing that any of these is the right (or wrong) way to go about this
 
 [^parm]:The parameter I'm talking about is `frac_of_deaths_impacted_base` in MRPRP Stan code.
 
+## Update: what if we assume correlation between estimates of morbidity and mortality?
+
+**Mar 2023 update**: The obvious problem with partitioning evidence into two "boxes" and then treating it as independent is that it introduces too much confidence into the calculation. All of mortality studies also measured diarrhea and we can expect correlation to be high. Therefore I am currently still working on a joint meta-analytic model of diarrhea and mortality outcomes, but it will take me a while to finish. For now I ran a hypothetical scenario that used MRPRP model, but with one modification: I allowed for user-defined linear correlation between morbidity and mortality effects.
+
+The current result is that if I set correlation to 0.75, in our running example of Kenya DSW the estimated reduction changes from 4.6% to just above 5%. 
+
+
 ## Conclusion
 
 - MRPRP probabilistic calculation of reductions is a very nice step forward/away from using a plausibility cap and toward averaging over multiple models.
@@ -116,6 +123,7 @@ I am not positing that any of these is the right (or wrong) way to go about this
 - Under the MRPRP model the benefits of water quality interventions appear to be highly sensitive to the assumption surrounding the share of deaths that can be prevented. Authors interpret the GW's assumption on share of all-cause mortality that can be affected (Mills-Reincke) as the upper end of 95% Gaussian interval.
 - A lot of the new result seems to be driven by level of confidence in this belief. In other words, the results of this new analysis may be substantially different even without changing the "average" belief about Mills-Reincke effect, but simply by reducing confidence in this one input.
 - In a couple of modifications (intended for illustrative purposes only) I saw that the mortality reductions under Kenya DSW changed from 4.6% (authors new estimate) to over 5%. E.g. doubling SD on the fraction of deaths affected retrieves the original GW result.
+- **Mar 2023**: allowing for correlation between mortality and morbidity estimates will also have a considerable impact on this estimate.
 - All of the above is intended only as a demonstration of how the model is sensitive to assumptions. I do not have the expertise to intuit the particular values that should be used. I may also be biased against the indirect evidence model simply because I know the direct evidence well and haven't spent a lot of time thinking about the indirect model.
 
 ## Links
