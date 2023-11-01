@@ -2,9 +2,8 @@ name: "Build and Deploy"
 on:
   push:
     branches:
-      # - main
-      # - master
-      - jekyll-chirpy
+      - main
+      - master
     paths-ignore:
       - .gitignore
       - README.md
