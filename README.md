@@ -1,3 +1,5 @@
+For information on formatting posts, see [here](https://chirpy.cotes.page/posts/text-and-typography/)
+
 # Chirpy Starter
 
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
