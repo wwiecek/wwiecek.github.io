@@ -1,4 +1,22 @@
-For information on formatting posts, see [here](https://chirpy.cotes.page/posts/text-and-typography/)
+For information on formatting posts, see [here](https://chirpy.cotes.page/posts/text-and-typography/). Some basic info is below:
+
+At the start of the post, here are the options you can use (non-exhaustive but most of the useful ones):
+```
+---
+layout: post # seems to be entirely redundant
+title: "Clinical trials for accelerating pandemic vaccines"
+date: 2022-12-27
+math: true # NOTE that to render $ as a dollar sign (either in normal text or mathjax), you need to precede it with a double backslash: \\$
+categories: [Category, Subcategory]
+tags: [tag]
+pin: # true or false
+image:
+  path: # directory within github file structure
+  alt: # caption
+---
+```
+Another important thing to note is that the "Contents" at the right hand side of the posts only display headings that are of ## size or larger. UNLESS there is a ### size heading below a ## (or larger) heading, in which case the "Contents" displays it as a sub-section/sub-heading underneath the ## heading.
+
 
 # Chirpy Starter
 

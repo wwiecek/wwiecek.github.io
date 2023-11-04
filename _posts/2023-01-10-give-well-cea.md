@@ -110,7 +110,6 @@ I am not positing that any of these is the right (or wrong) way to go about this
 
 The current result is that if I set correlation to 0.75, in our running example of Kenya DSW the estimated reduction changes from 4.6% to just above 5%. 
 
-
 ## Conclusion
 
 - MRPRP probabilistic calculation of reductions is a very nice step forward/away from using a plausibility cap and toward averaging over multiple models.
