@@ -7,12 +7,12 @@ Here's a non-exhaustive list of most of the useful front matter variables:
 title:  "Clinical trials for accelerating pandemic vaccines"
 date:   2022-12-27
 math: true 
-# NOTE that to render $ as a dollar sign (in normal text and/or mathjax), you need to precede it with a double backslash: \\$
 # categories: [Category, Subcategory]
 # tags: [tag] # tag names should always be lowercase
 # pin: true
 ---
 ```
+To render $ as a dollar sign (in normal text and/or mathjax), you need to precede it with a double backslash: \\$
 
 Also note is that the table of contents at the right hand side of the posts generally only display headings that are of ## size or larger. This is true unless there is a ### size heading below a ## (or larger) heading, in which case the contents displays it as a sub-section/sub-heading underneath the ## heading.
 
