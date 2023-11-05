@@ -13,7 +13,11 @@ A few months ago [GiveWell](https://www.givewell.org/) (GW), an effective altrui
 
 Soon I will post separately on the uncertainty analysis by Haber, but today I want to write a bit on MRPRP's analysis.
 
-As I wrote last time, back in April 2022 GW [recommended a grant of $65 million](https://blog.givewell.org/2022/04/06/water-quality-overview/) for clean water, in a "major update" to their earlier assessment. The decision was based on a pretty comprehensive analysis by GW, which estimated cost-benefit of specific interventions aimed at improving water quality in specific countries.[^mortality] (I'm flattered to say that they also cited our meta-analysis as a motivation for updating their assessment.) MRPRP re-do the GiveWell's analysis and find effects that are 10-20% smaller in some cases. This is still highly cost effective, but (per the logic I already mentioned) even small differences in cost-effectiveness will have large real-world implications for funding, given that funding gap for provision of safe drinking water is calculated in hundreds of millions of dollars.
+As I wrote last time, back in April 2022 GW [recommended a grant of \\$65 million](https://blog.givewell.org/2022/04/06/water-quality-overview/) for clean water, in a "major update" to their earlier assessment. The decision was based on a pretty comprehensive analysis by GW, which estimated cost-benefit of specific interventions aimed at improving water quality in specific countries.[^mortality] (I'm flattered to say that they also cited our meta-analysis as a motivation for updating their assessment.) MRPRP re-do the GiveWell's analysis and find effects that are 10-20% smaller in some cases. This is still highly cost effective, but (per the logic I already mentioned) even small differences in cost-effectiveness will have large real-world implications for funding, given that funding gap for provision of safe drinking water is calculated in hundreds of millions of dollars.
+
+$$
+\\$5 + \\$5 = \\$10 
+$$
 
 However, my intention is not to argue what the right number should be, but to ponder one interesting feature of this process of obtaining cost-effectiveness estimates, which is combining different sources of evidence. 
 
