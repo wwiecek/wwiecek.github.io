@@ -46,10 +46,10 @@ Calculation of plausibility cap $PC$ then proceeds as follows (this is my notati
 
 $$PC = S*(1-RR)*IV*EV$$
 
-- \$$S$$: share of all-cause GBD mortality that could be linked to morbidity affected by water
-- \$$RR$$: risk reduction in Clasen et al. meta-analysis of diarrhea reductions
-- \$$IV$$: internal validity adjustment[^1]
-- \$$EV$$: external validity adjustment (in case of Kenya DSW just adherence)
+- $$S$$: share of all-cause GBD mortality that could be linked to morbidity affected by water
+- $$RR$$: risk reduction in Clasen et al. meta-analysis of diarrhea reductions
+- $$IV$$: internal validity adjustment[^1]
+- $$EV$$: external validity adjustment (in case of Kenya DSW just adherence)
 
 Hence $$(1-RR)*IV*EV$$ corresponds to morbidity reduction. In the case of Kenya DSW[^kenyadsw] the numbers are:
 
