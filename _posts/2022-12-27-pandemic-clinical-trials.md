@@ -14,7 +14,7 @@ The paper is just a small contribution to complement [new issue of Oxford Review
 
 So, the paper. In spring 2020 the experts thought that 12-18 month vaccine timeline was optimistic. So we did very well relative to expectations. On the other hand, we know that a lot of public health decision-making was _bad_ (so bad) and non-vaccine trials were often badly designed messes. So were trials really so great?
 
-Have \$5. Now have another \$5. Now you have \$10.
+Have \\$5. Now have another \\$5. Now you have \\$10.
 
 Pandemic definitely accelerated some positive trends, like acceptability of adaptive platform trials. What are they, roughly: you have a single trial into which you can incorporate many sub-trials, dynmically adjust who gets recruited and then stop the trial if evidence of effect/no effect is strong enough. These trials were a big deal for Covid therapeutics. For vaccines a platform trial was a bridge too far (there was a very delayed effort by WHO that did not make any difference), but the trials did make use of adaptive elements. For example, Pfizer trial was built with interim analyses starting at 32 cases. That's good! (we'll get grumpy in a sec)
 
