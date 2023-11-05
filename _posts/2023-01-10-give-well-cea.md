@@ -46,12 +46,12 @@ Calculation of plausibility cap $PC$ then proceeds as follows (this is my notati
 
 $$PC = S*(1-RR)*IV*EV$$
 
-- $S$: share of all-cause GBD mortality that could be linked to morbidity affected by water
-- $RR$: risk reduction in Clasen et al. meta-analysis of diarrhea reductions
-- $IV$: internal validity adjustment[^1]
-- $EV$: external validity adjustment (in case of Kenya DSW just adherence)
+- $$S$$: share of all-cause GBD mortality that could be linked to morbidity affected by water
+- $$RR$$: risk reduction in Clasen et al. meta-analysis of diarrhea reductions
+- $$IV$$: internal validity adjustment[^1]
+- $$EV$$: external validity adjustment (in case of Kenya DSW just adherence)
 
-Hence $(1-RR)*IV*EV$ corresponds to morbidity reduction. In the case of Kenya DSW[^kenyadsw] the numbers are:
+Hence $$(1-RR)*IV*EV$$ corresponds to morbidity reduction. In the case of Kenya DSW[^kenyadsw] the numbers are:
 
 $$68.6\% * (1-0.81) * 0.9 * 0.49 = 68.6\% * 8.6\% = 5.6\%.$$
 
@@ -74,18 +74,12 @@ The crucial change seems to be that MRPRP interpret the GW's plausibility cap on
 
 >Mills-Reincke effect: Modeled as the fraction of all deaths that the X% reduction in mortality applies to. Normal distribution with mean equal to the sum of deaths due to enteric infections, respiratory infections, and a quarter of other infections and nutritional deficiencies, and standard deviation such that "Assumption 4" in GiveWell's mortality plausibility modeling is 2 standard deviations above the mean.
 
-In the case of Kenya DSW this means $S$ has a mean of 42% and a 95% interval from 21% to 67%, compared to the 68.6% in GW's cap.
+In the case of Kenya DSW this means $$S$$ has a mean of 42% and a 95% interval from 21% to 67%, compared to the 68.6% in GW's cap.
 
-While other adjustments are made by the authors, if we used the previously mentioned formula, $PC = S*(1-RR)*IV*EV$, we get average reduction using indirect evidence of
-
-$$42\% * (1-0.78) * 0.9 * 0.52 = 4.3\%$$
-
-(Once again, this is not how the calculation is done exactly, but it serves as an illustration.)
-
+While other adjustments are made by the authors, if we used the previously mentioned formula, $$PC = S*(1-RR)*IV*EV$$, we get average reduction using indirect evidence of
 This estimate of 4.3% reduction is then averaged (probabilistically) with estimate of deaths avoided from direct approach. The combined estimate (incorporating the direct approach, i.e. meta-analysis on mortality) for Kenya DSW is 4.6%.
 
 Just to reiterate: __where GW calculated the "plausibility cap", the authors here interpret it as the upper bound of a probabilistic quantity and then incorporate it directly into the model. This is likely what drives down the overall effect, although I'd have to look closer at other adjustments.__
-
 
 ## But what happens if we assume more deaths could be affected?
 
@@ -109,7 +103,6 @@ I am not positing that any of these is the right (or wrong) way to go about this
 **Mar 2023 update**: The obvious problem with partitioning evidence into two "boxes" and then treating it as independent is that it introduces too much confidence into the calculation. All of mortality studies also measured diarrhea and we can expect correlation to be high. Therefore I am currently still working on a joint meta-analytic model of diarrhea and mortality outcomes, but it will take me a while to finish. For now I ran a hypothetical scenario that used MRPRP model, but with one modification: I allowed for user-defined linear correlation between morbidity and mortality effects.
 
 The current result is that if I set correlation to 0.75, in our running example of Kenya DSW the estimated reduction changes from 4.6% to just above 5%. 
-
 
 ## Conclusion
 

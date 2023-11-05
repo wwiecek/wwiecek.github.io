@@ -23,7 +23,7 @@ description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://j-muthu.github.io/wwiecek.github.io-my-copy"
+url: "https://j-muthu.github.io"
 
 github:
   username: wwiecek # change to your github username
@@ -35,7 +35,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Witold Więcek
-  # email: # change to your email address
+  # email: example@domain.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/vientsek # change to your twitter homepage
@@ -73,7 +73,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "assets/img/favicons/wi landscape.png"
+avatar: "/assets/wi_landscape.png"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -112,7 +112,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: ""
+baseurl: "/wwiecek.github.io-from-chirpy"
 
 # ------------ The following options are not recommended to be modified ------------------
 

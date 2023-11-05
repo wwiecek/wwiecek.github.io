@@ -1,9 +1,10 @@
 ---
 title:  "Clinical trials for accelerating pandemic vaccines"
 date:   2022-12-27
-math: true # NOTE that to render $ as a dollar sign (either in normal text or mathjax), you need to precede it with a double backslash: \\$
+math: true 
+# NOTE that to render $ as a dollar sign (in normal text and/or mathjax), you need to precede it with a double backslash: \\$
 # categories: [Category, Subcategory]
-# tags: [tag]
+# tags: [tag] # tag names should always be lowercase
 # pin: true
 ---
 
