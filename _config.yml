@@ -112,7 +112,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "/wwiecek.github.io-from-chirpy"
+baseurl: "/wwiecek.github.io-my-copy"
 
 # ------------ The following options are not recommended to be modified ------------------
 
