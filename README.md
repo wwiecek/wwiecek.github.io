@@ -13,6 +13,7 @@ math: true
 # pin: true
 ---
 ```
+
 Also note is that the table of contents at the right hand side of the posts generally only display headings that are of ## size or larger. This is true unless there is a ### size heading below a ## (or larger) heading, in which case the contents displays it as a sub-section/sub-heading underneath the ## heading.
 
 
