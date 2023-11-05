@@ -1,6 +1,6 @@
 For information on formatting posts, see [here](https://chirpy.cotes.page/posts/text-and-typography/) (especially the [mathematics section](https://chirpy.cotes.page/posts/write-a-new-post/#mathematics)). Some basic info is below:
 
-At the start of the post, here are the options you can use (non-exhaustive but most of the useful ones):
+Here's a non-exhaustive list of most of the useful front matter variables:
 ```
 ---
 # layout: is redundant
