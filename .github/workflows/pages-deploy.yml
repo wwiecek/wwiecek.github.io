@@ -4,6 +4,7 @@ on:
     branches:
       - main
       - master
+      - chirpy
     paths-ignore:
       - .gitignore
       - README.md
