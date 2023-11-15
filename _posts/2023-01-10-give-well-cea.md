@@ -2,6 +2,8 @@
 title:  "A few comments on cost-effectiveness of water quality interventions"
 date:   2023-01-10
 math: true
+redirect_from:
+  - /2023/01/10/give-well-cea.html
 ---
 
 **30 Mar 2023 update: Since I wrote these notes, I also found that adding correlation between death and morbidity estimates would also bring the MRPRP results closer to GW's, but currently I do not have a good estimate of correlation, so I am not presenting it here.**
