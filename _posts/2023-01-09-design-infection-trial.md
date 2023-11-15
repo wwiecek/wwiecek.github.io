@@ -2,6 +2,8 @@
 title:  "Power calculations for an infection trial"
 date:   2023-01-09
 math: true
+redirect_from: 
+  - /2023/01/09/design-infection-trial.html
 ---
 
 Here are some simple notes on how experimental design for infection experiments. The goal is to detect statistically significant difference in infection rates. I start with back-of-envelope calculations, then show R code that makes the calculation a bit realistic.
