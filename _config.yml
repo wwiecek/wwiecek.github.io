@@ -114,6 +114,10 @@ paginate: 10
 # The base URL of your site
 baseurl: ""
 
+# Josh Muthu - Adding Jekyll Redirect From plugin to fix broken links
+plugins:
+  - jekyll-redirect-from
+
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
