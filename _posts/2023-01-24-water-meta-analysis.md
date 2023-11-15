@@ -2,6 +2,8 @@
 title:  "Water Treatment and Child Mortality: A Meta-analysis and Cost-effectiveness Analysis"
 date:   2023-01-24
 math: true
+redirect_from:
+  - /2023/01/24/water-meta-analysis.html
 ---
 
 Cross-posting this from [a guest post I wrote for Andrew Gelman's blog](https://statmodeling.stat.columbia.edu/2023/01/25/water-treatment-and-child-mortality-a-meta-analysis-and-cost-effectiveness-analysis/).
