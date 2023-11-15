@@ -2,6 +2,8 @@
 title:  "GiveWell's Change Our Mind contest and water quality interventions"
 date:   2023-02-17
 math: true
+redirect_from:
+  - /2023/02/17/gw-com-water.html
 ---
 
 [Some time ago](https://statmodeling.stat.columbia.edu/2023/01/25/water-treatment-and-child-mortality-a-meta-analysis-and-cost-effectiveness-analysis/) I wrote about a new meta-analysis pre-print where we estimated that providing safe drinking water led to a 30% mean reduction in deaths in children under-5, based on data from 15 RCTs. Today I want to write about water, but from a perspective of cost-effectiveness analyses (CEA).
