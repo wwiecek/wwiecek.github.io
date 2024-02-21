@@ -43,7 +43,9 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3
+          ruby-version: 3.2 # Setting to 3.2 rather than 3 as on 21 Feb 2024, running with 3 obtained Ruby 3.3.0, which gave the following deployment error:
+                            # google-protobuf-3.24.4-x86_64-linux requires ruby version < 3.3.dev, >= 2.7,
+                            # which is incompatible with the current version, 3.3.0
           bundler-cache: true
 
       - name: Build site
