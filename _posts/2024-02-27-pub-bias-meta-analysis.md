@@ -28,13 +28,13 @@ For heterogeneity, it's important to remember that when studies are heterogeneou
 
 Let's generate some funnels from a meta-analysis that has heterogeneity. In the plot below, we have 20 studies. Each **true** effect is drawn from a $\mathcal{N}(-0.1, 0.2)$ distribution (for example, because each study was designed a bit differently) and then measured in studies with various sample sizes. Check out R code below. This is what happens:
 
-![[assets/img/post_content/20240111122306.png]]
+![heterogeneity demonstration 1](/assets/img/post_content/20240111122306.png)
 
 You can see that on average a couple of studies fall outside of the funnel. This is because the funnel is centered at the assumed true, **fixed** effect. It makes no provisions for effects in studies varying for reasons other than sampling variation.
 
 However, now consider a situation where heterogeneity is driven by presence of distinct subgroups. We have 20 studies with true effect of -0.1 and 5 studies with effect of -0.9. If we combine them in a single meta-analysis, the mean estimate will be somewhere around -0.25, but funnel plots will look considerably more asymmetrical:
 
-![[assets/img/post_content/20240111122430.png]]
+![heterogeneity demonstration 2](/assets/img/post_content/20240111122430.png)
 
 This type asymmetry disappears once we conduct a subgroup analysis on regress on the covariate. The obvious challenge is that we may not know about these systematic heterogeneity drivers.
 
