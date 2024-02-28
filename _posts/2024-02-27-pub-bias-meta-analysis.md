@@ -3,9 +3,9 @@ title: Publication bias in meta-analysis
 date: 2024-02-27
 math: true
 ---
-_February 2024: Here are some notes on assessing publication bias in evidence synthesis. This is my own working in public note, so I will be going a bit into the weeds and skipping over basics._
+_Some notes on assessing publication bias. This is my own working in public note, so I will be going a bit into the weeds and skipping over basics._
 
-_If you stumbled on this note, it may make sense to read a general textbook before diving in, for example [Mathias Harrer's chapter on publication bias](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/pub-bias.html). I will also not get into p-hacking and [other research malpractices](https://forrt.org/glossary/garden-of-forking-paths/) that everyone should be aware of. Please email comments and corrections._
+_If you stumbled on this note, it may make sense to read a general textbook before diving in. For a quick overview you can try [Mathias Harrer's chapter on publication bias](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/pub-bias.html). I will also not get into p-hacking and [other research malpractices](https://forrt.org/glossary/garden-of-forking-paths/) that everyone should be aware of. Please email comments and corrections._
 
 # Publication bias and funnel plots
 
