@@ -7,7 +7,7 @@ _February 2024: Here are some notes on assessing publication bias in evidence sy
 
 _If you stumbled on this note, it may make sense to read a general textbook before diving in, for example [Mathias Harrer's chapter on publication bias](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/pub-bias.html). I will also not get into p-hacking and [other research malpractices](https://forrt.org/glossary/garden-of-forking-paths/) that everyone should be aware of. Please email comments and corrections._
 
-### Publication bias and funnel plots
+# Publication bias and funnel plots
 
 With that said, here are some basic observations that I find essential:
 - Publication bias simply means that probability of publishing findings is affected _post hoc_ by what the findings are.[^pub] 
@@ -22,7 +22,7 @@ With that said, here are some basic observations that I find essential:
 
 [^designhet]:Also note an interesting association between intervention effect and standard error that occurs by design. Early studies of an intervention are typically small. As we learn more about the intervention, we both start calibrating the sample sizes, because we get a better sense of what the effect size may be that we're trying to detect. We also evolve study protocols and intervention designs, which may lead to different effect sizes in subsequent studies. So in some domains there will be a relationship between sample sizes and effects. (For this point I am indebted to Michael Kremer.) 
 
-### Important side note: heterogeneity drives funnel asymmetry 
+## Important side note: heterogeneity drives funnel asymmetry 
 
 For heterogeneity, it's important to remember that when studies are heterogeneous in complex ways, this will look symmetrical, the funnel will simply not cover 95% of data points. 
 
@@ -40,7 +40,7 @@ This type asymmetry disappears once we conduct a subgroup analysis on regress on
 
 [^pub]:Thinking of results as simply published or not can be reductive. You can also think of results that were published somewhere, but cannot be accessed because they had no exposure or haven't been indexed in search, they are no longer available, not yet available, they are in a different language etc. So in a broader sense "published" means "I can find what I need when looking for data to analyse". Consider that studies may have been conducted but then selective in terms of what they reported: for example, in a [meta-analysis of water treatment](https://bfi.uchicago.edu/working-paper/2022-26/) we found that researchers didn't report on child mortality, because it was so rare (very typically single digit numbers of deaths may occur), even though they had these data.
 
-### Checking funnels: Egger's test
+# Checking funnels: Egger's test
 
 The most typically used test Egger's regression test: simply regress z-scores on reciprocal of standard errors. 
 - If the intercept is significantly different from zero, that suggests asymmetry
@@ -48,7 +48,7 @@ The most typically used test Egger's regression test: simply regress z-scores on
 - See R code at the end for a very simple demonstration.
 - A simple modification for working with binary data was proposed by Peters et al, which avoids some false positives. 
 
-### How to adjust for publication bias: Andrews and Kasy
+# How to adjust for publication bias: Andrews and Kasy
 
 Assume you suspect there is publication bias in your analysed sample of studies. We should be able not simply to test for it, but derive some kind of rule on how to penalise for it. A nice paper by Andrews and Kasy (2019) covers how to make this type of adjustment. The core idea is simple enough that it can be outlined in one paragraph and it should make intuitive sense to you.
 
@@ -63,11 +63,13 @@ $$
 $$
 \hat{\theta_k} \sim \mathcal{N}(\theta_k, se_k).
 $$
+
 This is a standard random-effects model that can be estimated e.g. in [baggr](https://github.com/wwiecek/baggr) or any frequentist meta-analytic software. Now assume that researchers in study $k$ make publication decisions based on one quantity only, the signal to noise ratio $z_k = \hat{\theta_k} / se_k$. That is, we define some arbitrary function that assigns $z$ a publication probability $p(z)$. 
 
 $$
 \textrm{published}_k \sim \textrm{Bernoulli}(p(z_k))
 $$
+
 We now have access only to studies where $\textrm{published}_k = 1$. However, Andrews and Kasy show that under these simple assumptions, if we assume we know the shape of $p(z)$, we can estimate it up to some constant. In plain language, if, for example, we assume something like a jump in publication likelihood when we meet the 5% significance threshold
 
 $$
@@ -77,6 +79,7 @@ c,\, \textrm{ if } |z| < 1.96  \\
 c \delta  \, \textrm{ otherwise},\\
 \end{cases}
 $$
+
 we can then estimate $\delta$, the relative publication probability **and retrieving original parameters** $(\mu, \tau^2)$. That means the Andrews and Kasy model returns the publication-bias adjusted quantities. Of course in practice we just need to have some studies with $|z| < 1.96$ and $|z| \geq 1.96$ to carry out estimation.[^indep]
 
 [^indep]:There is an extra complication, which I alluded in an earlier footnote. The inference assumes that standard errors and effect sizes are independent. But we know that this is unlikely to be the case in many domains. I don't have a good intuition on how much of a problem that presents. Unfortunately, it seems like all publication bias assessment methods just assume that. 
@@ -87,9 +90,9 @@ A frequentist implementation of this inference on $(\mu, \tau, \delta)$ is imple
 
 # References
 
-Andrews, Isaiah, and Maximilian Kasy. ‘Identification of and Correction for Publication Bias’. _American Economic Review_ 109, no. 8 (1 August 2019): 2766–94. [https://doi.org/10.1257/aer.20180310](https://doi.org/10.1257/aer.20180310).
-Peters, Jaime L., Alex J. Sutton, David R. Jones, Keith R. Abrams, and Lesley Rushton. ‘Comparison of Two Methods to Detect Publication Bias in Meta-Analysis’. _JAMA_ 295, no. 6 (8 February 2006): 676–80. [https://doi.org/10.1001/jama.295.6.676](https://doi.org/10.1001/jama.295.6.676).
-Sterne, Jonathan A. C., Alex J. Sutton, John P. A. Ioannidis, Norma Terrin, David R. Jones, Joseph Lau, James Carpenter, et al. ‘Recommendations for Examining and Interpreting Funnel Plot Asymmetry in Meta-Analyses of Randomised Controlled Trials’. _BMJ_ 343 (22 July 2011): d4002. [https://doi.org/10.1136/bmj.d4002](https://doi.org/10.1136/bmj.d4002).
+- Andrews, Isaiah, and Maximilian Kasy. ‘Identification of and Correction for Publication Bias’. _American Economic Review_ 109, no. 8 (1 August 2019): 2766–94. [https://doi.org/10.1257/aer.20180310](https://doi.org/10.1257/aer.20180310).
+- Peters, Jaime L., Alex J. Sutton, David R. Jones, Keith R. Abrams, and Lesley Rushton. ‘Comparison of Two Methods to Detect Publication Bias in Meta-Analysis’. _JAMA_ 295, no. 6 (8 February 2006): 676–80. [https://doi.org/10.1001/jama.295.6.676](https://doi.org/10.1001/jama.295.6.676).
+- Sterne, Jonathan A. C., Alex J. Sutton, John P. A. Ioannidis, Norma Terrin, David R. Jones, Joseph Lau, James Carpenter, et al. ‘Recommendations for Examining and Interpreting Funnel Plot Asymmetry in Meta-Analyses of Randomised Controlled Trials’. _BMJ_ 343 (22 July 2011): d4002. [https://doi.org/10.1136/bmj.d4002](https://doi.org/10.1136/bmj.d4002).
 
 
 
