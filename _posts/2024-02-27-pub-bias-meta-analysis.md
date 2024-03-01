@@ -7,7 +7,7 @@ _Some notes on assessing publication bias. This is my own working in public note
 
 _If you stumbled on this note, it may make sense to read a general textbook before diving in. For a quick overview you can try [Mathias Harrer's chapter on publication bias](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/pub-bias.html). I will also not get into p-hacking and [other research malpractices](https://forrt.org/glossary/garden-of-forking-paths/) that everyone should be aware of. Please email comments and corrections._
 
-# Publication bias and funnel plots
+## Publication bias and funnel plots
 
 With that said, here are some basic observations that I find essential:
 - Publication bias simply means that probability of publishing findings is affected _post hoc_ by what the findings are.[^pub] 
@@ -22,7 +22,7 @@ With that said, here are some basic observations that I find essential:
 
 [^designhet]:Also note an interesting association between intervention effect and standard error that occurs by design. Early studies of an intervention are typically small. As we learn more about the intervention, we both start calibrating the sample sizes, because we get a better sense of what the effect size may be that we're trying to detect. We also evolve study protocols and intervention designs, which may lead to different effect sizes in subsequent studies. So in some domains there will be a relationship between sample sizes and effects. (For this point I am indebted to Michael Kremer.) 
 
-## Important side note: heterogeneity drives funnel asymmetry 
+### Important side note: heterogeneity drives funnel asymmetry 
 
 For heterogeneity, it's important to remember that when studies are heterogeneous in complex ways, this will look symmetrical, the funnel will simply not cover 95% of data points. 
 
@@ -40,7 +40,7 @@ This type asymmetry disappears once we conduct a subgroup analysis on regress on
 
 [^pub]:Thinking of results as simply published or not can be reductive. You can also think of results that were published somewhere, but cannot be accessed because they had no exposure or haven't been indexed in search, they are no longer available, not yet available, they are in a different language etc. So in a broader sense "published" means "I can find what I need when looking for data to analyse". Consider that studies may have been conducted but then selective in terms of what they reported: for example, in a [meta-analysis of water treatment](https://bfi.uchicago.edu/working-paper/2022-26/) we found that researchers didn't report on child mortality, because it was so rare (very typically single digit numbers of deaths may occur), even though they had these data.
 
-# Checking funnels: Egger's test
+## Checking funnels: Egger's test
 
 The most typically used test Egger's regression test: simply regress z-scores on reciprocal of standard errors. 
 - If the intercept is significantly different from zero, that suggests asymmetry
@@ -48,7 +48,7 @@ The most typically used test Egger's regression test: simply regress z-scores on
 - See R code at the end for a very simple demonstration.
 - A simple modification for working with binary data was proposed by Peters et al, which avoids some false positives. 
 
-# How to adjust for publication bias: Andrews and Kasy
+## How to adjust for publication bias: Andrews and Kasy
 
 Assume you suspect there is publication bias in your analysed sample of studies. We should be able not simply to test for it, but derive some kind of rule on how to penalise for it. A nice paper by Andrews and Kasy (2019) covers how to make this type of adjustment. The core idea is simple enough that it can be outlined in one paragraph and it should make intuitive sense to you.
 
@@ -86,9 +86,10 @@ we can then estimate $\delta$, the relative publication probability. When we do 
 
 If this is still convoluted, you can think of the procedure graphically. For a basic $p(z)$ (symmetrical, with discontinuity at 5% significance level, i.e. 1.96) like above, we can think back to the funnel I drew earlier. (Let's forget about heterogeneity for a moment and think of a fixed effect, just because it's simpler that way.) Imagine you have lots of studies and start counting how many are inside and outside of the funnel. If you've got the right model and the process is simply governed by sampling variation, then you know 1 in 20 points should fall outside. Now, what if you have 900 studies inside the funnel and 100 outside? Well, it means you're missing 1,000 in the middle. (See Figures 3 and 4 in the Andrews and Kasy paper for an illustration.) So under these assumptions you quickly get an idea of how much bias there is.
 
+
 A frequentist implementation of this inference on $(\mu, \tau, \delta)$ is implemented not just in R and MATLAB, but also in a Shiny app by Kasy. See it [here](https://maxkasy.github.io/home/metastudy/). (I just made up the notation above, mind.)
 
-# References
+## References
 
 - Andrews, Isaiah, and Maximilian Kasy. ‘Identification of and Correction for Publication Bias’. _American Economic Review_ 109, no. 8 (1 August 2019): 2766–94. [https://doi.org/10.1257/aer.20180310](https://doi.org/10.1257/aer.20180310).
 - Peters, Jaime L., Alex J. Sutton, David R. Jones, Keith R. Abrams, and Lesley Rushton. ‘Comparison of Two Methods to Detect Publication Bias in Meta-Analysis’. _JAMA_ 295, no. 6 (8 February 2006): 676–80. [https://doi.org/10.1001/jama.295.6.676](https://doi.org/10.1001/jama.295.6.676).
@@ -96,7 +97,7 @@ A frequentist implementation of this inference on $(\mu, \tau, \delta)$ is imple
 
 
 
-# Appendix: R code for these demonstrations
+## Appendix: R code for these demonstrations
 
 ```r
 # baggrdev/funnel_heterogen.R
