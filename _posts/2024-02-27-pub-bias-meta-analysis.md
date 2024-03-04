@@ -26,17 +26,17 @@ With that said, here are some basic observations that I find essential:
 
 For heterogeneity, it's important to remember that when studies are heterogeneous in complex ways, this will look symmetrical, the funnel will simply not cover 95% of data points. 
 
-Let's generate some funnels from a meta-analysis that has heterogeneity. In the plot below, we have 20 studies. Each **true** effect is drawn from a $\mathcal{N}(-0.1, 0.2)$ distribution (for example, because each study was designed a bit differently) and then measured in studies with various sample sizes. Check out R code below. This is what happens:
+Let's generate some funnels from a meta-analysis that has heterogeneity. In the plot below, we have 20 studies in each panel. Each **true** effect is drawn from a $\mathcal{N}(-0.1, 0.2)$ distribution (for example, because each study was designed a bit differently) and then measured in studies with various sample sizes. I just repeat this 9 times (3x3 panels), just so that you get a sense for the random variation. (Check out R code below.)
 
 ![heterogeneity demonstration 1](/assets/img/post_content/20240111122306.png)
 
-You can see that on average a couple of studies fall outside of the funnel. This is because the funnel is centered at the assumed true, **fixed** effect. It makes no provisions for effects in studies varying for reasons other than sampling variation.
+You can see that on average a few studies will fall outside of the funnel (rather than one, i.e. 5%). Why? Because the funnel is centered at the assumed true, **fixed** effect. It makes no provisions for effects in studies varying for reasons other than sampling variation.
 
-However, now consider a situation where heterogeneity is driven by presence of distinct subgroups. We have 20 studies with true effect of -0.1 and 5 studies with effect of -0.9. If we combine them in a single meta-analysis, the mean estimate will be somewhere around -0.25, but funnel plots will look considerably more asymmetrical:
+However, now consider a situation where heterogeneity is driven by presence of distinct subgroups. We have 20 studies with true effect of -0.1 (same as above) and **now add 5 more studies with much larger effect**, -0.9. If we combine them in a single meta-analysis, the mean estimate will be somewhere around -0.25 (maths!), but funnel plots will look considerably more asymmetrical:
 
 ![heterogeneity demonstration 2](/assets/img/post_content/20240111122430.png)
 
-This type asymmetry disappears once we conduct a subgroup analysis on regress on the covariate. The obvious challenge is that we may not know about these systematic heterogeneity drivers.
+This type of asymmetry disappears once we conduct a subgroup analysis on regress on the covariate. The obvious challenge is that we may not know about these systematic heterogeneity drivers.
 
 [^pub]:Thinking of results as simply published or not can be reductive. You can also think of results that were published somewhere, but cannot be accessed because they had no exposure or haven't been indexed in search, they are no longer available, not yet available, they are in a different language etc. So in a broader sense "published" means "I can find what I need when looking for data to analyse". Consider that studies may have been conducted but then selective in terms of what they reported: for example, in a [meta-analysis of water treatment](https://bfi.uchicago.edu/working-paper/2022-26/) we found that researchers didn't report on child mortality, because it was so rare (very typically single digit numbers of deaths may occur), even though they had these data.
 
@@ -75,12 +75,14 @@ We now have access only to studies where $\textrm{published}_k = 1$. However, An
 $$
 p(z) =
 \begin{cases}
-c,\, \textrm{ if } |z| < 1.96  \\
+c,\, \textrm{ if } |z| < 1.96,  \\
 c \delta  \, \textrm{ otherwise},\\
 \end{cases}
 $$
 
-we can then estimate $\delta$, the relative publication probability. When we do that, we also retrieve the original parameters $(\mu, \tau^2)$. That means the Andrews and Kasy model returns the publication-bias adjusted quantities that the meta-analyst would be interested in. Of course for the method to work well in practice we need to have sufficient data on studies with $|z| < 1.96$ and $|z| \geq 1.96$ to carry out estimation.[^indep]
+we can then estimate $\delta$, the relative publication probability. When we do that, we also retrieve the original parameters. 
+
+That means the Andrews and Kasy model returns the publication-bias adjusted quantities that the meta-analyst would be interested in. Of course for the method to work well in practice we need to have sufficient data on studies with $|z| < 1.96$ and $|z| \geq 1.96$ to carry out estimation.[^indep]
 
 [^indep]:There is an extra complication, which I alluded to in an earlier footnote. The inference assumes that standard errors and effect sizes are independent. But we know that this is unlikely to be the case in many domains. I don't have a good intuition on how much of a problem that presents. Unfortunately, it seems like all publication bias assessment methods just assume that. 
 
