@@ -36,7 +36,7 @@ However, now consider a situation where heterogeneity is driven by presence of d
 
 ![heterogeneity demonstration 2](/assets/img/post_content/20240111122430.png)
 
-This type of asymmetry disappears once we conduct a subgroup analysis on regress on the covariate. The obvious challenge is that we may not know about these systematic heterogeneity drivers.
+This type of asymmetry disappears once we conduct a subgroup analysis or regress on the covariate. The obvious challenge is that we often do not know about these systematic heterogeneity drivers, even if they are there: we just see a soup of disparate (and possibly a bit asymmetrical) estimates, very much like in the plot above.
 
 [^pub]:Thinking of results as simply published or not can be reductive. You can also think of results that were published somewhere, but cannot be accessed because they had no exposure or haven't been indexed in search, they are no longer available, not yet available, they are in a different language etc. So in a broader sense "published" means "I can find what I need when looking for data to analyse". Consider that studies may have been conducted but then selective in terms of what they reported: for example, in a [meta-analysis of water treatment](https://bfi.uchicago.edu/working-paper/2022-26/) we found that researchers didn't report on child mortality, because it was so rare (very typically single digit numbers of deaths may occur), even though they had these data.
 
