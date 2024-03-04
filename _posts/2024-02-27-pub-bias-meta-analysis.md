@@ -75,14 +75,14 @@ We now have access only to studies where $\textrm{published}_k = 1$. However, An
 $$
 p(z) =
 \begin{cases}
-c,\, \textrm{ if } |z| < 1.96,  \\
+c,\, \textrm{ if } \|z\| < 1.96,  \\
 c \delta  \, \textrm{ otherwise},\\
 \end{cases}
 $$
 
 we can then estimate $\delta$, the relative publication probability. When we do that, we also retrieve the original parameters. 
 
-That means the Andrews and Kasy model returns the publication-bias adjusted quantities that the meta-analyst would be interested in. Of course for the method to work well in practice we need to have sufficient data on studies with $|z| < 1.96$ and $|z| \geq 1.96$ to carry out estimation.[^indep]
+That means the Andrews and Kasy model returns the publication-bias adjusted quantities that the meta-analyst would be interested in. Of course for the method to work well in practice we need to have sufficient data on studies with $\|z\| < 1.96$ and $\|z\| \ge 1.96$ to carry out estimation.[^indep]
 
 If this is still convoluted, you can think of the procedure graphically. For a basic $p(z)$ (symmetrical, with discontinuity at 5% significance level, i.e. 1.96) like above, we can think back to the funnel I drew earlier. (Let's forget about heterogeneity for a moment and think of a fixed effect, just because it's simpler that way.) Imagine you have lots of studies and start counting how many are inside and outside of the funnel. If you've got the right model and the process is simply governed by sampling variation, then you know 1 in 20 points should fall outside. Now, what if you have 900 studies inside the funnel and 100 outside? Well, it means you're missing 1,000 in the middle. (See Figures 3 and 4 in the Andrews and Kasy paper for an illustration.) So under these assumptions you quickly get an idea of how much bias there is.
 
