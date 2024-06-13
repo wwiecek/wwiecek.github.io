@@ -6,7 +6,7 @@ order: 4
 
 I am a researcher working on applied problems in global health, epidemiology, and development economics, with a PhD in statistics. 
 
-I'm a Consulting Director at [Development Innovation Lab at University of Chicago](https://bfi.uchicago.edu/news/dil-launch/), currently working with the lab's founder Michael Kremer on studies of water quality interventions and deworming, as well as supporting the lab's other statistical work. 
+I'm a Consulting Director at [Development Innovation Lab at University of Chicago](https://bfi.uchicago.edu/news/dil-launch/), currently working with the lab's founder Michael Kremer on studies of water quality interventions and deworming, as well as supporting the lab's other statistical work. I am also a [non-resident fellow at Centre For Global Development](https://www.cgdev.org/expert/witold-wiecek).
 
 I run a small consultancy which works with academics, NGOs and charities. My main focus is making [Bayesian meta-analysis methods](https://github.com/wwiecek/baggr/) more accessible to social scientists and generally using statistical inference to better support decision making in health and global priorities research. My own research into this has been funded by grants from [Schmidt Futures](https://schmidtfutures.com/) and [GiveWell/Open Philanthropy](https://www.openphilanthropy.org/). 
 
