@@ -76,9 +76,9 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    nokogiri (1.18.9-x64-mingw-ucrt)
+    nokogiri (1.18.10-x64-mingw-ucrt)
       racc (~> 1.4)
-    nokogiri (1.18.9-x86_64-linux)
+    nokogiri (1.18.10-x86_64-linux)
       racc (~> 1.4)
     parallel (1.23.0)
     pathutil (0.16.2)
@@ -119,7 +119,7 @@ DEPENDENCIES
   http_parser.rb (~> 0.6.0)
   jekyll-redirect-from
   jekyll-theme-chirpy (~> 6.2, >= 6.2.3)
-  nokogiri (>= 1.18.9)
+  nokogiri (>= 1.18.10)
   tzinfo (>= 1, < 3)
   tzinfo-data
   wdm (~> 0.1.1)
