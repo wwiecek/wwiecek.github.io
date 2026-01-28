@@ -1,5 +1,5 @@
 ---
-title: Bayesian interim analyses in clinical trials
+title: FDA Guidance on Bayesian Clinical Trials
 date: 2025-01-28
 math: false
 ---
