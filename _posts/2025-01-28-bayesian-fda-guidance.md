@@ -4,7 +4,9 @@ date: 2025-01-28
 math: false
 ---
 
-I published this originally [on Andrew's blog](https://statmodeling.stat.columbia.edu/2026/01/15/fda-guidance-on-bayesian-clinical-trials/).
+So, "FDA is Bayesian now!"?
+
+Published originally [on Andrew's blog](https://statmodeling.stat.columbia.edu/2026/01/15/fda-guidance-on-bayesian-clinical-trials/).
 
 ![](/assets/img/post_content/fda_guidance.png)
 
