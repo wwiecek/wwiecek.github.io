@@ -1,6 +1,5 @@
 ---
 title: "Allocating sample across control and treatment"
-author: "Witold Więcek"
 date: 2026-04-15
 math: true
 ---
@@ -144,6 +143,6 @@ optimal control share above the classical benchmark.
 
 ## References
 
-Kondylis and Loesler, 2021. *You’re probably doing it right: Experimental design with heterogeneous treatment effects*. Development Impact Blog. https://blogs.worldbank.org/en/impactevaluations/youre-probably-doing-it-right-experimental-design-heterogeneous-treatment-effects
+Kondylis and Loesler, 2021. *You’re probably doing it right: Experimental design with heterogeneous treatment effects*. Development Impact Blog. [URL](https://blogs.worldbank.org/en/impactevaluations/youre-probably-doing-it-right-experimental-design-heterogeneous-treatment-effects)
 J-PAL. 2025. *Power Calculations*. Abdul Latif Jameel Poverty Action
-Lab. https://www.povertyactionlab.org/resource/power-calculations
+Lab. [URL](https://www.povertyactionlab.org/resource/power-calculations)
