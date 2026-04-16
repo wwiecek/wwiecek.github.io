@@ -1,7 +1,9 @@
 ---
 title: FDA Guidance on Bayesian Clinical Trials
-date: 2025-01-28
+date: 2026-01-28
 math: false
+redirect_from:
+  - /2025/01/28/bayesian-fda-guidance.html
 ---
 
 So, "FDA is Bayesian now!"?
@@ -28,7 +30,7 @@ But then why issue guidance at all? In some sense it is pharma companies that wa
 
 By the way, each FDA division can have its own guidance. This new one deals with drugs and vaccines. FDA released a [guidance for Bayesian stats in medical device clinical trials (PDF version)](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-use-bayesian-statistics-medical-device-clinical-trials-pdf-version) back in 2010. This makes sense, these trials are quite different from drug or vaccine trials and people have used Bayesian techniques there for a long time, or so I'm told---I have not read that 2010 guidance (although I can report that the actual header for the doc says "baysian statistics", sic).
 
-Is this related to the current US gov't and recent changes at the FDA? That's very unlikely. (Sorry to disappoint another Twitter commenter who concluded that "Trump admin is Bayesian".) When I [blogged about this three years ago](https://wwiecek.github.io/posts/bayes-fda/), the guidance was already scheduled to come out in 2025. Documents like this do take a long while to create.
+Is this related to the current US gov't and recent changes at the FDA? That's very unlikely. (Sorry to disappoint another Twitter commenter who concluded that "Trump admin is Bayesian".) When I [blogged about this three years ago](https://wwiecek.github.io/posts/bayes-fda/), the guidance was already scheduled to come out in 2026. Documents like this do take a long while to create.
 
 ---
 
