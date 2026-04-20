@@ -4,16 +4,15 @@ date: 2026-04-15
 math: true
 ---
 
-# Allocating sample across control and treatment
+**In a randomised control trial, should your treatment arm(s) and control be allocated the same number of observations? What are the efficiency gains?**
 
 ## Summary
 
-In a randomised control trial, should your treatment arm(s) and control be allocated the same number of observations? What are the efficiency gains?
+1. In a simple T vs C comparison, the answer is almost always yes. Various other considerations do not have large efficiency gains.
+2. If you have an RCT with K treatment arms, in most cases you should consider scaling up the control arm by sqrt(K). If you care about comparing treatments to each other, do not inflate the control arm.
+3. If testing many highly similar treatments, you could increase size of control even further AND consider borrowing strength across treatment arms for large efficiency gains.
+4. Gains can be large for large $K$. For K = 5  you reduce sample size by ~1/9 by sizing up control arms. For K = 5 and highly correlated treatments you can reduce sample size by even 1/3 by borrowing information.
 
-(1) In a simple T vs C comparison, the answer is almost always yes. Various other considerations do not have large efficiency gains.
-(2) If you have an RCT with K treatment arms, in most cases you should consider scaling up the control arm by sqrt(K). If you care about comparing treatments to each other, do not inflate the control arm.
-(3) If testing many highly similar treatments, you could increase size of control even further AND consider borrowing strength across treatment arms for large efficiency gains.
-(4) Gains can be large for large $K$. For K = 5  you reduce sample size by ~1/9 by sizing up control arms. For K = 5 and highly correlated treatments you can reduce sample size by even 1/3 by borrowing information.
 
 ## Single treatment vs control
 
@@ -33,11 +32,7 @@ If either (1) or (2) is violated, it is very easy to solve: put
 relatively more sample where outcomes are noisier or where subjects are
 cheaper. (1) usually has little practical impact.[^1]
 
-[^1]: The ratio $\sigma_T / \sigma_C$ matters only when it is far from
-    1. Even in the extreme case where $\sigma_T / \sigma_C = 2$,
-    optimal allocation shrinks sample size by about 10%. If
-    $\sigma_T / \sigma_C = 1.25$ the gain is about 1%. Generally 1:1
-    split is a good choice (see Kondylis and Loesler 2021 for more thoughts).
+[^1]: The ratio $\sigma_T / \sigma_C$ matters only when it is far from 1. Even in the extreme case where $\sigma_T / \sigma_C = 2$, optimal allocation shrinks sample size by about 10%. If $\sigma_T / \sigma_C = 1.25$ the gain is about 1%. Generally 1:1 split is a good choice (see Kondylis and Loesler 2021 for more thoughts).
 
 In some cases it is practical to set the treatment arm larger because we
 learn additional information. In medicine, for example, we use the
@@ -130,16 +125,6 @@ for some treatment effect, the optimal allocation raises that to about
 85% at the same total sample size.
 
 ![Power gain from optimal control sizing when $k=5$ and the objective is five separate comparisons against control.](/assets/img/post_content/control-arm-sizing-note/allocation_power_curve.png)
-
-Under the classical $\sqrt{k}$ allocation, partial pooling delivers
-increasing sample savings as treatment arms become more similar.
-
-![Sample-size saving from partial pooling under fixed $\sqrt{k}$ allocation.](/assets/img/post_content/control-arm-sizing-note/fixed_sqrtk_sample_size_saving_by_correlation.png)
-
-Under partial pooling, higher cross-arm similarity also pushes the
-optimal control share above the classical benchmark.
-
-![Power curves under equal versus optimized allocation across correlation values.](/assets/img/post_content/control-arm-sizing-note/allocation_power_curve_by_correlation.png)
 
 ## References
 
