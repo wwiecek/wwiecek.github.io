@@ -78,8 +78,14 @@ shared control, the implied total sample savings add up as $k$ increases.
 
 Put differently, for $k=5$, if equal ($n_T = n_C$) allocation gives
 about 80% power for some treatment effect, the optimal allocation raises
-that to about 85% at the same total sample size. There is a figure to
-illustrate this at the end.
+that to about 85% at the same total sample size. 
+
+To give this a visual flavour: for $k = 5$, if equal ($n_T = n_C$) allocation gives about 80% power
+for some treatment effect, the optimal allocation raises that to about
+85% at the same total sample size.
+
+![Power gain from optimal control sizing when $k=5$ and the objective is five separate comparisons against control.](/assets/img/post_content/control-arm-sizing-note/allocation_power_curve.png)
+
 
 ## Borrowing of information across treatment arms
 
@@ -117,15 +123,8 @@ There are four practical conclusions.
 - If treatment arms are closely related, partial pooling should be done
   as an additional step. It offers larger efficiency gains than the
   optimal sample allocation alone.
-
-## Figures
-
-For $k = 5$, if equal ($n_T = n_C$) allocation gives about 80% power
-for some treatment effect, the optimal allocation raises that to about
-85% at the same total sample size.
-
-![Power gain from optimal control sizing when $k=5$ and the objective is five separate comparisons against control.](/assets/img/post_content/control-arm-sizing-note/allocation_power_curve.png)
-
+  
+  
 ## References
 
 Kondylis and Loesler, 2021. *You’re probably doing it right: Experimental design with heterogeneous treatment effects*. Development Impact Blog. [URL](https://blogs.worldbank.org/en/impactevaluations/youre-probably-doing-it-right-experimental-design-heterogeneous-treatment-effects)
