@@ -12,7 +12,11 @@ I'm a Consulting Director at [Development Innovation Lab at University of Chicag
 
 My own research is focused on using statistical methods to better support decision making in health and development. I am also interested in metascience. I am currently independently funded by a fellowship from Coefficient Giving (formerly Open Philanthropy). 
 
-I am particularly interested in vaccines, including research on [fractional dosing of vaccines](https://www.pnas.org/doi/10.1073/pnas.2116932119), [accelerating COVID vaccine supply](https://science.sciencemag.org/content/371/6534/1107.summary), and supporting human challenge trials (as an advisor to [1Day Sooner](https://www.1daysooner.org/)). For my work on COVID I was awarded an [Emergent Ventures prize](https://www.mercatus.org/emergent-ventures).
+I have been doing some meta-scientific research throughout 2025 and 2026, working with Andrew Gelman and Erik van Zwet. I maintain an [open-source meta-dataset of 11+ million empirical research results](https://github.com/wwiecek/BEAR) called BEAR.
+
+In health, I am particularly interested in vaccines, including research on [fractional dosing of vaccines](https://www.pnas.org/doi/10.1073/pnas.2116932119), [accelerating COVID vaccine supply](https://science.sciencemag.org/content/371/6534/1107.summary), and supporting human challenge trials (as an advisor to [1Day Sooner](https://www.1daysooner.org/)). For my work on COVID I was awarded an [Emergent Ventures prize](https://www.mercatus.org/emergent-ventures).
+
+I sometimes write [notes on statistics on here](https://witold.xyz/), on trials on [Clinical Trials Abundance blog](https://www.clinicaltrialsabundance.blog/), and other stuff on [Andrew Gelman's blog](https://statmodeling.stat.columbia.edu/).
 
 As a consultant at [Certara](https://www.certara.com/) (2014-2022) I worked on all stages of drug development, with focus on improving Bayesian modelling techniques in predicting real-world effectiveness of treatments, health technology assessment, and epidemiological modelling.
 
