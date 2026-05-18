@@ -4,14 +4,16 @@ date: 2026-04-15
 math: true
 ---
 
-**In a randomised control trial, should your treatment arm(s) and control be allocated the same number of observations? What are the efficiency gains?**
 
 ## Summary
 
-1. In a simple T vs C comparison, the answer is almost always yes. Various other considerations do not have large efficiency gains.
-2. If you have an RCT with K treatment arms, in most cases you should consider scaling up the control arm by sqrt(K). If you care about comparing treatments to each other, do not inflate the control arm.
-3. If testing many highly similar treatments, you could increase size of control even further AND consider borrowing strength across treatment arms for large efficiency gains.
-4. Gains can be large for large $K$. For K = 5  you reduce sample size by ~1/9 by sizing up control arms. For K = 5 and highly correlated treatments you can reduce sample size by even 1/3 by borrowing information.
+**In a randomised controlled trial, should your treatment arm(s) and control be allocated the same number of observations? What are the efficiency gains from optimal allocation?**
+
+1. In a simple treatment vs control comparison, it is usually OK to have 1:1 allocation, unless there are large differences in cost.
+2. If you have an RCT with K treatment arms, in most cases you should consider scaling up the control arm by $\sqrt{K}$. 
+3. If testing many highly similar treatments, you could increase the size of the control arm even further and consider borrowing strength across treatment arms for large efficiency gains.
+4. Gains can be large for large $K$. For $K = 5$, you reduce sample size by about one eighth by sizing up the control arm. For $K = 5$ and highly correlated treatments, you can reduce sample size by even _one third_ by borrowing information and increasing the control arm further.
+5. If you care about comparing treatments to each other, you should not increase the size of the control arm.
 
 
 ## Single treatment vs control
@@ -48,7 +50,7 @@ $$
 n_C = \sqrt{k} \cdot n_T.
 $$
 
-This follows from the same total variance formula. Each additional
+This follows from the same variance formula. Each additional
 control observation is used in every treatment-versus-control
 comparison, so control observations have higher value. Setting
 $\sqrt{k}$ scaling minimises total variance across $k$ comparisons.
@@ -62,6 +64,8 @@ multi-arm trial. They depend on what the goal is.
   treatment arms together.
 - This can be improved on further if you assume that different treatment arms are similar but not the same. See below.
 - If the main value of the trial is comparison between treatment arms, or ranking treatments against each other, one may instead want more sample in treatment arms.
+
+Also note that increasing size of control arm by $\sqrt{k}$ also does not apply when we study interactions or complementarity. For a factorial design it is still optimal to spread the sample across all arms, since the effects are estimated using a single model.
 
 ## How large are the gains?
 
@@ -79,9 +83,13 @@ shared control, the implied total sample savings add up as $k$ increases.
 
 To give this a visual flavour: for $k = 5$, if equal ($n_T = n_C$) allocation gives about 80% power
 for some treatment effect, the optimal allocation raises that to about
-85% at the same total sample size. (This plot was adjusted to a case where MDE is targetting 0.1 SD increase, but the gains from optimal allocation would scale accordingly. That is, the x axis is not relevant here.)
+85% at the same total sample size.[^2] (This plot was adjusted to a case where the MDE is targeting a 0.1 SD increase, but the gains from optimal allocation would scale accordingly. That is, the x-axis is not relevant here.)
 
 ![Power gain from optimal control sizing when $k=5$ and the objective is five separate comparisons against control.](/assets/img/post_content/control-arm-sizing-note/allocation_power_curve.png)
+
+[^2]: The exact power gain depends on the effect size, significance threshold, and inferential setup; the sample-size savings in the table are the more general result.
+
+[^3]: To be more methodologically precise, the relevant design quantity is not correlation alone, but between-arm heterogeneity relative to sampling noise. High correlation is one way of describing closely related treatment effects, but whether partial pooling helps, and how much extra control is useful, depends on how large true differences across arms are relative to the uncertainty with which each arm is estimated.
 
 
 ## Borrowing of information across treatment arms
@@ -90,16 +98,16 @@ The efficiency gains can be much larger if the active treatments are
 closely related and we account for that in the model. Simple examples
 include testing different doses of the same drug or different delivery
 methods for a behavioural intervention. If we see an intervention work
-at low intensity of delivery, we should be highly confident (but not
-certain) it will work at high intensity.
+at low intensity of delivery, we may reasonably become more confident,
+though not certain, that it will work at high intensity.
 
-Even without modifying allocation, the gains from this procedure can be very large when correlations are high. Continuing with the $k=5$ example and $\sqrt{k}$:1 allocation, at 90% correlation the required sample would be about 30% smaller if using a partially pooled model---if the goal is estimating significant arm-specific effects.
+Even without modifying allocation, the gains from this procedure can be very large when correlations are high.[^3] Continuing with the $k=5$ example and $\sqrt{k}$:1 allocation, at 90% correlation the required sample would be about 30% smaller if using a partially pooled model---if the goal is estimating significant arm-specific effects (i.e. maximising average marginal arm-specific power).
 
 In these cases it is also optimal to further increase size of control arm. As noted, if $k$ treatment arms are pooled into a single analysis, then it is optimal to set $n_C = k \cdot n_T$. Therefore usually the optimal
 size of $n_C$ will be somewhere between $\sqrt{k}$ times ("no pooling")
 to $k$ times ("full pooling") larger than $n_T$.
 
-Moving to 5:1 allocation in this highly correlated example would reduce sample size by further 7%. Taken together, that is about a one-third saving relative to no pooling under the classical $\sqrt{k}$ allocation.
+Moving to 5:1 allocation in this highly correlated example would reduce sample size by a further 7%. Taken together, that is about a one-third saving relative to no pooling under the classical $\sqrt{k}$ allocation.
 
 To be clear: these gains are purely illustrative and in practice we do not know how closely correlated treatments will be. Therefore this choice should be used cautiously both in design and analysis of experiments.
 
@@ -109,17 +117,16 @@ To be clear: these gains are purely illustrative and in practice we do not know 
 There are four practical conclusions.
 
 - J-PAL already has a short, accessible guide to power calculations.
-  People should make use of it, or revise it slightly to incorporate the
-  points on allocation and stratification (J-PAL 2025).
+  For general guidance on power calculations, one should make use of it, or revise it slightly to incorporate the points on allocation and stratification (J-PAL 2025).
 - In a multi-arm trial with $k$ separate comparisons against a common
   control, control arm should be scaled up by $\sqrt{k}$. This can
   shrink samples by 10% if you have 4 treatment arms.
-- The solution is different when concerned with average treatment effect
+- The solution is different when we are concerned with the average treatment effect
   across all arms (larger control arm) or comparisons across arms
   (larger treatment arms).
-- If treatment arms are closely related, partial pooling should be done
-  as an additional step. It offers larger efficiency gains than the
-  optimal sample allocation alone.
+- If treatment arms are closely related, partial pooling of information should be done
+  as an additional step. It may offer much larger efficiency gains than the
+  optimal sample allocation, although at the cost of making additional assumptions.
   
   
 ## References
