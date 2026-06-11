@@ -120,7 +120,6 @@ GEM
     tzinfo-data (1.2022.7)
       tzinfo (>= 1.0.0)
     unicode-display_width (2.6.0)
-    wdm (0.1.1)
     webrick (1.9.2)
     yell (2.2.2)
     zeitwerk (2.7.5)

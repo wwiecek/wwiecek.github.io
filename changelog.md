@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-06-09
+
+- Replaced the default Chirpy post-list homepage with a short bio, a generated list of the five latest posts, and a compact recent-projects section led by BEAR.
+- Renamed the archives navigation tab to `/blog/` while keeping `/archives/` as a redirect and preserving the existing `/posts/:title/` post permalinks.
+- Removed the local tags and categories navigation pages and disabled category/tag archive generation.
+- Refined the homepage with project and paper lists, newsletter links, a Bio tab, and a left-sidebar links section for active projects and resources.
+
 ## 2026-04-16
 
 - Realigned local `master` to `origin/master` after a bad merge; created a local backup branch `backup-pre-gh-align-2026-04-16` pointing to the pre-reset state first.

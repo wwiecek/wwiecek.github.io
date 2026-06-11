@@ -1,6 +1,7 @@
 ---
 title: "Allocating sample across control and treatment"
 date: 2026-04-15
+author: "Witold Więcek"
 math: true
 ---
 
@@ -81,11 +82,9 @@ shared control, the implied total sample savings add up as $k$ increases.
 | 5 | 2.2:1 | 12.7% |
 
 
-To give this a visual flavour: for $k = 5$, if equal ($n_T = n_C$) allocation gives about 80% power
+For $k = 5$, if equal ($n_T = n_C$) allocation gives about 80% power
 for some treatment effect, the optimal allocation raises that to about
-85% at the same total sample size.[^2] (This plot was adjusted to a case where the MDE is targeting a 0.1 SD increase, but the gains from optimal allocation would scale accordingly. That is, the x-axis is not relevant here.)
-
-![Power gain from optimal control sizing when $k=5$ and the objective is five separate comparisons against control.](/assets/img/post_content/control-arm-sizing-note/allocation_power_curve.png)
+85% at the same total sample size.[^2]
 
 [^2]: The exact power gain depends on the effect size, significance threshold, and inferential setup; the sample-size savings in the table are the more general result.
 
