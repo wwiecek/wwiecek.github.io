@@ -151,11 +151,11 @@
 .sidebar-links {
   width: 100%;
   padding: 0 2rem;
-  margin-top: 0.75rem;
+  margin-top: 0.9rem;
 
   .sidebar-links-heading {
     display: block;
-    margin: 0.65rem 0 0.35rem;
+    margin: 0.6rem 0 0.25rem;
     color: var(--sidebar-muted-color);
     font-size: 0.7rem;
     font-weight: 700;
@@ -165,31 +165,23 @@
   }
 
   a {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    height: 2.4rem;
+    display: block;
+    padding: 0.12rem 0;
     color: var(--sidebar-muted-color);
-    border-radius: 0.75rem;
+    line-height: 1.45;
+    opacity: 0.88;
 
     &:hover {
       color: var(--sidebar-active-color);
-      text-decoration: none;
-      background-color: var(--sidebar-hover-bg);
+      text-decoration: underline;
+      background: none;
     }
   }
 
-  i {
-    width: 1rem;
-    text-align: center;
-    font-size: 95%;
-    opacity: 0.8;
-  }
-
   span {
-    font-size: 90%;
-    letter-spacing: 0.2px;
-    text-transform: uppercase;
+    font-size: 0.86rem;
+    letter-spacing: 0;
+    text-transform: none;
   }
 }
 
