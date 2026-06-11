@@ -1,7 +1,11 @@
 ---
+title: Bio
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
+permalink: /bio/
+redirect_from:
+  - /about/
 ---
 
 _This is a short bio. I also have a ["working in public" doc](https://docs.google.com/document/d/1g6YOdmsPgeemeGUmMTiw8ApoMi94JTIfbU-tRSuzGVY/edit?usp=sharing), have a look at it if you want to learn about my projects!_

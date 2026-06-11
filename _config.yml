@@ -74,7 +74,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/assets/wi_landscape.png"
+avatar: "/assets/witold-wiecek-avatar.png"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -188,12 +188,3 @@ exclude:
   - LICENSE
   - rollup.config.js
   - package*.json
-
-jekyll-archives:
-  enabled: [categories, tags]
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/
