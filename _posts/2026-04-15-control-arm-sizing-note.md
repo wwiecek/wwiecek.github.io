@@ -1,7 +1,6 @@
 ---
 title: "Allocating sample across control and treatment"
 date: 2026-04-15
-author: "Witold Więcek"
 math: true
 ---
 
