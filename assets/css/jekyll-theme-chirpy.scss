@@ -114,14 +114,6 @@
     margin-left: 0.35rem;
     color: var(--text-muted-color);
     font-size: 0.9rem;
-
-    &::before {
-      content: "(";
-    }
-
-    &::after {
-      content: ")";
-    }
   }
 }
 
@@ -211,5 +203,11 @@
 
   .newsletter-button {
     width: 100%;
+  }
+}
+
+@media all and (min-width: 1600px) {
+  html {
+    font-size: 17px;
   }
 }
