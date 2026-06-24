@@ -3,6 +3,8 @@
 source "https://rubygems.org"
 
 gem "jekyll-theme-chirpy", "~> 6.2", ">= 6.2.3"
+gem "concurrent-ruby", ">= 1.3.7"
+gem "nokogiri", ">= 1.19.4"
 
 group :test do
   gem "html-proofer", "~> 4.4"
