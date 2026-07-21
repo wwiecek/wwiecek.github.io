@@ -86,13 +86,4 @@ The second point is that market shaping is a very natural fit for huge—and hug
 
 *Thanks to MSA colleagues Leah Rosenzweig, Siddh Haria, Sarrin Chethik, as well as Colin Aitken, Saloni Dattani, Adam Kroetsch, Arthur Baker, Michael Kremer, and Adam Howes for making many great suggestions.*
 
-## An extended example: far-UV lamps
-
-**Example 1: active role in evidence generation for far-UV lamps**
-Consider a funder of a pull mechanism for far-UV lamps, aimed at reducing transmission of infectious diseases. The mechanism can take the form of an advance market commitment where a number of large firms will purchase the lamps if they are proven to be efficacious.
-However, no single entity may be able to design an RCT that reliably detects health impacts, because testing is prohibitively expensive, too difficult to implement, or does not have enough external validity.
-By taking an active role in trial design and evidence synthesis, a large philanthropic funder may be able to combine (1) series of smaller RCT collecting comprehensive individual-level and environmental data (2) a mechanistic/prediction model for how disease spreads (e.g. based on lab studies of lamps and "room-scale physics" models) to evaluate health impacts (3) large scale observational studies from settings with air cleaning technologies, e.g. HEPA filters. Participating firms can commit to a tiered scale-up (combined with continued evaluation) based not on a single metric from a single RCT, but a synthetic metric of effectiveness.
-
-*Market shaping and trial innovation will require a multidisciplinary approach. Most of the know-how on trial design can currently be found in clinical trials. Economists and policy experts involved in market design offer a perspective that is absent even in the best medical research organisations. In particular, they focus on decision problems—especially relevant when considering the question of when to scale up from pilot into large scale testing, which may involve synthesising public information and private results of several trials from different producers. They also tend to think in terms of value of information—relevant, for example, when dynamically allocating patients.*
-
 [^1]:  To spell this out, the innovative designs don’t have to be limited to existing, already approved, drugs. Also, while it is no coincidence that these examples all come from the UK, which has a single payer system and great methodological expertise, there are some great examples of large basket, umbrella, and platform trials in the US that were funded by NIH and NCI.
