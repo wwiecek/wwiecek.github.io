@@ -58,32 +58,6 @@ layout: default
     </ul>
   </section>
 
-  <section class="home-section" aria-labelledby="recent-writing">
-    <div class="home-section-heading">
-      <h1 id="recent-writing">Recent Writing</h1>
-      <a href="{{ '/blog/' | relative_url }}">Blog</a>
-    </div>
-
-    <p class="section-note">
-      <em>
-        I occasionally blog at
-        <a href="https://www.clinicaltrialsabundance.blog/">Clinical Trials Abundance</a>
-        and <a href="https://statmodeling.stat.columbia.edu/">Andrew Gelman's blog</a>.
-      </em>
-    </p>
-
-    <ul class="recent-posts">
-      {% for post in site.posts limit: 3 %}
-        <li>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          <time datetime="{{ post.date | date_to_xmlschema }}">
-            {{ post.date | date: '%-d %B %Y' }}
-          </time>
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
-
   <section class="home-section" aria-labelledby="recent-papers">
     <div class="home-section-heading">
       <h1 id="recent-papers">Recent Papers</h1>
@@ -104,6 +78,32 @@ layout: default
         with a single study</a>. <em>Statistical Methods in Medical Research</em>,
         2025, with Andrew Gelman and Erik van Zwet.
       </li>
+    </ul>
+  </section>
+
+  <section class="home-section" aria-labelledby="recent-research-notes">
+    <div class="home-section-heading">
+      <h1 id="recent-research-notes">Recent Research Notes</h1>
+      <a href="{{ '/blog/' | relative_url }}">See All Notes</a>
+    </div>
+
+    <p class="section-note">
+      <em>
+        I occasionally blog at
+        <a href="https://www.clinicaltrialsabundance.blog/">Clinical Trials Abundance</a>
+        and <a href="https://statmodeling.stat.columbia.edu/">Andrew Gelman's blog</a>.
+      </em>
+    </p>
+
+    <ul class="recent-posts">
+      {% for post in site.posts limit: 3 %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <time datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: '%-d %B %Y' }}
+          </time>
+        </li>
+      {% endfor %}
     </ul>
   </section>
 </article>
