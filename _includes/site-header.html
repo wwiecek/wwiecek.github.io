@@ -1,6 +1,15 @@
-<header class="site-top">
+{% assign header_lang = include.lang | default: site.lang %}
+<header class="site-top{% if page.layout == 'post' %} post-site-header{% endif %}">
   <div class="site-top-inner">
-    <strong class="wordmark">Witold Więcek</strong>
+    {% if page.layout == 'post' %}
+      <div id="topbar-title" class="post-breadcrumb">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <span aria-hidden="true">›</span>
+        <span>{{ page.title }}</span>
+      </div>
+    {% else %}
+      <strong class="wordmark">Witold Więcek</strong>
+    {% endif %}
     <div class="header-actions">
       <nav class="site-nav" aria-label="Primary navigation">
         <span class="nav-group">
@@ -20,6 +29,24 @@
           </a>
         </span>
       </nav>
+      {% if page.layout == 'post' %}
+        <div class="post-header-tools">
+          <button type="button" id="sidebar-trigger" class="btn btn-link" aria-label="Open menu">
+            <i class="fas fa-bars fa-fw"></i>
+          </button>
+          <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">
+            <i class="fas fa-search fa-fw"></i>
+          </button>
+          <search class="align-items-center">
+            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+            <input class="form-control" id="search-input" type="search" aria-label="Search"
+              autocomplete="off" placeholder="{{ site.data.locales[header_lang].search.hint | capitalize }}...">
+          </search>
+          <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">
+            {{- site.data.locales[header_lang].search.cancel -}}
+          </button>
+        </div>
+      {% endif %}
       <button class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">
         <span class="theme-mark" aria-hidden="true">◐</span><span class="theme-label">Toggle theme</span>
       </button>
