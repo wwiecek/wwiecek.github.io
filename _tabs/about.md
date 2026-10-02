@@ -1,6 +1,6 @@
 ---
 title: Bio
-# the default layout is 'page'
+layout: site-page
 icon: fas fa-info-circle
 order: 4
 permalink: /bio/
