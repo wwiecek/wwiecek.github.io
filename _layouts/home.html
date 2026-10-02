@@ -1,109 +1,120 @@
 ---
-layout: default
 ---
-
-{% include lang.html %}
-
-<article class="home-page px-1">
-  <section class="home-intro">
-    <p>
-      I am a researcher with a PhD in statistics, working on applied problems
-      in global health, epidemiology, and development economics. I am a
-      Consulting Director at the
-      <a href="https://bfi.uchicago.edu/news/dil-launch/">Development Innovation Lab at the University of Chicago</a>,
-      a Non-resident Research Fellow at the
-      <a href="https://www.cgdev.org/">Centre for Global Development</a>,
-      and a Senior Fellow at the
-      <a href="https://ifp.org/">Institute for Progress</a>.
-    </p>
-  </section>
-
-  <section class="newsletter-callout" aria-labelledby="newsletter">
-    <div>
-      <h1 id="newsletter">Monthly newsletter</h1>
-      <p>I have a newsletter with work/life updates.</p>
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo title=false %}
+  <title>{{ site.title }}</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicons/favicon-32x32.png' | relative_url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+  <script>
+    try {
+      const saved = sessionStorage.getItem('mode');
+      document.documentElement.dataset.theme = saved === 'light' || saved === 'dark'
+        ? saved : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    } catch {
+      document.documentElement.dataset.theme =
+        matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+  </script>
+  <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+  <script src="{{ '/assets/js/home.js' | relative_url }}" defer></script>
+</head>
+<body>
+  <header class="site-top">
+    <div class="site-top-inner">
+      <strong class="wordmark">Witold Więcek</strong>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <span class="nav-group">
+            <span class="nav-label">This page:</span>
+            <a href="{{ '/' | relative_url }}" aria-current="page">HOME</a>
+            <a href="{{ '/bio/' | relative_url }}">BIO</a>
+            <a href="{{ '/blog/' | relative_url }}">BLOG</a>
+          </span>
+          <span class="nav-divider" aria-hidden="true">·</span>
+          <span class="nav-group">
+            <span class="nav-label">Projects:</span>
+            <a href="https://witold.xyz/BEAR/">BEAR
+              <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 5.5 10.5M12 9v4H3V4h4"/></svg>
+            </a>
+            <a href="https://witold.xyz/vaccines">VACCINES
+              <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 5.5 10.5M12 9v4H3V4h4"/></svg>
+            </a>
+          </span>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Dark theme" aria-pressed="false">
+          <span class="theme-mark" aria-hidden="true">◐</span><span class="theme-label">Dark theme</span>
+        </button>
+      </div>
     </div>
-    <a class="newsletter-button" href="https://buttondown.com/witold">Subscribe</a>
-  </section>
+  </header>
 
-  <section class="home-section" aria-labelledby="recent-projects">
-    <div class="home-section-heading">
-      <h1 id="recent-projects">Recent Projects</h1>
+  <main class="site-body">
+    <section class="hero" aria-labelledby="home-title">
+      <div>
+        <h1 id="home-title">Witold Więcek</h1>
+        <p>I am a researcher with a PhD in statistics, working on applied problems in global health, epidemiology, and development economics. I am a Consulting Director at the <a href="https://bfi.uchicago.edu/news/dil-launch/">Development Innovation Lab at the University of Chicago</a>, a Non-resident Research Fellow at the <a href="https://www.cgdev.org/">Centre for Global Development</a>, and a Senior Fellow at the <a href="https://ifp.org/">Institute for Progress</a>.</p>
+        <p class="featured-projects"><strong>Projects:</strong>
+          <a href="https://witold.xyz/BEAR/">BEAR
+            <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 5.5 10.5M12 9v4H3V4h4"/></svg>
+          </a>
+          <span aria-hidden="true">·</span>
+          <a href="https://witold.xyz/vaccines">VACCINES
+            <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 5.5 10.5M12 9v4H3V4h4"/></svg>
+          </a>
+        </p>
+      </div>
+      <img class="portrait" src="{{ '/assets/witold-wiecek-avatar.jpg' | relative_url }}" alt="Portrait of Witold Więcek" width="280" height="280">
+    </section>
+
+    <section class="newsletter" aria-labelledby="newsletter-title">
+      <div>
+        <h2 id="newsletter-title">Monthly newsletter</h2>
+        <p>I have a newsletter with work/life updates.</p>
+      </div>
+      <a href="https://buttondown.com/witold">Subscribe</a>
+    </section>
+
+    <div class="panels">
+      <section class="panel projects" aria-labelledby="projects-title">
+        <div class="panel-heading">
+          <div class="panel-heading-row"><h2 id="projects-title">Recent Projects</h2></div>
+        </div>
+        <ul>
+          <li><a href="https://witold.xyz/BEAR/">BEAR</a><p>an open-source meta-dataset of empirical research results for meta-science.</p></li>
+          <li><a href="https://www.nber.org/papers/w30835">Water meta-analysis</a><p>on water quality interventions and child mortality.</p></li>
+          <li><a href="https://www.cgdev.org/publication/more-from-less-optimising-vaccines-constrained-world">Optimising dosing of vaccines</a><p>policy work on how to deliver vaccines to more people when supply is constrained.</p></li>
+          <li>R package <a href="https://github.com/wwiecek/baggr">baggr</a><p>for fitting Bayesian meta-analytic models with Stan.</p></li>
+        </ul>
+        <div class="panel-footer"><p>You can see more of my current ideas in my <a href="https://docs.google.com/document/d/1g6YOdmsPgeemeGUmMTiw8ApoMi94JTIfbU-tRSuzGVY/edit?usp=sharing">Working In Public Doc</a>.</p></div>
+      </section>
+
+      <section class="panel papers" aria-labelledby="papers-title">
+        <div class="panel-heading">
+          <div class="panel-heading-row"><h2 id="papers-title">Recent Papers</h2><a href="https://scholar.google.com/citations?user=r6uDNqEAAAAJ&amp;hl=en">Google Scholar</a></div>
+        </div>
+        <ul>
+          <li><a href="{{ '/posts/bayesian-fda-guidance/' | relative_url }}">Bayesian clinical trials and the FDA</a><p><em>JAMA</em>, 2026, with Andrew Gelman and Erik van Zwet.</p></li>
+          <li><a href="https://www.nber.org/papers/w30835">Water treatment and child mortality</a><p>NBER working paper, Feb 2026, with Michael Kremer et al.</p></li>
+          <li><a href="https://pubmed.ncbi.nlm.nih.gov/41066386/">Meta-analysis with a single study</a><p><em>Statistical Methods in Medical Research</em>, 2025, with Andrew Gelman and Erik van Zwet.</p></li>
+        </ul>
+      </section>
+
+      <section class="panel notes" aria-labelledby="notes-title">
+        <div class="panel-heading">
+          <div class="panel-heading-row"><h2 id="notes-title">Recent Research Notes</h2><a href="{{ '/blog/' | relative_url }}">All Blogs</a></div>
+        </div>
+        <ul>
+          {% for post in site.posts limit: 3 %}
+            <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %B %Y' }}</time></li>
+          {% endfor %}
+        </ul>
+        <div class="panel-footer"><p>I occasionally blog at <a href="https://www.clinicaltrialsabundance.blog/">Clinical Trials Abundance</a> and <a href="https://statmodeling.stat.columbia.edu/">Andrew Gelman's blog</a>.</p></div>
+      </section>
     </div>
-
-    <p class="section-note">
-      <em>
-        You can see more of my current ideas in my
-        <a href="https://docs.google.com/document/d/1g6YOdmsPgeemeGUmMTiw8ApoMi94JTIfbU-tRSuzGVY/edit?usp=sharing">Working In Public Doc</a>.
-      </em>
-    </p>
-
-    <ul class="compact-list">
-      <li>
-        <a href="https://witold.xyz/BEAR/">BEAR</a>, an open-source
-        meta-dataset of empirical research results for meta-science.
-      </li>
-      <li>
-        <a href="https://www.nber.org/papers/w30835">Water meta-analysis</a>
-        on water quality interventions and child mortality.
-      </li>
-      <li>
-        <a href="https://www.cgdev.org/publication/more-from-less-optimising-vaccines-constrained-world">Optimising dosing of vaccines</a>,
-        policy work on how to deliver vaccines to more people when supply is constrained.
-      </li>
-      <li>
-        R package <a href="https://github.com/wwiecek/baggr">baggr</a> for
-        fitting Bayesian meta-analytic models with Stan.
-      </li>
-    </ul>
-  </section>
-
-  <section class="home-section" aria-labelledby="recent-papers">
-    <div class="home-section-heading">
-      <h1 id="recent-papers">Recent Papers</h1>
-      <a href="https://scholar.google.com/citations?user=r6uDNqEAAAAJ&hl=en">Google Scholar</a>
-    </div>
-
-    <ul class="compact-list paper-list">
-      <li>
-        <a href="{{ '/posts/bayesian-fda-guidance/' | relative_url }}">Bayesian
-        clinical trials and the FDA</a>. <em>JAMA</em>, 2026, with Andrew Gelman and Erik van Zwet.
-      </li>
-      <li>
-        <a href="https://www.nber.org/papers/w30835">Water treatment and child mortality</a>,
-        NBER working paper, Feb 2026, with Michael Kremer et al.
-      </li>
-      <li>
-        <a href="https://pubmed.ncbi.nlm.nih.gov/41066386/">Meta-analysis
-        with a single study</a>. <em>Statistical Methods in Medical Research</em>,
-        2025, with Andrew Gelman and Erik van Zwet.
-      </li>
-    </ul>
-  </section>
-
-  <section class="home-section" aria-labelledby="recent-research-notes">
-    <div class="home-section-heading">
-      <h1 id="recent-research-notes">Recent Research Notes</h1>
-      <a href="{{ '/blog/' | relative_url }}">See All Notes</a>
-    </div>
-
-    <p class="section-note">
-      <em>
-        I occasionally blog at
-        <a href="https://www.clinicaltrialsabundance.blog/">Clinical Trials Abundance</a>
-        and <a href="https://statmodeling.stat.columbia.edu/">Andrew Gelman's blog</a>.
-      </em>
-    </p>
-
-    <ul class="recent-posts">
-      {% for post in site.posts limit: 3 %}
-        <li>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          <time datetime="{{ post.date | date_to_xmlschema }}">
-            {{ post.date | date: '%-d %B %Y' }}
-          </time>
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
-</article>
+  </main>
+</body>
+</html>
