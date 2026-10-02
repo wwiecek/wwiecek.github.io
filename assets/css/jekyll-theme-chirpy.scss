@@ -5,6 +5,56 @@
 
 /* append your custom style below */
 
+@mixin site-light-palette {
+  --main-bg: #f7f6f1;
+  --text-color: #333b3c;
+  --text-muted-color: #59686a;
+  --heading-color: #333b3c;
+  --link-color: #305e61;
+  --link-underline-color: #c7d4d0;
+  --main-border-color: #e0e1d9;
+  --sidebar-bg: #31434b;
+  --sidebar-border-color: #40515a;
+  --sidebar-muted-color: #d7e0de;
+  --sidebar-active-color: #ffffff;
+  --sidebar-hover-bg: #ffffff18;
+  --site-title-color: #ffffff;
+  --site-subtitle-color: #ccd8d8;
+  --topbar-bg: #e0ebe8;
+  --topbar-text-color: #31434b;
+  --card-bg: #ffffff;
+}
+
+@mixin site-dark-palette {
+  --main-bg: #192328;
+  --text-color: #e6ecea;
+  --text-muted-color: #bdcbc9;
+  --heading-color: #e6ecea;
+  --link-color: #9bd6d1;
+  --link-underline-color: #526c6b;
+  --main-border-color: #415057;
+  --sidebar-bg: #101d23;
+  --sidebar-border-color: #31434b;
+  --sidebar-muted-color: #bdcbc9;
+  --sidebar-active-color: #ffffff;
+  --sidebar-hover-bg: #ffffff14;
+  --site-title-color: #ffffff;
+  --site-subtitle-color: #bdcbc9;
+  --topbar-bg: #26353b;
+  --topbar-text-color: #e6ecea;
+  --card-bg: #26353b;
+}
+
+@media (prefers-color-scheme: light) {
+  html:not([data-mode]), html[data-mode='light'] { @include site-light-palette; }
+  html[data-mode='dark'] { @include site-dark-palette; }
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode]), html[data-mode='dark'] { @include site-dark-palette; }
+  html[data-mode='light'] { @include site-light-palette; }
+}
+
 .home-page {
   max-width: 780px;
 }

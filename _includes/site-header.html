@@ -1,0 +1,28 @@
+<header class="site-top">
+  <div class="site-top-inner">
+    <strong class="wordmark">Witold Więcek</strong>
+    <div class="header-actions">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <span class="nav-group">
+          <span class="nav-label">This page:</span>
+          <a href="{{ '/' | relative_url }}"{% if page.layout == 'home' %} aria-current="page"{% endif %}>HOME</a>
+          <a href="{{ '/bio/' | relative_url }}"{% if page.url == '/bio/' %} aria-current="page"{% endif %}>BIO</a>
+          <a href="{{ '/blog/' | relative_url }}"{% if page.url == '/blog/' or page.layout == 'post' %} aria-current="page"{% endif %}>BLOG</a>
+        </span>
+        <span class="nav-divider" aria-hidden="true">·</span>
+        <span class="nav-group">
+          <span class="nav-label">Projects:</span>
+          <a href="https://witold.xyz/BEAR/" target="_blank" rel="noopener noreferrer">BEAR
+            <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 5.5 10.5M12 9v4H3V4h4"/></svg>
+          </a>
+          <a href="https://witold.xyz/vaccines" target="_blank" rel="noopener noreferrer">VACCINES
+            <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 5.5 10.5M12 9v4H3V4h4"/></svg>
+          </a>
+        </span>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">
+        <span class="theme-mark" aria-hidden="true">◐</span><span class="theme-label">Toggle theme</span>
+      </button>
+    </div>
+  </div>
+</header>
