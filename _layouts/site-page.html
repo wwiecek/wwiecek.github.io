@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
   {% seo title=false %}
   <title>{{ page.title }} | {{ site.title }}</title>
   <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicons/favicon-32x32.png' | relative_url }}">
@@ -15,6 +16,8 @@
       document.documentElement.dataset.theme =
         matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
+    document.querySelector('meta[name="color-scheme"]').content =
+      document.documentElement.dataset.theme;
   </script>
   <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
   <script src="{{ '/assets/js/home.js' | relative_url }}" defer></script>

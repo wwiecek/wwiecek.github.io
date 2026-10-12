@@ -5,6 +5,7 @@ const root = document.documentElement;
 function applyTheme(theme) {
   root.dataset.theme = theme;
   root.dataset.mode = theme;
+  document.querySelector('meta[name="color-scheme"]').content = theme;
 }
 
 function syncToggle() {
