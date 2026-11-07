@@ -29,35 +29,35 @@
   {% include site-header.html %}
   <main class="site-body">
     <section class="hero" aria-labelledby="home-title">
-      <div>
+      <div class="hero-copy">
         <h1 id="home-title">Witold Więcek</h1>
         <p>I am a researcher with a PhD in statistics, working on applied problems in global health, epidemiology, and development economics. I am a Consulting Director at the <a href="https://bfi.uchicago.edu/news/dil-launch/">Development Innovation Lab at the University of Chicago</a>, a Non-resident Research Fellow at the <a href="https://www.cgdev.org/">Centre for Global Development</a>, and a Senior Fellow at the <a href="https://ifp.org/">Institute for Progress</a>.</p>
-        <p class="featured-projects"><strong>Projects:</strong>
-          <a href="https://witold.xyz/BEAR/" target="_blank" rel="noopener noreferrer">BEAR
-            <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 5.5 10.5M12 9v4H3V4h4"/></svg>
+        <div class="hero-links">
+          <div>
+            <p class="featured-projects"><strong>Projects:</strong>
+              <a href="https://witold.xyz/BEAR/" target="_blank" rel="noopener noreferrer">BEAR
+                <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 5.5 10.5M12 9v4H3V4h4"/></svg>
+              </a>
+              <span aria-hidden="true">·</span>
+              <a href="https://witold.xyz/vaccines" target="_blank" rel="noopener noreferrer">VACCINES
+                <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 5.5 10.5M12 9v4H3V4h4"/></svg>
+              </a>
+            </p>
+            <p class="featured-projects featured-links"><strong>Links:</strong>
+              <a href="https://twitter.com/vientsek" target="_blank" rel="noopener noreferrer">TWITTER</a>
+              <span aria-hidden="true">·</span>
+              <a href="https://github.com/wwiecek" target="_blank" rel="noopener noreferrer">GITHUB</a>
+              <span aria-hidden="true">·</span>
+              <a href="https://scholar.google.com/citations?user=r6uDNqEAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">GOOGLE SCHOLAR</a>
+            </p>
+          </div>
+          <a class="newsletter" href="https://buttondown.com/witold">
+            <span>Monthly newsletter</span>
+            <small>Work/life updates <span aria-hidden="true">↗</span></small>
           </a>
-          <span aria-hidden="true">·</span>
-          <a href="https://witold.xyz/vaccines" target="_blank" rel="noopener noreferrer">VACCINES
-            <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 5.5 10.5M12 9v4H3V4h4"/></svg>
-          </a>
-        </p>
-        <p class="featured-projects featured-links"><strong>Links:</strong>
-          <a href="https://twitter.com/vientsek" target="_blank" rel="noopener noreferrer">TWITTER</a>
-          <span aria-hidden="true">·</span>
-          <a href="https://github.com/wwiecek" target="_blank" rel="noopener noreferrer">GITHUB</a>
-          <span aria-hidden="true">·</span>
-          <a href="https://scholar.google.com/citations?user=r6uDNqEAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">GOOGLE SCHOLAR</a>
-        </p>
+        </div>
       </div>
       <img class="portrait" src="{{ '/assets/witold-wiecek-avatar.jpg' | relative_url }}" alt="Portrait of Witold Więcek" width="280" height="280">
-    </section>
-
-    <section class="newsletter" aria-labelledby="newsletter-title">
-      <div>
-        <h2 id="newsletter-title">Monthly newsletter</h2>
-        <p>I have a newsletter with work/life updates.</p>
-      </div>
-      <a href="https://buttondown.com/witold">Subscribe</a>
     </section>
 
     <div class="panels">
@@ -71,7 +71,6 @@
           <li><a href="https://www.cgdev.org/publication/more-from-less-optimising-vaccines-constrained-world">Optimising dosing of vaccines</a><p>policy work on how to deliver vaccines to more people when supply is constrained.</p></li>
           <li>R package <a href="https://github.com/wwiecek/baggr">baggr</a><p>for fitting Bayesian meta-analytic models with Stan.</p></li>
         </ul>
-        <div class="panel-footer"><p>You can see more of my current ideas in my <a href="https://docs.google.com/document/d/1g6YOdmsPgeemeGUmMTiw8ApoMi94JTIfbU-tRSuzGVY/edit?usp=sharing">Working In Public Doc</a>.</p></div>
       </section>
 
       <section class="panel papers" aria-labelledby="papers-title">
@@ -90,13 +89,13 @@
       <section class="panel notes" aria-labelledby="notes-title">
         <div class="panel-heading">
           <div class="panel-heading-row"><h2 id="notes-title">Recent Research Notes</h2><a href="{{ '/blog/' | relative_url }}">All Blogs</a></div>
+          <p class="panel-intro">I occasionally blog at <a href="https://www.clinicaltrialsabundance.blog/">Clinical Trials Abundance</a> and <a href="https://statmodeling.stat.columbia.edu/">Andrew Gelman's blog</a>.</p>
         </div>
         <ul>
           {% for post in site.posts limit: 3 %}
             <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %B %Y' }}</time></li>
           {% endfor %}
         </ul>
-        <div class="panel-footer"><p>I occasionally blog at <a href="https://www.clinicaltrialsabundance.blog/">Clinical Trials Abundance</a> and <a href="https://statmodeling.stat.columbia.edu/">Andrew Gelman's blog</a>.</p></div>
       </section>
     </div>
   </main>

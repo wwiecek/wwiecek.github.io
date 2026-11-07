@@ -17,6 +17,19 @@ To render $ as a dollar sign (in normal text and/or mathjax), you need to preced
 Also note is that the table of contents at the right hand side of the posts generally only display headings that are of ## size or larger. This is true unless there is a ### size heading below a ## (or larger) heading, in which case the contents displays it as a sub-section/sub-heading underneath the ## heading.
 
 
+## Site layouts
+
+- Landing page: `_layouts/home.html`.
+- Biography and blog index: `_layouts/site-page.html`.
+- Individual posts retain Chirpy's article, maths and image support;
+  `_includes/note-layout.html` supplies the reading layout and
+  `_includes/toc.html` supplies the collapsible contents.
+- Shared navigation, styling and theme controls: `_includes/site-header.html`,
+  `assets/css/home.css` and `assets/js/home.js`.
+
+Preview with `bundle exec jekyll serve`, or build with
+`bundle exec jekyll build`.
+
 # Chirpy readme
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
 [![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]

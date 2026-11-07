@@ -1,0 +1,8 @@
+{% if site.toc and page.toc %}
+  {% if page.content contains '<h2' or page.content contains '<h3' %}
+    <details id="toc-wrapper" open>
+      <summary class="panel-heading">On this page</summary>
+      <nav id="toc" aria-label="On this page"></nav>
+    </details>
+  {% endif %}
+{% endif %}

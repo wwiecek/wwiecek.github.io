@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-06
+
+- Simplified the landing page to three columns with dividing rules on the page background, and moved the newsletter link beside the project and social links.
+- Centred the biography and removed links to the Working in Public document.
+- Gave individual posts an editorial reading layout based on the vaccines site, with serif prose, a theme-aware contents rail, and navigation confined to the top bar. On smaller screens, contents collapse above the article.
+
 ## 2026-06-09
 
 - Replaced the default Chirpy post-list homepage with a short bio, a generated list of the five latest posts, and a compact recent-projects section led by BEAR.

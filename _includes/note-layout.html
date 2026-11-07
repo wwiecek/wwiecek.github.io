@@ -1,0 +1,25 @@
+<div id="main-wrapper">
+  <div class="container note-grid">
+    {% if site.toc and page.toc %}
+      <aside id="panel-wrapper" aria-label="Table of contents">
+        {% include toc.html lang=lang %}
+      </aside>
+    {% endif %}
+    <main class="note-main" aria-label="Main Content">
+      {% include refactor-content.html content=content lang=lang %}
+    </main>
+    <div id="tail-wrapper">
+      {% for _include in layout.tail_includes %}
+        {% assign _include_path = _include | append: '.html' %}
+        {% include {{ _include_path }} lang=lang %}
+      {% endfor %}
+      {% include_cached footer.html lang=lang %}
+    </div>
+    {% include_cached search-results.html lang=lang %}
+  </div>
+  <aside aria-label="Scroll to Top">
+    <button id="back-to-top" type="button" class="btn btn-lg btn-box-shadow">
+      <i class="fas fa-angle-up"></i>
+    </button>
+  </aside>
+</div>

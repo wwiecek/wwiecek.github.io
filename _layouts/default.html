@@ -16,10 +16,15 @@ layout: compress
 <html lang="{{ site.alt_lang | default: site.lang }}" {{ prefer_mode }}>
   {% include head.html %}
 
-  <body class="with-site-nav">
+  <body class="{% if page.layout == 'post' %}post-page{% else %}with-site-nav{% endif %}">
     {% include site-header.html %}
-    {% include sidebar.html lang=lang %}
+    {% unless page.layout == 'post' %}
+      {% include sidebar.html lang=lang %}
+    {% endunless %}
 
+    {% if page.layout == 'post' %}
+      {% include note-layout.html %}
+    {% else %}
     <div id="main-wrapper" class="d-flex justify-content-center">
       <div class="container d-flex flex-column px-xxl-5">
         {% unless page.layout == 'post' %}
@@ -71,6 +76,8 @@ layout: compress
         </button>
       </aside>
     </div>
+
+    {% endif %}
 
     <div id="mask"></div>
 

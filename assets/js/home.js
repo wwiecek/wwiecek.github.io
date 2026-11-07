@@ -32,3 +32,11 @@ media.addEventListener('change', event => {
     syncToggle();
   }
 });
+
+// Contents stay in the reading flow on small screens and in a desktop rail.
+const contents = document.querySelector('#toc-wrapper');
+if (contents) {
+  const wide = window.matchMedia('(min-width: 951px)');
+  contents.open = wide.matches;
+  wide.addEventListener('change', event => { contents.open = event.matches; });
+}
