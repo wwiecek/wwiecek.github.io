@@ -8,7 +8,7 @@ math: false
 
 *Originally posted at [Clinical Trials Abundance Substack](https://www.clinicaltrialsabundance.blog/p/market-shaping-and-trial-design-belong).*
 
-**(1) Innovative trial designs**
+## (1) Innovative trial designs
 
 In a nutshell, innovative trial designs (see glossary in a box below) can reduce costs and speed up testing of interventions. They achieve higher efficiency by creating shared trial infrastructures, borrowing information across populations, and adapting testing to information that is learned during the experiment. I previously argued that [trial innovation is particularly important in this period of AI advances](https://docs.google.com/document/d/1VEG1Cd6ndDtL3kAO8ensjlrslwXmXFS01b03OS3tSnE/edit?usp=sharing): as drug discovery improves, having an efficient infrastructure for testing innovations in the real world will increasingly become the main bottleneck.
 
@@ -21,16 +21,16 @@ For medical interventions that need regulatory approval this creates an addition
 For that reason we should not expect the trial innovation to come from producers or regulators.
 
 <div class="glossary-box">
-<h3>Glossary of innovative trial designs</h3>
+<h3 id="glossary-of-innovative-trial-designs">Glossary of innovative trial designs</h3>
 
 <p>There is <a href="https://learninghealthadam.substack.com/cp/201171882">a broader need for trial innovation</a>, but here I talk about their statistical aspect, trial <em>designs</em>. “Innovative designs” (sometimes “complex innovative designs”) is a catch-all terms without a clear definition, but it’s good to distinguish the following: platform trials, which focus on creating infrastructure for many (sometimes dynamically added) treatments; adaptive trials, which pre-register dynamic decisions (e.g. dropping a treatment or changing dose based on results in an initial set of patients); Bayesian trials, which can borrow relevant information, e.g. across trials or patient groups; related to the platform idea are multi-stage, multi-arm trials, which are built for comparison of many promising interventions (and eliminating the less promising ones with time) and seamless trials, which use a single trial protocol for e.g. choosing the best dose of treatment (Phase 2) and then large-scale testing of its effects (Phase 3); basket trials (one therapy, many diseases) and umbrella trials (many therapies, one disease) are typically used for targeting treatments in cancer. There can be a lot of overlap in these definitions and most trials meet several of these definitions.</p>
 
-<h4>Example: adaptive platform trial for patients hospitalised with Covid-19</h4>
+<h4 id="example-adaptive-platform-trial">Example: adaptive platform trial for patients hospitalised with Covid-19</h4>
 
 <p>RECOVERY, a large-scale platform trial that started in the UK, was responsible for rapidly evaluating many possible COVID treatments in 2020. It was run within the UK's National Health Service. Its headline finding was that dexamethasone, a cheap generic steroid, could reduce a large fraction of mortality during that phase of the pandemic—as well as several other potentially beneficial treatments. This required testing 20 treatments with a flexible protocol that was adapted dozens of times. I will give more examples later in this note.</p>
 </div>
 
-**(2) Market shaping**
+## (2) Market shaping
 
 In science and global health, large philanthropic and public bodies plug gaps left by private R\&D—both in terms of existing and new technologies.
 
@@ -45,7 +45,7 @@ The most important difference is that pull funding can work if the funder can cl
 
 Pull and push can be used not just for new technologies, but also to solve the R\&D gaps that I just mentioned in existing technologies. As an example, [pull funding mechanisms have been proposed for repurposing.](https://www.cgdev.org/blog/case-pull-funding-national-institutes-health) That is because in many cases repurposing targets are off-patent medicines, where the main barrier to repurposing is efficient research, as no single company can easily generate revenue to fund a large confirmatory trial.
 
-**(3) An example of how market shaping and trial design fit together**
+## (3) An example of how market shaping and trial design fit together
 
 I argue that innovative designs are very relevant to funders interested in market shaping. At a basic level any funder wants to ensure that all evaluations of possible solutions are as fast, powerful, and inexpensive as possible. This is something that innovative designs can help with. However, there are also some cases where innovative designs have some unique advantages for market shaping.
 
@@ -61,7 +61,7 @@ In another world (which I prefer), the AMC designer is also the trial designer. 
 
 This trial design can extend further. It can dynamically remove treatments that do not show promising results. It may start as a small scale evaluation and then seamlessly transition into a large-scale efficacy trial of the best candidate. It may also look at adjusting dosages or considering combinations of treatments.
 
-**(4) Advantages of jointly tackling trial and market design**
+## (4) Advantages of jointly tackling trial and market design
 
 What are the major advantages of my suggestion?
 
@@ -79,7 +79,7 @@ However, even when there is no need for any innovative elements, it may be best 
 
 To sum up, while firms have private information and expertise that usually means it’s good for them to be drivers of innovation, they (1) they may be less efficient at testing their innovations (insufficient know-how or lack of coordination), (2) have incentives against producing most publicly useful information (e.g. comparison with other technologies, dosing).
 
-**(5) Why now is the right time to support joint design**
+## (5) Why now is the right time to support joint design
 
 The idea of using innovative trial designs by public funders to address public good questions is not new. At start I mentioned RECOVERY, which in essence was a platform trial for repurposing treatments in a pandemic. Another trial embedded within the UK’s NHS, [STAMPEDE, is a multi-stage, multi-arm trial](https://www.nihr.ac.uk/story/stampede-turning-point-trial-design) that has been evaluating treatments for prostate cancer. Both have led to changes in treatment standards in the UK. [REFINE, a basket trial](https://pmc.ncbi.nlm.nih.gov/articles/PMC7614585/), has been looking at dropping intensity for many cancer immunotherapies. Publicly-funded innovative trials like these can evaluate both new and existing treatments, at scale and speed that would not be possible otherwise.[^1]
 

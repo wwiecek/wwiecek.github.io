@@ -1,7 +1,7 @@
 {% assign header_lang = include.lang | default: site.lang %}
 <header class="site-top{% if page.layout == 'post' %} post-site-header{% endif %}">
   <div class="site-top-inner">
-    <strong class="wordmark">Witold Więcek</strong>
+    <a class="wordmark" href="{{ '/' | relative_url }}">Witold Więcek</a>
     <div class="header-actions">
       <nav class="site-nav" aria-label="Primary navigation">
         <span class="nav-group">

@@ -37,7 +37,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .site-top { background: var(--top); color: #fff; }
 .site-top-inner { max-width: 1320px; margin: auto; padding: 21px 40px;
   display: flex; justify-content: space-between; align-items: center; gap: 24px; }
-.wordmark { font: 700 18px Georgia, serif; white-space: nowrap; }
+.wordmark { color: inherit; text-decoration: none;
+  font: 700 18px Georgia, serif; white-space: nowrap; }
 .header-actions { display: flex; align-items: center; gap: 27px; }
 .site-nav { display: flex; align-items: center; gap: 13px;
   font: 600 13px Arial, sans-serif; }
@@ -71,14 +72,16 @@ button, a { -webkit-tap-highlight-color: transparent; }
   font: 400 clamp(48px, 5.2vw, 70px)/1.05 Georgia, serif;
   letter-spacing: 0; }
 .hero p { max-width: none; margin: 0; font-size: 18px; }
-.hero-links { display: flex; justify-content: space-between;
-  align-items: center; gap: 24px; margin-top: 19px; }
+.hero-links { display: flex; align-items: stretch; margin-top: 19px;
+  background: var(--footer); }
+.hero-links > div { padding: 12px 18px; }
 .hero .featured-projects { display: flex; align-items: baseline; gap: 10px;
   font-size: 15px; flex-wrap: wrap; }
 .hero .featured-links { margin-top: 7px; }
 .featured-projects strong, .featured-projects a { font-weight: 700; }
 .portrait { width: 240px; height: 240px; border-radius: 50%; object-fit: cover; }
-.newsletter { display: block; flex-shrink: 0; padding: 12px 18px;
+.newsletter { display: flex; flex: 1; flex-direction: column;
+  justify-content: center; padding: 12px 18px;
   color: var(--newsletter-text); background: var(--newsletter);
   text-decoration: none; }
 .newsletter > span { display: block; font: 400 20px/1.25 Georgia, serif; }
@@ -126,12 +129,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 /* Research notes share the vaccines site's editorial reading style. */
 .post-page #main-wrapper { margin: 0; padding: 0; background: var(--page); }
 .post-page #main-wrapper > .container {
-  width: 100%; max-width: 1240px; margin: auto; padding: 42px 40px;
+  width: 100%; max-width: 1400px; margin: auto; padding: 42px 40px;
 }
 .post-page .note-grid { display: grid;
-  grid-template-columns: minmax(0, 820px) minmax(0, 240px);
-  gap: 0 60px; align-items: start; }
-.post-page .note-main { grid-column: 1; grid-row: 1; min-width: 0; }
+  grid-template-columns: minmax(0, 1fr)
+    minmax(0, min(760px, calc(100vw - 520px))) minmax(0, 1fr);
+  gap: 0 32px; align-items: start; }
+.post-page .note-main { grid-column: 2; grid-row: 1; min-width: 0; }
 .post-page article { padding: 0 !important; }
 .post-page article > header { margin-bottom: 2.2rem; }
 .post-page article h1 { margin: 0 0 1.2rem; color: var(--link);
@@ -161,7 +165,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .post-page .content table { font: 14px/1.5 Arial, sans-serif; }
 .post-page .content .footnotes { border-top: 1px solid var(--rule);
   padding-top: 1rem; color: var(--muted); font: 14px/1.6 Arial, sans-serif; }
-.post-page #panel-wrapper { display: block; grid-column: 2; grid-row: 1;
+.post-page #panel-wrapper { display: block; grid-column: 1; grid-row: 1;
   position: sticky; top: 28px; padding: 0; margin: 0; width: auto;
   height: auto; align-self: start; color: var(--muted); }
 .post-page #toc-wrapper { position: static; animation: none; padding: 0; margin: 0; overflow: auto;
@@ -183,14 +187,18 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .post-page #toc .is-active-link { color: var(--link) !important;
   background: none; box-shadow: -1px 0 var(--link); }
 .post-page #toc .toc-link::before { display: none; }
-.post-page #tail-wrapper { grid-column: 1; min-width: 0; padding: 0; }
+.post-page #tail-wrapper { grid-column: 2; min-width: 0; padding: 0; }
 /* Chirpy fills this panel dynamically when searching. */
 .post-page #search-result-wrapper { grid-column: 1 / -1; width: 100%; }
 .post-page .note-grid:has(> #search-result-wrapper:not(.unloaded))
   > :not(#search-result-wrapper) { display: none; }
 .post-page #panel-wrapper:not(:has(#toc-wrapper)) { display: none; }
 .post-page #main-wrapper > .note-grid:not(:has(#toc-wrapper)) {
-  max-width: 900px; grid-template-columns: minmax(0, 1fr);
+  max-width: 840px;
+}
+.post-page .note-grid:not(:has(#toc-wrapper)) > .note-main,
+.post-page .note-grid:not(:has(#toc-wrapper)) > #tail-wrapper {
+  grid-column: 1 / -1;
 }
 .glossary-box { margin: 2rem 0; padding: 22px 25px; color: var(--text);
   background: var(--footer); border-left: 2px solid var(--link); }
@@ -221,12 +229,11 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .site-top-inner, .site-body { padding-inline: 28px; }
   .hero { gap: 30px; grid-template-columns: minmax(0, 1fr) 200px; }
   .portrait { width: 200px; height: 200px; }
-  .hero-links { flex-wrap: wrap; gap: 16px; }
+  .hero-links { flex-wrap: wrap; }
   .panel { padding-inline: 18px; }
   .panel h2 { font-size: 23px; }
   .post-page #main-wrapper > .container { padding: 32px 28px; }
-  .post-page .note-grid { gap: 0 36px;
-    grid-template-columns: minmax(0, 1fr) 210px; }
+  .post-page .note-grid { column-gap: 24px; }
 }
 @media (max-width: 950px) {
   .panels { grid-template-columns: 1fr; gap: 26px; }
@@ -239,6 +246,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
     border-block: 1px solid var(--rule); padding-block: 12px; }
   .post-page #toc-wrapper .panel-heading { padding: 0; }
   .post-page #toc-wrapper[open] .panel-heading { padding-bottom: 12px; }
+  /* Keep the contents height stable while section links scroll the page. */
+  .post-page #toc .is-collapsible { max-height: none; }
 }
 @media (max-width: 880px) {
   .site-top-inner { flex-wrap: wrap; gap: 16px; }

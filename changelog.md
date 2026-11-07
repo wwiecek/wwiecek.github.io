@@ -4,7 +4,7 @@
 
 - Simplified the landing page to three columns with dividing rules on the page background, and moved the newsletter link beside the project and social links.
 - Centred the biography and removed links to the Working in Public document.
-- Gave individual posts an editorial reading layout based on the vaccines site, with serif prose, a theme-aware contents rail, and navigation confined to the top bar. On smaller screens, contents collapse above the article.
+- Gave individual posts an editorial reading layout based on the vaccines site, with centred serif prose, a theme-aware contents rail on the left, and navigation confined to the top bar. The name in the top bar links home, and the market-shaping post uses numbered section headings with working contents anchors. On smaller screens, contents collapse above the article.
 
 ## 2026-06-09
 
